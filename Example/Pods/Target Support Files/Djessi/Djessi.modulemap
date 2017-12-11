@@ -1,0 +1,6 @@
+framework module Djessi {
+  umbrella header "Djessi-umbrella.h"
+
+  export *
+  module * { export * }
+}
