@@ -7,14 +7,14 @@ Pod::Spec.new do |s|
 Djessi is reactive abstraction over NSObject based on [smart key paths](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md) & defines lightweight reactive objects for your models.
                        DESC
 
-  s.homepage         = 'https://github.com/AGStarz/Djessi'
+  s.homepage         = 'https://github.com/AGStarz/Djessi.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AGStarz' => 'agafonov.vasya.93@gmail.com' }
-  s.source           = { :git => 'https://github.com/AGStarz/Djessi', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AGStarz/Djessi.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Djessi/Classes/**/*'
+  s.source_files = 'Source/**/*'
 
   s.frameworks = 'Foundation'
 end
