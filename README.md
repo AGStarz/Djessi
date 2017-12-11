@@ -61,7 +61,6 @@ class ViewController: UIViewController {
 }
 ```
 
-> Important
 >You should keep strong reference to every `Disposable` token's to keep observation alive or use `DisposeBag` (as shown in the example above).
 
 #### Additional functions
