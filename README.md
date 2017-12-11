@@ -12,7 +12,7 @@ Smart key path introduced by Apple on WWDC 17, see [here](https://developer.appl
 
 ## Usage
 
-* Inherit your models from `NSObject` & mark observable fields with `@objc dynamic var` keywords (requires for [key path's](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md))
+#### Inherit your models from `NSObject` & mark observable fields with `@objc dynamic var` keywords (required for [key path's](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md))
 
 ```swift
 import Foundation
@@ -22,7 +22,7 @@ class Model: NSObject {
 }
 ```
 
-* Use your models to create observable objects
+#### Use your models to create observable objects
 
 ```swift
 import Foundation
@@ -41,7 +41,7 @@ class ViewModel {
 
 > Observable constructor take two arguments - key path & flag which indicate to observe or not initial value of variable. Default value is `true` which means that initial value will be observed. Don't forget to set it to `false` if you don't needed to observe initial value.
 
-* Subscribe to start listen changes
+#### Subscribe to start listen changes
 
 ```swift
 import UIKit
@@ -61,15 +61,14 @@ class ViewController: UIViewController {
 }
 ```
 
-#### Important
+> Important
+>You should keep strong reference to every `Disposable` token's to keep observation alive or use `DisposeBag` (as shown in the example above).
 
-You should keep strong reference to every `Disposable` token's to keep observation alive or use `DisposeBag` (as shown in the example above).
-
-* Additional functions
+#### Additional functions
 
 > I will use `Model` (described in first section) as source for observables in the next examples.
 
-#### Bindings
+##### Bindings
 
 You can bind any `Observable` implementation to any other `KeyPathObservable` implementation
 
@@ -81,7 +80,7 @@ obj1.field = "Another message"
 print(obj2.field) // prints 'Another message'
 ```
 
-#### Threads
+##### Threads
 
 You should provide any implementation of `Queue` to use multi-thread observing or use already implemented lightweight wrapper over GCD - `GCDQueue`. `GCDQueue` already have implementation of `DispatchQueue.main` - you can directly access to it as `GCDQueue.asyncMain` or `GCDQueue.syncMain`.
 
@@ -95,7 +94,7 @@ let token = obj.observable(at: \Model.field)
     }
 ```
 
-#### Mapping values
+##### Mapping values
 
 You can transform your observing values to another one
 
@@ -110,7 +109,7 @@ let token = obj.observable(at: \Model.field)
     }
 ```
 
-#### Filtering values
+##### Filtering values
 
 You can specify condition to observe values
 
