@@ -1,7 +1,7 @@
 <img src="Assets/djessi.png" width="36" height="36"> Djessi
 ======
 
-[![CI Status](http://img.shields.io/travis/JStarz/Djessi.svg?style=flat)](https://travis-ci.org/JStarz/Djessi)
+[![Build Status](https://travis-ci.org/AGStarz/Djessi.svg?branch=master)](https://travis-ci.org/AGStarz/Djessi)
 [![Version](https://img.shields.io/cocoapods/v/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
 [![Platform](https://img.shields.io/cocoapods/p/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
 
