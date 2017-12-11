@@ -12,7 +12,7 @@ Smart key path introduced by Apple on WWDC 17, see [here](https://developer.appl
 
 ## Usage
 
-0. Inherit your models from `NSObject` & mark observable fields with `@objc dynamic var` keywords (requires for [key path's](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md))
+* Inherit your models from `NSObject` & mark observable fields with `@objc dynamic var` keywords (requires for [key path's](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md))
 
 ```swift
 import Foundation
@@ -22,24 +22,26 @@ class Model: NSObject {
 }
 ```
 
-1. Use your models to create observable objects
+* Use your models to create observable objects
 
 ```swift
 import Foundation
 
 class ViewModel {
 
+    let associatedModel: Model
     let observable: AnyKeyPathObservable<Model, String>
 
     init(model: Model) {
+        associatedModel = model
         observable = model.observable(at: \Model.field)
     }
 }
 ```
 
-> Observable constructor take two arguments - key path & flag which indicate observe or not initial value of variable. Default value is `true` which means that initial value will be observed. Don't forget to set it to `false` if you don't needed to observe initial value.
+> Observable constructor take two arguments - key path & flag which indicate to observe or not initial value of variable. Default value is `true` which means that initial value will be observed. Don't forget to set it to `false` if you don't needed to observe initial value.
 
-2. Subscribe to start listen changes
+* Subscribe to start listen changes
 
 ```swift
 import UIKit
@@ -63,9 +65,9 @@ class ViewController: UIViewController {
 
 You should keep strong reference to every `Disposable` token's to keep observation alive or use `DisposeBag` (as shown in the example above).
 
-3. Additional functions
+* Additional functions
 
-I will use `Model` (described in section 0) as source for observables in the next examples.
+> I will use `Model` (described in first section) as source for observables in the next examples.
 
 #### Bindings
 
