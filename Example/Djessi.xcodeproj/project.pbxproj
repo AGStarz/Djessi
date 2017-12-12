@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518D23471FDFCB64005D6E40 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23461FDFCB63005D6E40 /* DogAPI.swift */; };
+		518D234B1FDFCB97005D6E40 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D234A1FDFCB97005D6E40 /* Breed.swift */; };
+		518D234F1FDFD68D005D6E40 /* BreedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* BreedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* BreedsListViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -31,11 +34,14 @@
 		27AEC5939C877998E51A06A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		39B14C54A98E33672A8EECE5 /* Pods_Djessi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Djessi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2918272FC971EB3470579B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		518D23461FDFCB63005D6E40 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		518D234A1FDFCB97005D6E40 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageViewController.swift; sourceTree = "<group>"; };
 		5319404370E8E231364994B7 /* Pods-Djessi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Djessi_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Djessi_Tests/Pods-Djessi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Djessi_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Djessi_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* BreedsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,6 +84,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		518D23481FDFCB86005D6E40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				518D23461FDFCB63005D6E40 /* DogAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		518D23491FDFCB8E005D6E40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				518D234A1FDFCB97005D6E40 /* Breed.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		518D234C1FDFCBB8005D6E40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		518D234D1FDFCBCD005D6E40 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* BreedsListViewController.swift */,
+				518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				518D23491FDFCB8E005D6E40 /* Model */,
+				518D234D1FDFCBCD005D6E40 /* View Controllers */,
+				518D23481FDFCB86005D6E40 /* Network */,
+				518D234C1FDFCBB8005D6E40 /* Storyboards */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for Djessi";
@@ -116,6 +156,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -370,8 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				518D234F1FDFD68D005D6E40 /* BreedImageViewController.swift in Sources */,
+				518D234B1FDFCB97005D6E40 /* Breed.swift in Sources */,
+				607FACD81AFB9204008FA782 /* BreedsListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				518D23471FDFCB64005D6E40 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
