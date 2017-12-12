@@ -3,6 +3,7 @@
 
 [![Build Status](https://travis-ci.org/AGStarz/Djessi.svg?branch=master)](https://travis-ci.org/AGStarz/Djessi)
 [![Version](https://img.shields.io/cocoapods/v/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
+[![codecov](https://codecov.io/gh/AGStarz/Djessi/branch/master/graph/badge.svg)](https://codecov.io/gh/AGStarz/Djessi)
 [![Platform](https://img.shields.io/cocoapods/p/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
 
 Djessi is reactive abstraction over `NSObject` based on [smart key paths](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md) & defines lightweight reactive objects for your models.
