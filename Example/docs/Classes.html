@@ -33,10 +33,13 @@
                 <a href="Classes/AnyKeyPathObservable.html">AnyKeyPathObservable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ConditionObservable.html">ConditionObservable</a>
+                <a href="Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/DisposeBag.html">DisposeBag</a>
+                <a href="Classes/FilterConditionObservable.html">FilterConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FlatMapTransformObservable.html">FlatMapTransformObservable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/GCDQueue.html">GCDQueue</a>
@@ -45,10 +48,10 @@
                 <a href="Classes/GCDQueue/DispatchStyle.html">– DispatchStyle</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ThreadObservable.html">ThreadObservable</a>
+                <a href="Classes/MapTransformObservable.html">MapTransformObservable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/TransformObservable.html">TransformObservable</a>
+                <a href="Classes/ThreadObservable.html">ThreadObservable</a>
               </li>
             </ul>
           </li>
@@ -132,9 +135,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi19TransformObservableC"></a>
-                    <a name="//apple_ref/swift/Class/TransformObservable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi19TransformObservableC">TransformObservable</a>
+                    <a name="/s:6Djessi22MapTransformObservableC"></a>
+                    <a name="//apple_ref/swift/Class/MapTransformObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi22MapTransformObservableC">MapTransformObservable</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -142,15 +145,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define transformations for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define mapping values for observables.</p>
 
-                        <a href="Classes/TransformObservable.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/MapTransformObservable.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TransformObservable</span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="kt">K</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MapTransformObservable</span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="kt">K</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -196,6 +199,38 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6Djessi26FlatMapTransformObservableC"></a>
+                    <a name="//apple_ref/swift/Class/FlatMapTransformObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi26FlatMapTransformObservableC">FlatMapTransformObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define flat mapping transformations for observables.</p>
+
+                        <a href="Classes/FlatMapTransformObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FlatMapTransformObservable</span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="kt">K</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6Djessi10DisposeBagC"></a>
                     <a name="//apple_ref/swift/Class/DisposeBag" class="dashAnchor"></a>
                     <a class="token" href="#/s:6Djessi10DisposeBagC">DisposeBag</a>
@@ -228,9 +263,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi19ConditionObservableC"></a>
-                    <a name="//apple_ref/swift/Class/ConditionObservable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi19ConditionObservableC">ConditionObservable</a>
+                    <a name="/s:6Djessi25FilterConditionObservableC"></a>
+                    <a name="//apple_ref/swift/Class/FilterConditionObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi25FilterConditionObservableC">FilterConditionObservable</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,15 +273,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define callback condition for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define filtering values for observables.</p>
 
-                        <a href="Classes/ConditionObservable.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/FilterConditionObservable.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FilterConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -290,7 +325,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-12-13)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-12-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
