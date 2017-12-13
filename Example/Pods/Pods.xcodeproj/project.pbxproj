@@ -11,6 +11,10 @@
 		0B5B6D653E7C62AC473116955AA386C1 /* Djessi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0963FB2312F90039560BDE635221BB33 /* Djessi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FBE97805AE4427F2D47F49D950E1B9 /* Djessi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408407F22FBFBCE650FC237E6970823 /* Djessi-dummy.m */; };
 		3A499C409F73BA14149C2191DA51479A /* Pods-Djessi_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0AA152B264EF53C0D09EF6FE3A5880 /* Pods-Djessi_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */; };
+		5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */; };
+		5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */; };
+		5139F40D1FE19F090026EF3E /* Djessi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF612C73D7DC7D9921010C432828D8F /* Djessi.framework */; };
 		518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23051FDEAD51005D6E40 /* Queue.swift */; };
 		518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23061FDEAD51005D6E40 /* GCDQueue.swift */; };
 		518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23091FDEAD51005D6E40 /* Disposable.swift */; };
@@ -19,8 +23,6 @@
 		518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */; };
 		518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */; };
 		518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */; };
-		518D23231FDEAD51005D6E40 /* TransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23141FDEAD51005D6E40 /* TransformObservable.swift */; };
-		518D23241FDEAD51005D6E40 /* ConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23161FDEAD51005D6E40 /* ConditionObservable.swift */; };
 		518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23181FDEAD51005D6E40 /* ThreadObservable.swift */; };
 		518D23261FDEAD51005D6E40 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D231A1FDEAD51005D6E40 /* Observable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
@@ -32,6 +34,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		199621BA18BED5263363A82659DB5905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C2D44213579CA2B3F21C9877619023;
+			remoteInfo = Djessi;
+		};
+		5139F40E1FE19F090026EF3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -50,6 +59,9 @@
 		48335A643C0A861A71685DE171571905 /* Pods-Djessi_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Djessi_Tests.modulemap"; sourceTree = "<group>"; };
 		4D47A42EE4174C2014A2D1217EC85A56 /* Djessi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Djessi.xcconfig; sourceTree = "<group>"; };
 		501A94FA9DFD9450418F392EF16325D1 /* Pods-Djessi_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Djessi_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTransformObservable.swift; sourceTree = "<group>"; };
+		5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapTransformObservable.swift; sourceTree = "<group>"; };
+		5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConditionObservable.swift; sourceTree = "<group>"; };
 		518D23051FDEAD51005D6E40 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		518D23061FDEAD51005D6E40 /* GCDQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueue.swift; sourceTree = "<group>"; };
 		518D23091FDEAD51005D6E40 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
@@ -58,8 +70,6 @@
 		518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Observable.swift"; sourceTree = "<group>"; };
 		518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyKeyPathObservable.swift; sourceTree = "<group>"; };
 		518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathObservable.swift; sourceTree = "<group>"; };
-		518D23141FDEAD51005D6E40 /* TransformObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformObservable.swift; sourceTree = "<group>"; };
-		518D23161FDEAD51005D6E40 /* ConditionObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionObservable.swift; sourceTree = "<group>"; };
 		518D23181FDEAD51005D6E40 /* ThreadObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadObservable.swift; sourceTree = "<group>"; };
 		518D231A1FDEAD51005D6E40 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,8 +243,8 @@
 		518D23101FDEAD51005D6E40 /* Key Path */ = {
 			isa = PBXGroup;
 			children = (
-				518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */,
 				518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */,
+				518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */,
 			);
 			path = "Key Path";
 			sourceTree = "<group>";
@@ -242,7 +252,8 @@
 		518D23131FDEAD51005D6E40 /* Transformable */ = {
 			isa = PBXGroup;
 			children = (
-				518D23141FDEAD51005D6E40 /* TransformObservable.swift */,
+				5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */,
+				5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */,
 			);
 			path = Transformable;
 			sourceTree = "<group>";
@@ -250,7 +261,7 @@
 		518D23151FDEAD51005D6E40 /* Conditional */ = {
 			isa = PBXGroup;
 			children = (
-				518D23161FDEAD51005D6E40 /* ConditionObservable.swift */,
+				5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */,
 			);
 			path = Conditional;
 			sourceTree = "<group>";
@@ -456,10 +467,11 @@
 				21FBE97805AE4427F2D47F49D950E1B9 /* Djessi-dummy.m in Sources */,
 				518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */,
 				518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */,
-				518D23231FDEAD51005D6E40 /* TransformObservable.swift in Sources */,
+				5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */,
 				518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */,
+				5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */,
 				518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */,
-				518D23241FDEAD51005D6E40 /* ConditionObservable.swift in Sources */,
+				5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */,
 				518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */,
 				518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */,
 				518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */,

@@ -1,15 +1,15 @@
 //
-//  ConditionObservable.swift
+//  FilterConditionObservable.swift
 //  Djessi
 //
-//  Created by Vasily Agafonov on 10.12.2017.
+//  Created by Vasily Agafonov on 13.12.2017.
 //  Copyright © 2017 Agafonov. All rights reserved.
 //
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define callback condition for observables.
-public class ConditionObservable<O: Observable>: Observable {
+/// Implementation of `Observable` protocol. Define filtering values for observables.
+public class FilterConditionObservable<O: Observable>: Observable {
     
     /// Observing value type
     public typealias Value = O.Value
@@ -45,11 +45,11 @@ public class ConditionObservable<O: Observable>: Observable {
 
 extension Observable {
     
-    /// Add condition for current observable. New observable will be fired if value satisfy to `condition`.
+    /// Add filter rule condition for current observable. New observable will be fired if value satisfy to `condition`.
     ///
     /// - Parameter condition: Condition that observed values should satisfy.
     /// - Returns: Wrapped current observable with condition support.
-    public func filter(condition: @escaping (Value) -> Bool) -> ConditionObservable<Self> {
-        return ConditionObservable(observable: self, condition: condition)
+    public func filter(condition: @escaping (Value) -> Bool) -> FilterConditionObservable<Self> {
+        return FilterConditionObservable(observable: self, condition: condition)
     }
 }

@@ -1,15 +1,15 @@
 //
-//  TransformObservable.swift
+//  FlatMapTransformObservable.swift
 //  Djessi
 //
-//  Created by Vasily Agafonov on 10.12.2017.
+//  Created by Vasily Agafonov on 13.12.2017.
 //  Copyright © 2017 Agafonov. All rights reserved.
 //
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define transformations for observables.
-public class TransformObservable<To, K: Observable>: Observable {
+/// Implementation of `Observable` protocol. Define flat mapping transformations for observables.
+public class FlatMapTransformObservable<To, K: Observable>: Observable {
     
     /// Observing value type
     public typealias Value = To
@@ -18,14 +18,14 @@ public class TransformObservable<To, K: Observable>: Observable {
     private let associatedObservable: K
     
     /// Transform block for observed values.
-    private let transform: (K.Value) -> To
+    private let transform: (K.Value) -> To?
     
-    /// Create new transformations supported observable.
+    /// Create new flat map transformation support for observable.
     ///
     /// - Parameters:
     ///   - source: Source observable whose changes should be transformed by provided transform block.
     ///   - transform: Transformation block for each observed value of source observable.
-    init(source: K, transform t: @escaping (K.Value) -> To) {
+    init(source: K, transform t: @escaping (K.Value) -> To?) {
         associatedObservable = source
         transform = t
     }
@@ -36,18 +36,20 @@ public class TransformObservable<To, K: Observable>: Observable {
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
     public func observe(onNext: @escaping (Value) -> Void) -> Disposable {
         return associatedObservable.observe { (value) in
-            onNext(self.transform(value))
+            guard let value = self.transform(value) else { return }
+            
+            onNext(value)
         }
     }
 }
 
 extension Observable {
     
-    /// Add transformation for current observable. New observable will be firing with transformed values.
+    /// Add flat mapping transformation for current observable. New observable will be firing with non optional values.
     ///
     /// - Parameter transform: Transformation block.
-    /// - Returns: Wrapped current observable with transformation support.
-    public func map<To>(transform: @escaping (Value) -> To) -> TransformObservable<To, Self> {
-        return TransformObservable<To, Self>(source: self, transform: transform)
+    /// - Returns: Wrapped current observable with flat map transformation support.
+    public func flatMap<To>(transform: @escaping (Value) -> To?) -> FlatMapTransformObservable<To, Self> {
+        return FlatMapTransformObservable<To, Self>(source: self, transform: transform)
     }
 }
