@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Observable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Observable" class="dashAnchor"></a>
+    <a title="Observable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Observable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AnyKeyPathObservable.html">AnyKeyPathObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConditionObservable.html">ConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisposeBag.html">DisposeBag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GCDQueue.html">GCDQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GCDQueue/DispatchStyle.html">– DispatchStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThreadObservable.html">ThreadObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformObservable.html">TransformObservable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObjectProtocol.html">NSObjectProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Observable.html">Observable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Queue.html">Queue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/KPODisposable.html">KPODisposable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Observable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Observable</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                </div>
+              </div>
+            <p>Core protocol of all observables.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservableP7observeAA10Disposable_py5ValueQzc6onNext_tF"></a>
+                    <a name="//apple_ref/swift/Method/observe(onNext:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservableP7observeAA10Disposable_py5ValueQzc6onNext_tF">observe(onNext:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscribtion to next value changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">observe</span><span class="p">(</span><span class="nv">onNext</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onNext</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block which will be used to handle new value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Disposable token. You should keep strong reference to it or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object observing depends on token.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AEQyd__AFRSlF"></a>
+                    <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AEQyd__AFRSlF">bind(to:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bind current observable changes to another one with identical value type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>another</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Disposable token. You should keep strong reference to it or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object observing depends on token.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AFSgAERtd__lF"></a>
+                    <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AFSgAERtd__lF">bind(to:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bind current observable changes to another one with optional value type of current one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>another</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Disposable token. You should keep strong reference to it or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object observing depends on token.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__SQyAFGAERtd__lF"></a>
+                    <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__SQyAFGAERtd__lF">bind(to:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bind current observable changes to another one with implicitly unwrapped value type of current one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">ImplicitlyUnwrappedOptional</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>another</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Disposable token. You should keep strong reference to it or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object observing depends on token.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePAAE3mapAA09TransformB0Cyqd__xGqd__5ValueQzc9transform_tlF"></a>
+                    <a name="//apple_ref/swift/Method/map(transform:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE3mapAA09TransformB0Cyqd__xGqd__5ValueQzc9transform_tlF">map(transform:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add transformation for current observable. New observable will be firing with transformed values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">To</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">To</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/TransformObservable.html">TransformObservable</a></span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transformation block.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Wrapped current observable with transformation support.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePAAE7deliverAA06ThreadB0CyxGAA5Queue_p2on_tF"></a>
+                    <a name="//apple_ref/swift/Method/deliver(on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE7deliverAA06ThreadB0CyxGAA5Queue_p2on_tF">deliver(on:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add thread support on specified <code><a href="../Protocols/Queue.html">Queue</a></code> for current observable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deliver</span><span class="p">(</span><span class="n">on</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Queue.html">Queue</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ThreadObservable.html">ThreadObservable</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Queue for callback&rsquo;s.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Wrapped current observable with thread support.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi10ObservablePAAE6filterAA09ConditionB0CyxGSb5ValueQzc9condition_tF"></a>
+                    <a name="//apple_ref/swift/Method/filter(condition:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE6filterAA09ConditionB0CyxGSb5ValueQzc9condition_tF">filter(condition:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add condition for current observable. New observable will be fired if value satisfy to <code>condition</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="nv">condition</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConditionObservable.html">ConditionObservable</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>condition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Condition that observed values should satisfy.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Wrapped current observable with condition support.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-12-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
