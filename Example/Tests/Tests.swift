@@ -7,6 +7,7 @@ class Tests: XCTestCase {
     @objcMembers
     class Test: NSObject {
         dynamic var field: String
+        dynamic var optionalField: String? = nil
         
         init(value: String) {
             field = value
@@ -110,7 +111,7 @@ class Tests: XCTestCase {
     
     func testFiltering() {
         let expectation = XCTestExpectation(description: "Filter expectation")
-        let object = Test(value: initialValueConstant)
+        let object = Test(value: emptyValueConstant)
         
         object
             .observable(at: Test.keyPath)
@@ -148,5 +149,32 @@ class Tests: XCTestCase {
             .dispose(in: disposeBag)
         
         wait(for: [expectation], timeout: 1)
+    }
+    
+    func testFlatMapping() {
+        let expectation = XCTestExpectation(description: "Flat map expectation")
+        let object = Test(value: initialValueConstant)
+        
+        object
+            .observable(at: \Test.optionalField)
+            .flatMap(transform: { $0 })
+            .observe { (value) in
+                XCTAssert(value == self.newValueConstant)
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        object.optionalField = newValueConstant
+        
+        wait(for: [expectation], timeout: 1)
+    }
+    
+    func testCreation() {
+        let object = Test(value: initialValueConstant)
+        let observable = object.observable(at: \Test.optionalField)
+        
+        XCTAssert(observable.source == object)
+        XCTAssert(observable.keyPath == \Test.optionalField)
     }
 }

@@ -44,7 +44,7 @@ class BreedsListViewController: UIViewController {
         viewModel
             .observable(at: \ViewModel.title)
             .deliver(on: GCDQueue.asyncMain)
-            .observe(onNext: { self.navigationItem.title = $0 })
+            .bind(to: navigationItem.observable(at: \UINavigationItem.title))
             .dispose(in: disposeBag)
         
         viewModel
