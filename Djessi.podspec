@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Djessi'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = 'Djessi is lightweight reactive framework based on smart key paths.'
 
   s.description      = <<-DESC
