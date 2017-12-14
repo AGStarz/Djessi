@@ -27,6 +27,7 @@ class Model: NSObject {
 
 ```swift
 import Foundation
+import Djessi
 
 class ViewModel {
 
@@ -46,6 +47,7 @@ class ViewModel {
 
 ```swift
 import UIKit
+import Djessi
 
 class ViewController: UIViewController {
 
