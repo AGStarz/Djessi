@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>KeyPathObservable Protocol Reference</title>
+    <title>Reactive Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/KeyPathObservable" class="dashAnchor"></a>
-    <a title="KeyPathObservable Protocol Reference"></a>
+    <a name="//apple_ref/swift/Protocol/Reactive" class="dashAnchor"></a>
+    <a title="Reactive Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        KeyPathObservable Protocol Reference
+        Reactive Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -100,14 +100,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>KeyPathObservable</h1>
+            <h1>Reactive</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">KeyPathObservable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Observable.html">Observable</a></span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Reactive</span></code></pre>
 
                 </div>
               </div>
-            <p>Core observable for smart key path observing.</p>
+            <p>Reactive compatible objects protocol. To add reactive support for your objects adopt it to this protocol.</p>
 
           </section>
           <section class="section task-group-section">
@@ -116,51 +116,27 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi17KeyPathObservableP6source6SourceQzv"></a>
-                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi17KeyPathObservableP6source6SourceQzv">source</a>
+                    <a name="/s:6Djessi8ReactivePAAE02asB0AA0B9ExtensionVyxGv"></a>
+                    <a name="//apple_ref/swift/Property/asReactive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi8ReactivePAAE02asB0AA0B9ExtensionVyxGv">asReactive</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Source object whose field will be observed. It constrained to <code>NSObject</code> because only <code>NSObject</code> support smart key path observing.</p>
+                        <p>Main point to access available reactive functions for current object.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">Source</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Djessi17KeyPathObservableP03keyC0s017ReferenceWritablebC0Cy6SourceQz5ValueQzGv"></a>
-                    <a name="//apple_ref/swift/Property/keyPath" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi17KeyPathObservableP03keyC0s017ReferenceWritablebC0Cy6SourceQz5ValueQzGv">keyPath</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Smart key path which used to produce observing.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">ReferenceWritableKeyPath</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">asReactive</span><span class="p">:</span> <span class="kt"><a href="../Structs/ReactiveExtension.html">ReactiveExtension</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>

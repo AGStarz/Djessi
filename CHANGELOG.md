@@ -1,6 +1,3 @@
-CHANGELOG
-=========
-
 0.3.0
 ---------
 
@@ -12,7 +9,7 @@ import UIKit
 import Djessi
 
 @objcMembers
-class Test {
+class Test: NSObject {
     dynamic var stringField: String = ""
 }
 
