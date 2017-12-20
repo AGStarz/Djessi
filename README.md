@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/AGStarz/Djessi.svg?branch=master)](https://travis-ci.org/AGStarz/Djessi)
 [![Version](https://img.shields.io/cocoapods/v/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
-[![docs](https://cdn.rawgit.com/AGStarz/Djessi/feature/generate_jazzy/Example/docs/badge.svg)](https://cdn.rawgit.com/AGStarz/Djessi/feature/generate_jazzy/Example/docs/index.html)
+[![docs](https://cdn.rawgit.com/AGStarz/Djessi/master/Example/docs/badge.svg)](https://cdn.rawgit.com/AGStarz/Djessi/master/Example/docs/index.html)
 [![codecov](https://codecov.io/gh/AGStarz/Djessi/branch/master/graph/badge.svg)](https://codecov.io/gh/AGStarz/Djessi)
 [![Platform](https://img.shields.io/cocoapods/p/Djessi.svg?style=flat)](http://cocoapods.org/pods/Djessi)
 
