@@ -1,3 +1,10 @@
+0.3.1
+---------
+
+* Fix demo app bug
+* Fix broken docs link
+* Update jazzy docs
+
 0.3.0
 ---------
 
