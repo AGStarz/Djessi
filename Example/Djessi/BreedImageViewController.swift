@@ -15,7 +15,6 @@ class BreedImageViewController: UIViewController {
     class ViewModel: NSObject {
         dynamic var breedImage: UIImage? = nil
         dynamic var title: String = ""
-        dynamic var test: String? = nil
         
         init(breed: Breed) {
             super.init()
@@ -53,14 +52,15 @@ class BreedImageViewController: UIViewController {
             .observable(at: \ViewModel.breedImage)
             .deliver(on: GCDQueue.asyncMain)
             .map(transform: { $0 != nil })
-            .bind(to: activityIndicator.observable(at: \UIActivityIndicatorView.isHidden))
+            .bind(to: activityIndicator.asReactive.isHidden)
             .dispose(in: disposeBag)
         
         viewModel
             .observable(at: \ViewModel.breedImage)
             .deliver(on: GCDQueue.asyncMain)
             .flatMap(transform: { $0 })
-            .bind(to: imageView.observable(at: \UIImageView.image))
+            .bind(to: imageView.asReactive.image)
+            .dispose(in: disposeBag)
             .dispose(in: disposeBag)
     }
 }

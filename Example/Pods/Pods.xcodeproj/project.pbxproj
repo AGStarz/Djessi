@@ -14,7 +14,6 @@
 		5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */; };
 		5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */; };
 		5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */; };
-		5139F40D1FE19F090026EF3E /* Djessi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF612C73D7DC7D9921010C432828D8F /* Djessi.framework */; };
 		518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23051FDEAD51005D6E40 /* Queue.swift */; };
 		518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23061FDEAD51005D6E40 /* GCDQueue.swift */; };
 		518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23091FDEAD51005D6E40 /* Disposable.swift */; };
@@ -25,6 +24,39 @@
 		518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */; };
 		518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23181FDEAD51005D6E40 /* ThreadObservable.swift */; };
 		518D23261FDEAD51005D6E40 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D231A1FDEAD51005D6E40 /* Observable.swift */; };
+		5196F8821FE50DF900B9E44D /* ReactiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8811FE50DF900B9E44D /* ReactiveExtension.swift */; };
+		5196F8841FE50E5200B9E44D /* UIView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8831FE50E5200B9E44D /* UIView+Observable.swift */; };
+		5196F8861FE52BAC00B9E44D /* UIControl+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8851FE52BAC00B9E44D /* UIControl+Observable.swift */; };
+		5196F8881FE53F0C00B9E44D /* UIButton+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8871FE53F0C00B9E44D /* UIButton+Observable.swift */; };
+		5196F88C1FE5570A00B9E44D /* UIDatePicker+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F88B1FE5570A00B9E44D /* UIDatePicker+Observable.swift */; };
+		5196F88E1FE55C2700B9E44D /* UIPageControl+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F88D1FE55C2700B9E44D /* UIPageControl+Observable.swift */; };
+		5196F8901FE55C5500B9E44D /* UIRefreshControl+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F88F1FE55C5500B9E44D /* UIRefreshControl+Observable.swift */; };
+		5196F8921FE560DF00B9E44D /* UISegmentedControl+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8911FE560DF00B9E44D /* UISegmentedControl+Observable.swift */; };
+		5196F8941FE58FD300B9E44D /* UISlider+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8931FE58FD300B9E44D /* UISlider+Observable.swift */; };
+		5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8951FE5919200B9E44D /* UIStepper+Observable.swift */; };
+		5196F8981FE592FE00B9E44D /* UISwitch+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8971FE592FE00B9E44D /* UISwitch+Observable.swift */; };
+		5196F89A1FE5949900B9E44D /* UITextField+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8991FE5949900B9E44D /* UITextField+Observable.swift */; };
+		5196F89D1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F89C1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift */; };
+		5196F8A11FE9756B00B9E44D /* UICollectionViewCell+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8A01FE9756B00B9E44D /* UICollectionViewCell+Observable.swift */; };
+		5196F8A41FE977D500B9E44D /* UIImageView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8A31FE977D500B9E44D /* UIImageView+Observable.swift */; };
+		5196F8A71FE97A9A00B9E44D /* UIInputView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8A61FE97A9A00B9E44D /* UIInputView+Observable.swift */; };
+		5196F8AA1FE97C2900B9E44D /* UILabel+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8A91FE97C2900B9E44D /* UILabel+Observable.swift */; };
+		5196F8AE1FEA458600B9E44D /* UINavigationBar+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8AD1FEA458600B9E44D /* UINavigationBar+Observable.swift */; };
+		5196F8B11FEA48D900B9E44D /* UIPickerView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8B01FEA48D900B9E44D /* UIPickerView+Observable.swift */; };
+		5196F8B41FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8B31FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift */; };
+		5196F8B71FEA4C8400B9E44D /* UIProgressView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8B61FEA4C8400B9E44D /* UIProgressView+Observable.swift */; };
+		5196F8BA1FEA576200B9E44D /* UICollectionView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8B91FEA576200B9E44D /* UICollectionView+Observable.swift */; };
+		5196F8BC1FEA59C500B9E44D /* UITableView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8BB1FEA59C500B9E44D /* UITableView+Observable.swift */; };
+		5196F8BE1FEA5E0E00B9E44D /* UITextView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8BD1FEA5E0E00B9E44D /* UITextView+Observable.swift */; };
+		5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8C01FEA6FB500B9E44D /* UISearchBar+Observable.swift */; };
+		5196F8C41FEA75AD00B9E44D /* UIStackView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8C31FEA75AD00B9E44D /* UIStackView+Observable.swift */; };
+		5196F8C71FEA79D700B9E44D /* UITabBar+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8C61FEA79D700B9E44D /* UITabBar+Observable.swift */; };
+		5196F8CA1FEA7D2400B9E44D /* UITableViewCell+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8C91FEA7D2400B9E44D /* UITableViewCell+Observable.swift */; };
+		5196F8CD1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8CC1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift */; };
+		5196F8D01FEA7FD600B9E44D /* UIToolbar+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8CF1FEA7FD600B9E44D /* UIToolbar+Observable.swift */; };
+		5196F8D31FEA823500B9E44D /* UIVisualEffectView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D21FEA823500B9E44D /* UIVisualEffectView+Observable.swift */; };
+		5196F8D61FEA82F800B9E44D /* UIWebView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D51FEA82F800B9E44D /* UIWebView+Observable.swift */; };
+		5196F8D91FEA867700B9E44D /* UIWindow+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
 		90766A5AFC0A084EDE8D8B63A4FCB3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E50CF6275BB383838C6FBA031D62FC7E /* Pods-Djessi_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88C72476EFC3D344661D5051ACB99E87 /* Pods-Djessi_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,13 +66,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		199621BA18BED5263363A82659DB5905 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4C2D44213579CA2B3F21C9877619023;
-			remoteInfo = Djessi;
-		};
-		5139F40E1FE19F090026EF3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -72,6 +97,39 @@
 		518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathObservable.swift; sourceTree = "<group>"; };
 		518D23181FDEAD51005D6E40 /* ThreadObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadObservable.swift; sourceTree = "<group>"; };
 		518D231A1FDEAD51005D6E40 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		5196F8811FE50DF900B9E44D /* ReactiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtension.swift; sourceTree = "<group>"; };
+		5196F8831FE50E5200B9E44D /* UIView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8851FE52BAC00B9E44D /* UIControl+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Observable.swift"; sourceTree = "<group>"; };
+		5196F8871FE53F0C00B9E44D /* UIButton+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Observable.swift"; sourceTree = "<group>"; };
+		5196F88B1FE5570A00B9E44D /* UIDatePicker+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Observable.swift"; sourceTree = "<group>"; };
+		5196F88D1FE55C2700B9E44D /* UIPageControl+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Observable.swift"; sourceTree = "<group>"; };
+		5196F88F1FE55C5500B9E44D /* UIRefreshControl+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Observable.swift"; sourceTree = "<group>"; };
+		5196F8911FE560DF00B9E44D /* UISegmentedControl+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Observable.swift"; sourceTree = "<group>"; };
+		5196F8931FE58FD300B9E44D /* UISlider+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Observable.swift"; sourceTree = "<group>"; };
+		5196F8951FE5919200B9E44D /* UIStepper+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStepper+Observable.swift"; sourceTree = "<group>"; };
+		5196F8971FE592FE00B9E44D /* UISwitch+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Observable.swift"; sourceTree = "<group>"; };
+		5196F8991FE5949900B9E44D /* UITextField+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Observable.swift"; sourceTree = "<group>"; };
+		5196F89C1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8A01FE9756B00B9E44D /* UICollectionViewCell+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Observable.swift"; sourceTree = "<group>"; };
+		5196F8A31FE977D500B9E44D /* UIImageView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8A61FE97A9A00B9E44D /* UIInputView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInputView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8A91FE97C2900B9E44D /* UILabel+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Observable.swift"; sourceTree = "<group>"; };
+		5196F8AD1FEA458600B9E44D /* UINavigationBar+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Observable.swift"; sourceTree = "<group>"; };
+		5196F8B01FEA48D900B9E44D /* UIPickerView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8B31FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverBackgroundView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8B61FEA4C8400B9E44D /* UIProgressView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8B91FEA576200B9E44D /* UICollectionView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8BB1FEA59C500B9E44D /* UITableView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8BD1FEA5E0E00B9E44D /* UITextView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8C01FEA6FB500B9E44D /* UISearchBar+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Observable.swift"; sourceTree = "<group>"; };
+		5196F8C31FEA75AD00B9E44D /* UIStackView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8C61FEA79D700B9E44D /* UITabBar+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Observable.swift"; sourceTree = "<group>"; };
+		5196F8C91FEA7D2400B9E44D /* UITableViewCell+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Observable.swift"; sourceTree = "<group>"; };
+		5196F8CC1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8CF1FEA7FD600B9E44D /* UIToolbar+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Observable.swift"; sourceTree = "<group>"; };
+		5196F8D21FEA823500B9E44D /* UIVisualEffectView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8D51FEA82F800B9E44D /* UIWebView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWebView+Observable.swift"; sourceTree = "<group>"; };
+		5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Observable.swift"; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EF6A15D16CE4C94C4B9E323875D93D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C48972993041D658830CD48D77CA68 /* Pods-Djessi_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Djessi_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -223,7 +281,8 @@
 		518D230D1FDEAD51005D6E40 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */,
+				5196F8801FE50DE000B9E44D /* Reactive */,
+				5196F87E1FE50D5800B9E44D /* NSObject+Observable */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +339,246 @@
 				518D231A1FDEAD51005D6E40 /* Observable.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		5196F87E1FE50D5800B9E44D /* NSObject+Observable */ = {
+			isa = PBXGroup;
+			children = (
+				518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */,
+			);
+			path = "NSObject+Observable";
+			sourceTree = "<group>";
+		};
+		5196F87F1FE50D7E00B9E44D /* UIKit+Observable */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8AB1FEA454700B9E44D /* UIResponder */,
+			);
+			path = "UIKit+Observable";
+			sourceTree = "<group>";
+		};
+		5196F8801FE50DE000B9E44D /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8811FE50DF900B9E44D /* ReactiveExtension.swift */,
+				5196F87F1FE50D7E00B9E44D /* UIKit+Observable */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
+		5196F8891FE554A600B9E44D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8831FE50E5200B9E44D /* UIView+Observable.swift */,
+				5196F8D71FEA865F00B9E44D /* Windows */,
+				5196F8D41FEA82E800B9E44D /* Web Views */,
+				5196F8D11FEA820800B9E44D /* Visual Effect Views */,
+				5196F8CE1FEA7FBB00B9E44D /* Toolbars */,
+				5196F8CB1FEA7F4400B9E44D /* Table View Header Footer Views */,
+				5196F8C81FEA7D0600B9E44D /* Table View Cells */,
+				5196F8C51FEA79B500B9E44D /* Tab Bars */,
+				5196F8C21FEA759B00B9E44D /* Stack Views */,
+				5196F8BF1FEA6F9B00B9E44D /* Search Bars */,
+				5196F8B81FEA570B00B9E44D /* Scroll Views */,
+				5196F8B51FEA4C6C00B9E44D /* Progress Views */,
+				5196F8B21FEA49EA00B9E44D /* Popover Background Views */,
+				5196F8AF1FEA48BF00B9E44D /* Picker Views */,
+				5196F8AC1FEA457100B9E44D /* Navigation Bars */,
+				5196F89B1FE972B400B9E44D /* Activity Indicators */,
+				5196F8A51FE97A8200B9E44D /* Input Views */,
+				5196F8A21FE977B600B9E44D /* Image Views */,
+				5196F89E1FE9752100B9E44D /* Collection Reusable Views */,
+				5196F88A1FE554B500B9E44D /* Controls */,
+				5196F8A81FE97C0800B9E44D /* Labels */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		5196F88A1FE554B500B9E44D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8851FE52BAC00B9E44D /* UIControl+Observable.swift */,
+				5196F8871FE53F0C00B9E44D /* UIButton+Observable.swift */,
+				5196F88B1FE5570A00B9E44D /* UIDatePicker+Observable.swift */,
+				5196F88D1FE55C2700B9E44D /* UIPageControl+Observable.swift */,
+				5196F88F1FE55C5500B9E44D /* UIRefreshControl+Observable.swift */,
+				5196F8911FE560DF00B9E44D /* UISegmentedControl+Observable.swift */,
+				5196F8931FE58FD300B9E44D /* UISlider+Observable.swift */,
+				5196F8951FE5919200B9E44D /* UIStepper+Observable.swift */,
+				5196F8971FE592FE00B9E44D /* UISwitch+Observable.swift */,
+				5196F8991FE5949900B9E44D /* UITextField+Observable.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		5196F89B1FE972B400B9E44D /* Activity Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				5196F89C1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift */,
+			);
+			path = "Activity Indicators";
+			sourceTree = "<group>";
+		};
+		5196F89E1FE9752100B9E44D /* Collection Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F89F1FE9754E00B9E44D /* Collection Cells */,
+			);
+			path = "Collection Reusable Views";
+			sourceTree = "<group>";
+		};
+		5196F89F1FE9754E00B9E44D /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8A01FE9756B00B9E44D /* UICollectionViewCell+Observable.swift */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		5196F8A21FE977B600B9E44D /* Image Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8A31FE977D500B9E44D /* UIImageView+Observable.swift */,
+			);
+			path = "Image Views";
+			sourceTree = "<group>";
+		};
+		5196F8A51FE97A8200B9E44D /* Input Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8A61FE97A9A00B9E44D /* UIInputView+Observable.swift */,
+			);
+			path = "Input Views";
+			sourceTree = "<group>";
+		};
+		5196F8A81FE97C0800B9E44D /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8A91FE97C2900B9E44D /* UILabel+Observable.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		5196F8AB1FEA454700B9E44D /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8891FE554A600B9E44D /* UIView */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		5196F8AC1FEA457100B9E44D /* Navigation Bars */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8AD1FEA458600B9E44D /* UINavigationBar+Observable.swift */,
+			);
+			path = "Navigation Bars";
+			sourceTree = "<group>";
+		};
+		5196F8AF1FEA48BF00B9E44D /* Picker Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8B01FEA48D900B9E44D /* UIPickerView+Observable.swift */,
+			);
+			path = "Picker Views";
+			sourceTree = "<group>";
+		};
+		5196F8B21FEA49EA00B9E44D /* Popover Background Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8B31FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift */,
+			);
+			path = "Popover Background Views";
+			sourceTree = "<group>";
+		};
+		5196F8B51FEA4C6C00B9E44D /* Progress Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8B61FEA4C8400B9E44D /* UIProgressView+Observable.swift */,
+			);
+			path = "Progress Views";
+			sourceTree = "<group>";
+		};
+		5196F8B81FEA570B00B9E44D /* Scroll Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8B91FEA576200B9E44D /* UICollectionView+Observable.swift */,
+				5196F8BB1FEA59C500B9E44D /* UITableView+Observable.swift */,
+				5196F8BD1FEA5E0E00B9E44D /* UITextView+Observable.swift */,
+			);
+			path = "Scroll Views";
+			sourceTree = "<group>";
+		};
+		5196F8BF1FEA6F9B00B9E44D /* Search Bars */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8C01FEA6FB500B9E44D /* UISearchBar+Observable.swift */,
+			);
+			path = "Search Bars";
+			sourceTree = "<group>";
+		};
+		5196F8C21FEA759B00B9E44D /* Stack Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8C31FEA75AD00B9E44D /* UIStackView+Observable.swift */,
+			);
+			path = "Stack Views";
+			sourceTree = "<group>";
+		};
+		5196F8C51FEA79B500B9E44D /* Tab Bars */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8C61FEA79D700B9E44D /* UITabBar+Observable.swift */,
+			);
+			path = "Tab Bars";
+			sourceTree = "<group>";
+		};
+		5196F8C81FEA7D0600B9E44D /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8C91FEA7D2400B9E44D /* UITableViewCell+Observable.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		5196F8CB1FEA7F4400B9E44D /* Table View Header Footer Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8CC1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift */,
+			);
+			path = "Table View Header Footer Views";
+			sourceTree = "<group>";
+		};
+		5196F8CE1FEA7FBB00B9E44D /* Toolbars */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8CF1FEA7FD600B9E44D /* UIToolbar+Observable.swift */,
+			);
+			path = Toolbars;
+			sourceTree = "<group>";
+		};
+		5196F8D11FEA820800B9E44D /* Visual Effect Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8D21FEA823500B9E44D /* UIVisualEffectView+Observable.swift */,
+			);
+			path = "Visual Effect Views";
+			sourceTree = "<group>";
+		};
+		5196F8D41FEA82E800B9E44D /* Web Views */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8D51FEA82F800B9E44D /* UIWebView+Observable.swift */,
+			);
+			path = "Web Views";
+			sourceTree = "<group>";
+		};
+		5196F8D71FEA865F00B9E44D /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */,
+			);
+			path = Windows;
 			sourceTree = "<group>";
 		};
 		6EC0345741D486E50EDF9AB21F2EAC95 /* Products */ = {
@@ -462,18 +761,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				518D23261FDEAD51005D6E40 /* Observable.swift in Sources */,
+				5196F88C1FE5570A00B9E44D /* UIDatePicker+Observable.swift in Sources */,
 				518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */,
 				518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */,
 				21FBE97805AE4427F2D47F49D950E1B9 /* Djessi-dummy.m in Sources */,
+				5196F8C71FEA79D700B9E44D /* UITabBar+Observable.swift in Sources */,
+				5196F8AA1FE97C2900B9E44D /* UILabel+Observable.swift in Sources */,
 				518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */,
+				5196F8941FE58FD300B9E44D /* UISlider+Observable.swift in Sources */,
+				5196F8861FE52BAC00B9E44D /* UIControl+Observable.swift in Sources */,
+				5196F8981FE592FE00B9E44D /* UISwitch+Observable.swift in Sources */,
 				518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */,
 				5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */,
+				5196F8881FE53F0C00B9E44D /* UIButton+Observable.swift in Sources */,
+				5196F8BC1FEA59C500B9E44D /* UITableView+Observable.swift in Sources */,
 				518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */,
 				5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */,
+				5196F8BE1FEA5E0E00B9E44D /* UITextView+Observable.swift in Sources */,
+				5196F8B71FEA4C8400B9E44D /* UIProgressView+Observable.swift in Sources */,
 				518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */,
+				5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */,
+				5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */,
+				5196F89A1FE5949900B9E44D /* UITextField+Observable.swift in Sources */,
+				5196F8BA1FEA576200B9E44D /* UICollectionView+Observable.swift in Sources */,
+				5196F88E1FE55C2700B9E44D /* UIPageControl+Observable.swift in Sources */,
 				5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */,
+				5196F8D01FEA7FD600B9E44D /* UIToolbar+Observable.swift in Sources */,
+				5196F8CA1FEA7D2400B9E44D /* UITableViewCell+Observable.swift in Sources */,
+				5196F8841FE50E5200B9E44D /* UIView+Observable.swift in Sources */,
+				5196F8B41FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift in Sources */,
+				5196F8D61FEA82F800B9E44D /* UIWebView+Observable.swift in Sources */,
+				5196F8901FE55C5500B9E44D /* UIRefreshControl+Observable.swift in Sources */,
+				5196F8A11FE9756B00B9E44D /* UICollectionViewCell+Observable.swift in Sources */,
+				5196F8D31FEA823500B9E44D /* UIVisualEffectView+Observable.swift in Sources */,
 				518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */,
+				5196F8D91FEA867700B9E44D /* UIWindow+Observable.swift in Sources */,
 				518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */,
+				5196F8A71FE97A9A00B9E44D /* UIInputView+Observable.swift in Sources */,
+				5196F8A41FE977D500B9E44D /* UIImageView+Observable.swift in Sources */,
+				5196F89D1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift in Sources */,
+				5196F8CD1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift in Sources */,
+				5196F8AE1FEA458600B9E44D /* UINavigationBar+Observable.swift in Sources */,
+				5196F8921FE560DF00B9E44D /* UISegmentedControl+Observable.swift in Sources */,
+				5196F8821FE50DF900B9E44D /* ReactiveExtension.swift in Sources */,
+				5196F8B11FEA48D900B9E44D /* UIPickerView+Observable.swift in Sources */,
+				5196F8C41FEA75AD00B9E44D /* UIStackView+Observable.swift in Sources */,
 				518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

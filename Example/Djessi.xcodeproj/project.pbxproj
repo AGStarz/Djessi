@@ -37,6 +37,7 @@
 		518D23461FDFCB63005D6E40 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
 		518D234A1FDFCB97005D6E40 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageViewController.swift; sourceTree = "<group>"; };
+		5196F8DA1FEAA0E200B9E44D /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		5319404370E8E231364994B7 /* Pods-Djessi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Djessi_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Djessi_Tests/Pods-Djessi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Djessi_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Djessi_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 			children = (
 				EF3DEAE8C27C49CFD96D0979 /* Djessi.podspec */,
 				3E2918272FC971EB3470579B /* README.md */,
+				5196F8DA1FEAA0E200B9E44D /* CHANGELOG.md */,
 				27AEC5939C877998E51A06A5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
