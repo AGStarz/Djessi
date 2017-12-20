@@ -61,7 +61,6 @@ class BreedImageViewController: UIViewController {
             .flatMap(transform: { $0 })
             .bind(to: imageView.asReactive.image)
             .dispose(in: disposeBag)
-            .dispose(in: disposeBag)
     }
 }
 
