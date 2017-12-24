@@ -8,8 +8,6 @@
 
 import UIKit
 
-// TODO: not completed, don't forget about titles/labels/images encapsulated to button
-
 @available(iOS 2.0, *)
 extension ReactiveExtension where Source: UIButton {
     
@@ -49,8 +47,8 @@ extension ReactiveExtension where Source: UIButton {
     }
     
     /// Observable for `tintColor` property of `UIButton` source.
-//    @available(iOS 5.0, *)
-//    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
-//        return source.observable(at: \Source.tintColor)
-//    }
+    @available(iOS 5.0, *)
+    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+        return source.observable(at: \Source.tintColor)
+    }
 }

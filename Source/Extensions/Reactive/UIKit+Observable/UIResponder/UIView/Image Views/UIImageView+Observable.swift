@@ -55,4 +55,26 @@ extension ReactiveExtension where Source: UIImageView {
     public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
+    
+    /// Observable for `isAnimating` property of `UIImageView` source.
+    public var isAnimating: AnyKeyPathObservable<Source, Bool> {
+        return source.observable(at: \Source.djessi_isAnimating)
+    }
+}
+
+extension UIImageView {
+    
+    /// Proxy property for `isAnimating` field.
+    @objc internal dynamic var djessi_isAnimating: Bool {
+        get {
+            return isAnimating
+        }
+        set {
+            if newValue {
+                startAnimating()
+            } else {
+                stopAnimating()
+            }
+        }
+    }
 }

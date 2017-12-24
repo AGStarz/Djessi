@@ -8,10 +8,13 @@
 
 import UIKit
 
-// TODO: - not completed, add observable for animating property
-
 @available(iOS 2.0, *)
 extension ReactiveExtension where Source: UIActivityIndicatorView {
+    
+    /// Observable for `isAnimating` property of `UIActivityIndicatorView` source.
+    public var isAnimating: AnyKeyPathObservable<Source, Bool> {
+        return source.observable(at: \Source.djessi_isAnimating)
+    }
 
     /// Observable for `hidesWhenStopped` property of `UIActivityIndicatorView` source.
     public var hidesWhenStopped: AnyKeyPathObservable<Source, Bool> {
@@ -27,5 +30,22 @@ extension ReactiveExtension where Source: UIActivityIndicatorView {
     /// Observable for `activityIndicatorViewStyle` property of `UIActivityIndicatorView` source.
     public var activityIndicatorViewStyle: AnyKeyPathObservable<Source, UIActivityIndicatorViewStyle> {
         return source.observable(at: \Source.activityIndicatorViewStyle)
+    }
+}
+
+extension UIActivityIndicatorView {
+    
+    /// Proxy property for `isAnimating` field.
+    @objc internal dynamic var djessi_isAnimating: Bool {
+        get {
+            return isAnimating
+        }
+        set {
+            if newValue {
+                startAnimating()
+            } else {
+                stopAnimating()
+            }
+        }
     }
 }

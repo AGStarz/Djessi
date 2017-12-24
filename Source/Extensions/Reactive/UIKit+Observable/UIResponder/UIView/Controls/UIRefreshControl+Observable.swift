@@ -8,9 +8,29 @@
 
 import UIKit
 
-/*extension UIRefreshControl {
+@available(iOS 6.0, *)
+extension ReactiveExtension where Source: UIRefreshControl {
     
-    var refreshing: Bool {
+    /// Observable for `tintColor` property of `UIRefreshControl` source.
+    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+        return source.observable(at: \Source.tintColor)
+    }
+    
+    /// Observable for `attributedTitle` property of `UIRefreshControl` source.
+    public var attributedTitle: AnyKeyPathObservable<Source, NSAttributedString?> {
+        return source.observable(at: \Source.attributedTitle)
+    }
+    
+    /// Observable for `isRefreshing` property of `UIRefreshControl` source.
+    public var isRefreshing: AnyKeyPathObservable<Source, Bool> {
+        return source.observable(at: \Source.djessi_isRefreshing)
+    }
+}
+
+extension UIRefreshControl {
+    
+    /// Refreshing proxy property.
+    @objc internal dynamic var djessi_isRefreshing: Bool {
         get {
             return isRefreshing
         }
@@ -21,23 +41,5 @@ import UIKit
                 endRefreshing()
             }
         }
-    }
-}*/
-
-// TODO: - not completed
-
-@available(iOS 6.0, *)
-extension ReactiveExtension where Source: UIRefreshControl {
-    
-    // source.observable(at: \Source.refreshing)
-    
-    /// Observable for `tintColor` property of `UIRefreshControl` source.
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
-        return source.observable(at: \Source.tintColor)
-    }
-    
-    /// Observable for `attributedTitle` property of `UIRefreshControl` source.
-    public var attributedTitle: AnyKeyPathObservable<Source, NSAttributedString?> {
-        return source.observable(at: \Source.attributedTitle)
     }
 }

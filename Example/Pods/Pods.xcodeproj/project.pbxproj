@@ -388,8 +388,8 @@
 				5196F8A51FE97A8200B9E44D /* Input Views */,
 				5196F8A21FE977B600B9E44D /* Image Views */,
 				5196F89E1FE9752100B9E44D /* Collection Reusable Views */,
-				5196F88A1FE554B500B9E44D /* Controls */,
 				5196F8A81FE97C0800B9E44D /* Labels */,
+				5196F88A1FE554B500B9E44D /* Controls */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
