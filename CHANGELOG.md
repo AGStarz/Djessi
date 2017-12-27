@@ -1,3 +1,9 @@
+0.3.2
+---------
+
+* Proxied properties for all `UIResponder` subclasses.
+* Update jazzy docs
+
 0.3.1
 ---------
 

@@ -119,7 +119,7 @@ You can specify condition to observe values
 let obj = Model()
 
 let token = obj.observable(at: \Model.field)
-    .filter(condition: {  $0.count > 5 })
+    .filter(condition: { $0.count > 5 })
     .observe { (value) in
         print(value) // prints '123456'
     }
@@ -127,6 +127,20 @@ let token = obj.observable(at: \Model.field)
 obj.field = "1234" // not observed
 obj.field = "12345" // not observed
 obj.field = "123456" // observed
+```
+
+#### Reactive extensions
+
+Every `NSObject` have reactive capability accessible via `asReactive` property.
+
+> Reactive extensions proxied properties for `UIResponder` sublasses only (for now). Wait future releases for more.
+
+```swift
+let model = Model()
+let label = UILabel()
+
+model.observable(at: \Model.field)
+    .bind(to: label.asReactive.text)
 ```
 
 ## Example project
