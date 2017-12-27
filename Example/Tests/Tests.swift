@@ -178,3 +178,410 @@ class Tests: XCTestCase {
         XCTAssert(observable.keyPath == \Test.optionalField)
     }
 }
+
+// MARK: - Reactive extensions
+
+extension Tests {
+    
+    @objcMembers
+    class ReactiveExtensionModel: NSObject {
+        dynamic var integerField: Int = 0
+        dynamic var stringField: String = "Test"
+        dynamic var boolField: Bool = true
+    }
+    
+    // MARK: UIApplication
+    
+    func testBadgeNumber() {
+        let application = UIApplication.shared
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.integerField)
+            .bind(to: application.asReactive.applicationIconBadgeNumber)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(application.applicationIconBadgeNumber == 0)
+        
+        object.integerField = 3
+        
+        XCTAssert(application.applicationIconBadgeNumber == 3)
+    }
+    
+    func testShakeToEdit() {
+        let application = UIApplication.shared
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: application.asReactive.applicationSupportsShakeToEdit)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(application.applicationSupportsShakeToEdit)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!application.applicationSupportsShakeToEdit)
+    }
+    
+    func testIdleTimer() {
+        let application = UIApplication.shared
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: application.asReactive.isIdleTimerDisabled)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(application.isIdleTimerDisabled)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!application.isIdleTimerDisabled)
+    }
+    
+    func testNetworkActivityIndicator() {
+        let application = UIApplication.shared
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: application.asReactive.isNetworkActivityIndicatorVisible)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(application.isNetworkActivityIndicatorVisible)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!application.isNetworkActivityIndicatorVisible)
+    }
+    
+    // MARK: UIViewController
+    
+    func testViewControllerTitle() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.stringField)
+            .bind(to: vc.asReactive.title)
+            .dispose(in: disposeBag)
+        
+        object.stringField = newValueConstant
+        
+        XCTAssert(vc.title == newValueConstant)
+    }
+    
+    func testViewControllerRestorationIdentifier() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.stringField)
+            .bind(to: vc.asReactive.restorationIdentifier)
+            .dispose(in: disposeBag)
+        
+        object.stringField = newValueConstant
+        
+        XCTAssert(vc.restorationIdentifier == newValueConstant)
+    }
+    
+    func testAdjustsScrollViewInsets() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.automaticallyAdjustsScrollViewInsets)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.automaticallyAdjustsScrollViewInsets)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.automaticallyAdjustsScrollViewInsets)
+    }
+    
+    func testDefinesPresentationContext() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.definesPresentationContext)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.definesPresentationContext)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.definesPresentationContext)
+    }
+    
+    func testExtendedLayoutIncludesOpaqueBars() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.extendedLayoutIncludesOpaqueBars)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.extendedLayoutIncludesOpaqueBars)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.extendedLayoutIncludesOpaqueBars)
+    }
+    
+    func testIsEditing() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.isEditing)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.isEditing)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.isEditing)
+    }
+    
+    func testModalPresentationCapturesStatusBarAppearance() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.modalPresentationCapturesStatusBarAppearance)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.modalPresentationCapturesStatusBarAppearance)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.modalPresentationCapturesStatusBarAppearance)
+    }
+    
+    func testProvidesPresentationContextTransitionStyle() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.providesPresentationContextTransitionStyle)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.providesPresentationContextTransitionStyle)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.providesPresentationContextTransitionStyle)
+    }
+    
+    func testRestoresFocusAfterTransition() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.restoresFocusAfterTransition)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.restoresFocusAfterTransition)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.restoresFocusAfterTransition)
+    }
+    
+    @available(iOS 11.0, *)
+    func testRespectsSystemMinimumLayoutMargins() {
+        let vc = UIViewController()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: vc.asReactive.viewRespectsSystemMinimumLayoutMargins)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(vc.viewRespectsSystemMinimumLayoutMargins)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!vc.viewRespectsSystemMinimumLayoutMargins)
+    }
+    
+    // MARK: UIView
+    
+    func testAutoresizesSubviews() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.autoresizesSubviews)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.autoresizesSubviews)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.autoresizesSubviews)
+    }
+    
+    @available(iOS 11.0, *)
+    func testIgnoresInvertColors() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.accessibilityIgnoresInvertColors)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.accessibilityIgnoresInvertColors)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.accessibilityIgnoresInvertColors)
+    }
+    
+    func testClearsContextBeforeDrawing() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.clearsContextBeforeDrawing)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.clearsContextBeforeDrawing)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.clearsContextBeforeDrawing)
+    }
+    
+    func testClipsToBounds() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.clipsToBounds)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.clipsToBounds)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.clipsToBounds)
+    }
+    
+    @available(iOS 11.0, *)
+    func testInsetsLayoutMarginsFromSafeArea() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.insetsLayoutMarginsFromSafeArea)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.insetsLayoutMarginsFromSafeArea)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.insetsLayoutMarginsFromSafeArea)
+    }
+    
+    func testExclusiveTouch() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.isExclusiveTouch)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.isExclusiveTouch)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.isExclusiveTouch)
+    }
+    
+    func testIsHidden() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.isHidden)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.isHidden)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.isHidden)
+    }
+    
+    func testMultipleTouchEnabled() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.isMultipleTouchEnabled)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.isMultipleTouchEnabled)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.isMultipleTouchEnabled)
+    }
+    
+    func testOpaque() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.isOpaque)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.isOpaque)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.isOpaque)
+    }
+    
+    func testUserInteractionEnabled() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.isUserInteractionEnabled)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.isUserInteractionEnabled)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.isUserInteractionEnabled)
+    }
+    
+    func testSuperviewLayoutMargins() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.preservesSuperviewLayoutMargins)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.preservesSuperviewLayoutMargins)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.preservesSuperviewLayoutMargins)
+    }
+    
+    func testTranslatesAutoresizingMaskIntoConstraints() {
+        let view = UIView()
+        let object = ReactiveExtensionModel()
+        
+        object.observable(at: \ReactiveExtensionModel.boolField)
+            .bind(to: view.asReactive.translatesAutoresizingMaskIntoConstraints)
+            .dispose(in: disposeBag)
+        
+        XCTAssert(view.translatesAutoresizingMaskIntoConstraints)
+        
+        object.boolField = !object.boolField
+        
+        XCTAssert(!view.translatesAutoresizingMaskIntoConstraints)
+    }
+}
