@@ -6,8 +6,6 @@
 //  Copyright © 2017 Agafonov. All rights reserved.
 //
 
-import UIKit
-
 /// Reactive functions container object.
 public struct ReactiveExtension<Source> {
     let source: Source

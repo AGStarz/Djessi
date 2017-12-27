@@ -16,5 +16,5 @@ Djessi is reactive abstraction over NSObject based on [smart key paths](https://
 
   s.source_files = 'Source/**/*'
 
-  s.frameworks = 'Foundation'
+  s.frameworks = 'Foundation', 'UIKit'
 end

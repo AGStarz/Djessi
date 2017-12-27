@@ -57,6 +57,23 @@
 		5196F8D31FEA823500B9E44D /* UIVisualEffectView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D21FEA823500B9E44D /* UIVisualEffectView+Observable.swift */; };
 		5196F8D61FEA82F800B9E44D /* UIWebView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D51FEA82F800B9E44D /* UIWebView+Observable.swift */; };
 		5196F8D91FEA867700B9E44D /* UIWindow+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */; };
+		5196F8DD1FF14C3200B9E44D /* UIApplication+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8DC1FF14C3200B9E44D /* UIApplication+Observable.swift */; };
+		5196F8E01FF1510D00B9E44D /* UIViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8DF1FF1510D00B9E44D /* UIViewController+Observable.swift */; };
+		5196F8E31FF156C100B9E44D /* UIActivityViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8E21FF156C100B9E44D /* UIActivityViewController+Observable.swift */; };
+		5196F8E61FF157F000B9E44D /* UIAlertController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8E51FF157F000B9E44D /* UIAlertController+Observable.swift */; };
+		5196F8E91FF1584800B9E44D /* UICloudSharingController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8E81FF1584800B9E44D /* UICloudSharingController+Observable.swift */; };
+		5196F8EC1FF1587600B9E44D /* UICollectionViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8EB1FF1587600B9E44D /* UICollectionViewController+Observable.swift */; };
+		5196F8EF1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8EE1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift */; };
+		5196F8F81FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8F71FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift */; };
+		5196F8FB1FF15A2800B9E44D /* UIInputViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8FA1FF15A2800B9E44D /* UIInputViewController+Observable.swift */; };
+		5196F8FE1FF15A6D00B9E44D /* UINavigationController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F8FD1FF15A6D00B9E44D /* UINavigationController+Observable.swift */; };
+		5196F9011FF15A9600B9E44D /* UIPageViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9001FF15A9600B9E44D /* UIPageViewController+Observable.swift */; };
+		5196F90A1FF15B7A00B9E44D /* UISearchController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9091FF15B7A00B9E44D /* UISearchController+Observable.swift */; };
+		5196F90D1FF15BAC00B9E44D /* UISplitViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F90C1FF15BAC00B9E44D /* UISplitViewController+Observable.swift */; };
+		5196F9101FF15BE200B9E44D /* UITabBarController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F90F1FF15BE200B9E44D /* UITabBarController+Observable.swift */; };
+		5196F9131FF15C1000B9E44D /* UITableViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9121FF15C1000B9E44D /* UITableViewController+Observable.swift */; };
+		5196F9161FF15C9F00B9E44D /* UIImagePickerController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9151FF15C9F00B9E44D /* UIImagePickerController+Observable.swift */; };
+		5196F9191FF15CD700B9E44D /* UIVideoEditorController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9181FF15CD700B9E44D /* UIVideoEditorController+Observable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
 		90766A5AFC0A084EDE8D8B63A4FCB3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E50CF6275BB383838C6FBA031D62FC7E /* Pods-Djessi_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88C72476EFC3D344661D5051ACB99E87 /* Pods-Djessi_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +147,23 @@
 		5196F8D21FEA823500B9E44D /* UIVisualEffectView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+Observable.swift"; sourceTree = "<group>"; };
 		5196F8D51FEA82F800B9E44D /* UIWebView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWebView+Observable.swift"; sourceTree = "<group>"; };
 		5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Observable.swift"; sourceTree = "<group>"; };
+		5196F8DC1FF14C3200B9E44D /* UIApplication+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Observable.swift"; sourceTree = "<group>"; };
+		5196F8DF1FF1510D00B9E44D /* UIViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8E21FF156C100B9E44D /* UIActivityViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8E51FF157F000B9E44D /* UIAlertController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8E81FF1584800B9E44D /* UICloudSharingController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICloudSharingController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8EB1FF1587600B9E44D /* UICollectionViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8EE1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentBrowserViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8F71FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentPickerViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8FA1FF15A2800B9E44D /* UIInputViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInputViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F8FD1FF15A6D00B9E44D /* UINavigationController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Observable.swift"; sourceTree = "<group>"; };
+		5196F9001FF15A9600B9E44D /* UIPageViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F9091FF15B7A00B9E44D /* UISearchController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchController+Observable.swift"; sourceTree = "<group>"; };
+		5196F90C1FF15BAC00B9E44D /* UISplitViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F90F1FF15BE200B9E44D /* UITabBarController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Observable.swift"; sourceTree = "<group>"; };
+		5196F9121FF15C1000B9E44D /* UITableViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Observable.swift"; sourceTree = "<group>"; };
+		5196F9151FF15C9F00B9E44D /* UIImagePickerController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Observable.swift"; sourceTree = "<group>"; };
+		5196F9181FF15CD700B9E44D /* UIVideoEditorController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVideoEditorController+Observable.swift"; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EF6A15D16CE4C94C4B9E323875D93D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C48972993041D658830CD48D77CA68 /* Pods-Djessi_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Djessi_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -462,6 +496,8 @@
 		5196F8AB1FEA454700B9E44D /* UIResponder */ = {
 			isa = PBXGroup;
 			children = (
+				5196F8DE1FF150D600B9E44D /* UIViewController */,
+				5196F8DB1FF14BF600B9E44D /* UIApplication */,
 				5196F8891FE554A600B9E44D /* UIView */,
 			);
 			path = UIResponder;
@@ -579,6 +615,157 @@
 				5196F8D81FEA867700B9E44D /* UIWindow+Observable.swift */,
 			);
 			path = Windows;
+			sourceTree = "<group>";
+		};
+		5196F8DB1FF14BF600B9E44D /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8DC1FF14C3200B9E44D /* UIApplication+Observable.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		5196F8DE1FF150D600B9E44D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8DF1FF1510D00B9E44D /* UIViewController+Observable.swift */,
+				5196F9111FF15BFA00B9E44D /* Table View Controllers */,
+				5196F90E1FF15BC900B9E44D /* Tab Bar Controllers */,
+				5196F90B1FF15B9400B9E44D /* Split View Controllers */,
+				5196F9081FF15B6300B9E44D /* Search Controllers */,
+				5196F8FF1FF15A8100B9E44D /* Page View Controllers */,
+				5196F8FC1FF15A4300B9E44D /* Navigation Controllers */,
+				5196F8F91FF15A1000B9E44D /* Input View Controllers */,
+				5196F8F61FF159BE00B9E44D /* Document Picker View Controllers */,
+				5196F8ED1FF1589B00B9E44D /* Document Browser View Controllers */,
+				5196F8EA1FF1586000B9E44D /* Collection View Controllers */,
+				5196F8E71FF1581E00B9E44D /* Cloud Sharing Controllers */,
+				5196F8E41FF157CA00B9E44D /* Alert Controllers */,
+				5196F8E11FF156A800B9E44D /* Activity View Controllers */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		5196F8E11FF156A800B9E44D /* Activity View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8E21FF156C100B9E44D /* UIActivityViewController+Observable.swift */,
+			);
+			path = "Activity View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8E41FF157CA00B9E44D /* Alert Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8E51FF157F000B9E44D /* UIAlertController+Observable.swift */,
+			);
+			path = "Alert Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8E71FF1581E00B9E44D /* Cloud Sharing Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8E81FF1584800B9E44D /* UICloudSharingController+Observable.swift */,
+			);
+			path = "Cloud Sharing Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8EA1FF1586000B9E44D /* Collection View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8EB1FF1587600B9E44D /* UICollectionViewController+Observable.swift */,
+			);
+			path = "Collection View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8ED1FF1589B00B9E44D /* Document Browser View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8EE1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift */,
+			);
+			path = "Document Browser View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8F61FF159BE00B9E44D /* Document Picker View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8F71FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift */,
+			);
+			path = "Document Picker View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8F91FF15A1000B9E44D /* Input View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8FA1FF15A2800B9E44D /* UIInputViewController+Observable.swift */,
+			);
+			path = "Input View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8FC1FF15A4300B9E44D /* Navigation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F8FD1FF15A6D00B9E44D /* UINavigationController+Observable.swift */,
+				5196F9171FF15CB200B9E44D /* Video Editors */,
+				5196F9141FF15C8300B9E44D /* Image Pickers */,
+			);
+			path = "Navigation Controllers";
+			sourceTree = "<group>";
+		};
+		5196F8FF1FF15A8100B9E44D /* Page View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F9001FF15A9600B9E44D /* UIPageViewController+Observable.swift */,
+			);
+			path = "Page View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F9081FF15B6300B9E44D /* Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F9091FF15B7A00B9E44D /* UISearchController+Observable.swift */,
+			);
+			path = "Search Controllers";
+			sourceTree = "<group>";
+		};
+		5196F90B1FF15B9400B9E44D /* Split View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F90C1FF15BAC00B9E44D /* UISplitViewController+Observable.swift */,
+			);
+			path = "Split View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F90E1FF15BC900B9E44D /* Tab Bar Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F90F1FF15BE200B9E44D /* UITabBarController+Observable.swift */,
+			);
+			path = "Tab Bar Controllers";
+			sourceTree = "<group>";
+		};
+		5196F9111FF15BFA00B9E44D /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F9121FF15C1000B9E44D /* UITableViewController+Observable.swift */,
+			);
+			path = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		5196F9141FF15C8300B9E44D /* Image Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				5196F9151FF15C9F00B9E44D /* UIImagePickerController+Observable.swift */,
+			);
+			path = "Image Pickers";
+			sourceTree = "<group>";
+		};
+		5196F9171FF15CB200B9E44D /* Video Editors */ = {
+			isa = PBXGroup;
+			children = (
+				5196F9181FF15CD700B9E44D /* UIVideoEditorController+Observable.swift */,
+			);
+			path = "Video Editors";
 			sourceTree = "<group>";
 		};
 		6EC0345741D486E50EDF9AB21F2EAC95 /* Products */ = {
@@ -761,6 +948,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				518D23261FDEAD51005D6E40 /* Observable.swift in Sources */,
+				5196F8E91FF1584800B9E44D /* UICloudSharingController+Observable.swift in Sources */,
 				5196F88C1FE5570A00B9E44D /* UIDatePicker+Observable.swift in Sources */,
 				518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */,
 				518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */,
@@ -768,29 +956,41 @@
 				5196F8C71FEA79D700B9E44D /* UITabBar+Observable.swift in Sources */,
 				5196F8AA1FE97C2900B9E44D /* UILabel+Observable.swift in Sources */,
 				518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */,
+				5196F8FE1FF15A6D00B9E44D /* UINavigationController+Observable.swift in Sources */,
 				5196F8941FE58FD300B9E44D /* UISlider+Observable.swift in Sources */,
+				5196F8E01FF1510D00B9E44D /* UIViewController+Observable.swift in Sources */,
 				5196F8861FE52BAC00B9E44D /* UIControl+Observable.swift in Sources */,
 				5196F8981FE592FE00B9E44D /* UISwitch+Observable.swift in Sources */,
+				5196F8DD1FF14C3200B9E44D /* UIApplication+Observable.swift in Sources */,
+				5196F9191FF15CD700B9E44D /* UIVideoEditorController+Observable.swift in Sources */,
 				518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */,
 				5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */,
+				5196F90A1FF15B7A00B9E44D /* UISearchController+Observable.swift in Sources */,
 				5196F8881FE53F0C00B9E44D /* UIButton+Observable.swift in Sources */,
 				5196F8BC1FEA59C500B9E44D /* UITableView+Observable.swift in Sources */,
+				5196F9161FF15C9F00B9E44D /* UIImagePickerController+Observable.swift in Sources */,
 				518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */,
 				5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */,
+				5196F8F81FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift in Sources */,
 				5196F8BE1FEA5E0E00B9E44D /* UITextView+Observable.swift in Sources */,
 				5196F8B71FEA4C8400B9E44D /* UIProgressView+Observable.swift in Sources */,
 				518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */,
+				5196F90D1FF15BAC00B9E44D /* UISplitViewController+Observable.swift in Sources */,
 				5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */,
 				5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */,
 				5196F89A1FE5949900B9E44D /* UITextField+Observable.swift in Sources */,
 				5196F8BA1FEA576200B9E44D /* UICollectionView+Observable.swift in Sources */,
 				5196F88E1FE55C2700B9E44D /* UIPageControl+Observable.swift in Sources */,
 				5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */,
+				5196F8E31FF156C100B9E44D /* UIActivityViewController+Observable.swift in Sources */,
 				5196F8D01FEA7FD600B9E44D /* UIToolbar+Observable.swift in Sources */,
+				5196F8E61FF157F000B9E44D /* UIAlertController+Observable.swift in Sources */,
 				5196F8CA1FEA7D2400B9E44D /* UITableViewCell+Observable.swift in Sources */,
+				5196F8EF1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift in Sources */,
 				5196F8841FE50E5200B9E44D /* UIView+Observable.swift in Sources */,
 				5196F8B41FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift in Sources */,
 				5196F8D61FEA82F800B9E44D /* UIWebView+Observable.swift in Sources */,
+				5196F8FB1FF15A2800B9E44D /* UIInputViewController+Observable.swift in Sources */,
 				5196F8901FE55C5500B9E44D /* UIRefreshControl+Observable.swift in Sources */,
 				5196F8A11FE9756B00B9E44D /* UICollectionViewCell+Observable.swift in Sources */,
 				5196F8D31FEA823500B9E44D /* UIVisualEffectView+Observable.swift in Sources */,
@@ -803,7 +1003,11 @@
 				5196F8CD1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift in Sources */,
 				5196F8AE1FEA458600B9E44D /* UINavigationBar+Observable.swift in Sources */,
 				5196F8921FE560DF00B9E44D /* UISegmentedControl+Observable.swift in Sources */,
+				5196F9131FF15C1000B9E44D /* UITableViewController+Observable.swift in Sources */,
+				5196F9011FF15A9600B9E44D /* UIPageViewController+Observable.swift in Sources */,
+				5196F9101FF15BE200B9E44D /* UITabBarController+Observable.swift in Sources */,
 				5196F8821FE50DF900B9E44D /* ReactiveExtension.swift in Sources */,
+				5196F8EC1FF1587600B9E44D /* UICollectionViewController+Observable.swift in Sources */,
 				5196F8B11FEA48D900B9E44D /* UIPickerView+Observable.swift in Sources */,
 				5196F8C41FEA75AD00B9E44D /* UIStackView+Observable.swift in Sources */,
 				518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */,
