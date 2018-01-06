@@ -3,7 +3,7 @@
 //  Djessi
 //
 //  Created by Vasily Agafonov on 10.12.2017.
-//  Copyright © 2017 Agafonov. All rights reserved.
+//  Copyright © 2018 Agafonov. All rights reserved.
 //
 
 import Foundation
@@ -39,7 +39,7 @@ public class AnyKeyPathObservable<Source: NSObject, Value>: KeyPathObservable {
     init(source: Source, keyPath: ReferenceWritableKeyPath<Source, Value>, shouldObserveInitialValue: Bool = true) {
         self.source = source
         self.keyPath = keyPath
-        observingOptions = shouldObserveInitialValue ? [.new, .initial] : [.new]
+        observingOptions = shouldObserveInitialValue ? [.new, .old, .initial] : [.new, .old]
     }
     
     /// Start observe changes.

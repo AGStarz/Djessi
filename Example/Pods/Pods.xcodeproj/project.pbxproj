@@ -74,6 +74,91 @@
 		5196F9131FF15C1000B9E44D /* UITableViewController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9121FF15C1000B9E44D /* UITableViewController+Observable.swift */; };
 		5196F9161FF15C9F00B9E44D /* UIImagePickerController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9151FF15C9F00B9E44D /* UIImagePickerController+Observable.swift */; };
 		5196F9191FF15CD700B9E44D /* UIVideoEditorController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196F9181FF15CD700B9E44D /* UIVideoEditorController+Observable.swift */; };
+		51A8ECC61FFFE66400C5E230 /* UIPasteboard+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECC51FFFE66400C5E230 /* UIPasteboard+Observable.swift */; };
+		51A8ECC91FFFE82E00C5E230 /* UIPasteConfiguration+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECC81FFFE82E00C5E230 /* UIPasteConfiguration+Observable.swift */; };
+		51A8ECCC1FFFE92800C5E230 /* UIPercentDrivenInteractiveTransition+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECCB1FFFE92800C5E230 /* UIPercentDrivenInteractiveTransition+Observable.swift */; };
+		51A8ECCF1FFFEA8800C5E230 /* UIPopoverController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECCE1FFFEA8800C5E230 /* UIPopoverController+Observable.swift */; };
+		51A8ECD21FFFEBC500C5E230 /* UIPresentationController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECD11FFFEBC500C5E230 /* UIPresentationController+Observable.swift */; };
+		51A8ECD51FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECD41FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift */; };
+		51A8ECD81FFFEDFB00C5E230 /* UIPreviewInteraction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECD71FFFEDFB00C5E230 /* UIPreviewInteraction+Observable.swift */; };
+		51A8ECDB1FFFEE6200C5E230 /* UIPrinterPickerController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECDA1FFFEE6200C5E230 /* UIPrinterPickerController+Observable.swift */; };
+		51A8ECDE1FFFEEE700C5E230 /* UIPrintFormatter+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECDD1FFFEEE700C5E230 /* UIPrintFormatter+Observable.swift */; };
+		51A8ECE11FFFEFBE00C5E230 /* UISimpleTextPrintFormatter+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECE01FFFEFBE00C5E230 /* UISimpleTextPrintFormatter+Observable.swift */; };
+		51A8ECE41FFFF06A00C5E230 /* UIMarkupTextPrintFormatter+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECE31FFFF06A00C5E230 /* UIMarkupTextPrintFormatter+Observable.swift */; };
+		51A8ECE71FFFF0C100C5E230 /* UIPrintInfo+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECE61FFFF0C100C5E230 /* UIPrintInfo+Observable.swift */; };
+		51A8ECEA1FFFF18F00C5E230 /* UIPrintInteractionController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECE91FFFF18F00C5E230 /* UIPrintInteractionController+Observable.swift */; };
+		51A8ECED1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8ECEC1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift */; };
+		51D5306D1FFE91080016DADC /* UIAccessibilityCustomAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5306C1FFE91080016DADC /* UIAccessibilityCustomAction+Observable.swift */; };
+		51D530701FFE95CA0016DADC /* UIAccessibilityCustomRotor+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5306F1FFE95CA0016DADC /* UIAccessibilityCustomRotor+Observable.swift */; };
+		51D530731FFE969A0016DADC /* UIAccessibilityCustomRotorItemResult+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530721FFE969A0016DADC /* UIAccessibilityCustomRotorItemResult+Observable.swift */; };
+		51D530761FFE97330016DADC /* UIAccessibilityCustomRotorSearchPredicate+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530751FFE97330016DADC /* UIAccessibilityCustomRotorSearchPredicate+Observable.swift */; };
+		51D530791FFE98010016DADC /* UIAccessibilityElement+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530781FFE98010016DADC /* UIAccessibilityElement+Observable.swift */; };
+		51D5307C1FFE9A970016DADC /* UIAlertAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5307B1FFE9A970016DADC /* UIAlertAction+Observable.swift */; };
+		51D530801FFE9BBD0016DADC /* UIMutableApplicationShortcutItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5307F1FFE9BBD0016DADC /* UIMutableApplicationShortcutItem+Observable.swift */; };
+		51D530831FFE9CC50016DADC /* UIBarButtonItemGroup+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530821FFE9CC50016DADC /* UIBarButtonItemGroup+Observable.swift */; };
+		51D530861FFE9D570016DADC /* UIBarItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530851FFE9D570016DADC /* UIBarItem+Observable.swift */; };
+		51D530891FFE9EAA0016DADC /* UIBarButtonItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530881FFE9EAA0016DADC /* UIBarButtonItem+Observable.swift */; };
+		51D5308C1FFE9FEA0016DADC /* UITabBarItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5308B1FFE9FEA0016DADC /* UITabBarItem+Observable.swift */; };
+		51D5308F1FFEA1010016DADC /* UIBezierPath+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5308E1FFEA1010016DADC /* UIBezierPath+Observable.swift */; };
+		51D530931FFEB0C70016DADC /* UICollectionViewFlowLayout+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530921FFEB0C70016DADC /* UICollectionViewFlowLayout+Observable.swift */; };
+		51D530961FFEB1FC0016DADC /* UICollectionViewTransitionLayout+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530951FFEB1FC0016DADC /* UICollectionViewTransitionLayout+Observable.swift */; };
+		51D530991FFF5E6B0016DADC /* UICollectionViewLayoutAttributes+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530981FFF5E6B0016DADC /* UICollectionViewLayoutAttributes+Observable.swift */; };
+		51D5309C1FFF60680016DADC /* UICollectionViewLayoutInvalidationContext+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5309B1FFF60680016DADC /* UICollectionViewLayoutInvalidationContext+Observable.swift */; };
+		51D5309F1FFF61160016DADC /* UICollectionViewFlowLayoutInvalidationContext+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5309E1FFF61160016DADC /* UICollectionViewFlowLayoutInvalidationContext+Observable.swift */; };
+		51D530A21FFF625A0016DADC /* UICollectionViewPlaceholder+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530A11FFF625A0016DADC /* UICollectionViewPlaceholder+Observable.swift */; };
+		51D530A51FFF62E10016DADC /* UICollectionViewDropPlaceholder+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530A41FFF62E10016DADC /* UICollectionViewDropPlaceholder+Observable.swift */; };
+		51D530A81FFF63FC0016DADC /* UIContextualAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530A71FFF63FC0016DADC /* UIContextualAction+Observable.swift */; };
+		51D530AB1FFF65120016DADC /* UIDevice+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530AA1FFF65120016DADC /* UIDevice+Observable.swift */; };
+		51D530AE1FFF66970016DADC /* UIDocument+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530AD1FFF66970016DADC /* UIDocument+Observable.swift */; };
+		51D530B11FFF67530016DADC /* UIManagedDocument+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530B01FFF67530016DADC /* UIManagedDocument+Observable.swift */; };
+		51D530B41FFF7F290016DADC /* UIDocumentBrowserAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530B31FFF7F290016DADC /* UIDocumentBrowserAction+Observable.swift */; };
+		51D530B71FFF7FC40016DADC /* UIDocumentBrowserTransitionController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530B61FFF7FC40016DADC /* UIDocumentBrowserTransitionController+Observable.swift */; };
+		51D530BA1FFF80750016DADC /* UIDocumentInteractionController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530B91FFF80750016DADC /* UIDocumentInteractionController+Observable.swift */; };
+		51D530BD1FFF81670016DADC /* UIDragInteraction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530BC1FFF81670016DADC /* UIDragInteraction+Observable.swift */; };
+		51D530C01FFF81F30016DADC /* UIDragItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530BF1FFF81F30016DADC /* UIDragItem+Observable.swift */; };
+		51D530C31FFF82650016DADC /* UIDragPreviewParameters+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530C21FFF82650016DADC /* UIDragPreviewParameters+Observable.swift */; };
+		51D530C61FFF83230016DADC /* UIDropInteraction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530C51FFF83230016DADC /* UIDropInteraction+Observable.swift */; };
+		51D530C91FFF88540016DADC /* UIDropProposal+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530C81FFF88540016DADC /* UIDropProposal+Observable.swift */; };
+		51D530CC1FFF89340016DADC /* UITextDropProposal+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530CB1FFF89340016DADC /* UITextDropProposal+Observable.swift */; };
+		51D530CF1FFF8F8C0016DADC /* UIDynamicAnimator+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530CE1FFF8F8C0016DADC /* UIDynamicAnimator+Observable.swift */; };
+		51D530D21FFF900E0016DADC /* UIDynamicBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530D11FFF900E0016DADC /* UIDynamicBehavior+Observable.swift */; };
+		51D530D51FFF90B40016DADC /* UIAttachmentBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530D41FFF90B40016DADC /* UIAttachmentBehavior+Observable.swift */; };
+		51D530D81FFF91D80016DADC /* UICollisionBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530D71FFF91D80016DADC /* UICollisionBehavior+Observable.swift */; };
+		51D530DB1FFF92820016DADC /* UIDynamicItemBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530DA1FFF92820016DADC /* UIDynamicItemBehavior+Observable.swift */; };
+		51D530DE1FFF93B10016DADC /* UIFieldBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530DD1FFF93B10016DADC /* UIFieldBehavior+Observable.swift */; };
+		51D530E11FFF94A30016DADC /* UIGravityBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530E01FFF94A30016DADC /* UIGravityBehavior+Observable.swift */; };
+		51D530E41FFF95490016DADC /* UIPushBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530E31FFF95490016DADC /* UIPushBehavior+Observable.swift */; };
+		51D530E71FFF95B30016DADC /* UISnapBehavior+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530E61FFF95B30016DADC /* UISnapBehavior+Observable.swift */; };
+		51D530EA1FFF989F0016DADC /* UIGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530E91FFF989F0016DADC /* UIGestureRecognizer+Observable.swift */; };
+		51D530ED1FFF99D10016DADC /* UILongPressGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530EC1FFF99D10016DADC /* UILongPressGestureRecognizer+Observable.swift */; };
+		51D530F01FFF9A820016DADC /* UIPanGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530EF1FFF9A820016DADC /* UIPanGestureRecognizer+Observable.swift */; };
+		51D530F31FFF9AEE0016DADC /* UIScreenEdgePanGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530F21FFF9AEE0016DADC /* UIScreenEdgePanGestureRecognizer+Observable.swift */; };
+		51D530F61FFF9B420016DADC /* UIPinchGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530F51FFF9B420016DADC /* UIPinchGestureRecognizer+Observable.swift */; };
+		51D530F91FFF9BA50016DADC /* UIRotationGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530F81FFF9BA50016DADC /* UIRotationGestureRecognizer+Observable.swift */; };
+		51D530FC1FFF9BF80016DADC /* UISwipeGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530FB1FFF9BF80016DADC /* UISwipeGestureRecognizer+Observable.swift */; };
+		51D530FF1FFF9C660016DADC /* UITapGestureRecognizer+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D530FE1FFF9C660016DADC /* UITapGestureRecognizer+Observable.swift */; };
+		51D531031FFF9E560016DADC /* UIGraphicsImageRendererFormat+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531021FFF9E560016DADC /* UIGraphicsImageRendererFormat+Observable.swift */; };
+		51D531061FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531051FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift */; };
+		51D531091FFF9FFF0016DADC /* UIKeyCommand+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531081FFF9FFF0016DADC /* UIKeyCommand+Observable.swift */; };
+		51D5310C1FFFA0B00016DADC /* UILayoutGuide+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5310B1FFFA0B00016DADC /* UILayoutGuide+Observable.swift */; };
+		51D5310F1FFFA1210016DADC /* UIFocusGuide+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5310E1FFFA1210016DADC /* UIFocusGuide+Observable.swift */; };
+		51D531121FFFA4B20016DADC /* UILocalNotification+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531111FFFA4B20016DADC /* UILocalNotification+Observable.swift */; };
+		51D531151FFFA7950016DADC /* UIMenuController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531141FFFA7950016DADC /* UIMenuController+Observable.swift */; };
+		51D531181FFFA8430016DADC /* UIMenuItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531171FFFA8430016DADC /* UIMenuItem+Observable.swift */; };
+		51D5311C1FFFA8EE0016DADC /* UIInterpolatingMotionEffect+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5311B1FFFA8EE0016DADC /* UIInterpolatingMotionEffect+Observable.swift */; };
+		51D5311F1FFFA9490016DADC /* UIMotionEffectGroup+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5311E1FFFA9490016DADC /* UIMotionEffectGroup+Observable.swift */; };
+		51D531221FFFA9D20016DADC /* UINavigationItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D531211FFFA9D20016DADC /* UINavigationItem+Observable.swift */; };
+		51DA80D42000DB28003654D5 /* UIScreen+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80D32000DB28003654D5 /* UIScreen+Observable.swift */; };
+		51DA80D72000DD11003654D5 /* UISearchDisplayController+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80D62000DD11003654D5 /* UISearchDisplayController+Observable.swift */; };
+		51DA80DA2000DE80003654D5 /* UISwipeActionsConfiguration+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80D92000DE80003654D5 /* UISwipeActionsConfiguration+Observable.swift */; };
+		51DA80DD2000DEE6003654D5 /* UITableViewPlaceholder+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80DC2000DEE6003654D5 /* UITableViewPlaceholder+Observable.swift */; };
+		51DA80E02000DF3B003654D5 /* UITableViewDropPlaceholder+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80DF2000DF3B003654D5 /* UITableViewDropPlaceholder+Observable.swift */; };
+		51DA80E32000DFA0003654D5 /* UITableViewRowAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80E22000DFA0003654D5 /* UITableViewRowAction+Observable.swift */; };
+		51DA80E62000E07B003654D5 /* UITextChecker+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80E52000E07B003654D5 /* UITextChecker+Observable.swift */; };
+		51DA80E92000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80E82000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift */; };
+		51DA80ED2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */; };
+		51DA80F12000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */; };
+		51DA80F42000E492003654D5 /* UIViewPropertyAnimator+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
 		90766A5AFC0A084EDE8D8B63A4FCB3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E50CF6275BB383838C6FBA031D62FC7E /* Pods-Djessi_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88C72476EFC3D344661D5051ACB99E87 /* Pods-Djessi_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -164,6 +249,91 @@
 		5196F9121FF15C1000B9E44D /* UITableViewController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Observable.swift"; sourceTree = "<group>"; };
 		5196F9151FF15C9F00B9E44D /* UIImagePickerController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Observable.swift"; sourceTree = "<group>"; };
 		5196F9181FF15CD700B9E44D /* UIVideoEditorController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVideoEditorController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECC51FFFE66400C5E230 /* UIPasteboard+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPasteboard+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECC81FFFE82E00C5E230 /* UIPasteConfiguration+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPasteConfiguration+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECCB1FFFE92800C5E230 /* UIPercentDrivenInteractiveTransition+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPercentDrivenInteractiveTransition+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECCE1FFFEA8800C5E230 /* UIPopoverController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECD11FFFEBC500C5E230 /* UIPresentationController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPresentationController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECD41FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverPresentationController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECD71FFFEDFB00C5E230 /* UIPreviewInteraction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPreviewInteraction+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECDA1FFFEE6200C5E230 /* UIPrinterPickerController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPrinterPickerController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECDD1FFFEEE700C5E230 /* UIPrintFormatter+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPrintFormatter+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECE01FFFEFBE00C5E230 /* UISimpleTextPrintFormatter+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISimpleTextPrintFormatter+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECE31FFFF06A00C5E230 /* UIMarkupTextPrintFormatter+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMarkupTextPrintFormatter+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECE61FFFF0C100C5E230 /* UIPrintInfo+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPrintInfo+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECE91FFFF18F00C5E230 /* UIPrintInteractionController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPrintInteractionController+Observable.swift"; sourceTree = "<group>"; };
+		51A8ECEC1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPrintPageRenderer+Observable.swift"; sourceTree = "<group>"; };
+		51D5306C1FFE91080016DADC /* UIAccessibilityCustomAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAccessibilityCustomAction+Observable.swift"; sourceTree = "<group>"; };
+		51D5306F1FFE95CA0016DADC /* UIAccessibilityCustomRotor+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAccessibilityCustomRotor+Observable.swift"; sourceTree = "<group>"; };
+		51D530721FFE969A0016DADC /* UIAccessibilityCustomRotorItemResult+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAccessibilityCustomRotorItemResult+Observable.swift"; sourceTree = "<group>"; };
+		51D530751FFE97330016DADC /* UIAccessibilityCustomRotorSearchPredicate+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAccessibilityCustomRotorSearchPredicate+Observable.swift"; sourceTree = "<group>"; };
+		51D530781FFE98010016DADC /* UIAccessibilityElement+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAccessibilityElement+Observable.swift"; sourceTree = "<group>"; };
+		51D5307B1FFE9A970016DADC /* UIAlertAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Observable.swift"; sourceTree = "<group>"; };
+		51D5307F1FFE9BBD0016DADC /* UIMutableApplicationShortcutItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableApplicationShortcutItem+Observable.swift"; sourceTree = "<group>"; };
+		51D530821FFE9CC50016DADC /* UIBarButtonItemGroup+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItemGroup+Observable.swift"; sourceTree = "<group>"; };
+		51D530851FFE9D570016DADC /* UIBarItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Observable.swift"; sourceTree = "<group>"; };
+		51D530881FFE9EAA0016DADC /* UIBarButtonItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Observable.swift"; sourceTree = "<group>"; };
+		51D5308B1FFE9FEA0016DADC /* UITabBarItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Observable.swift"; sourceTree = "<group>"; };
+		51D5308E1FFEA1010016DADC /* UIBezierPath+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Observable.swift"; sourceTree = "<group>"; };
+		51D530921FFEB0C70016DADC /* UICollectionViewFlowLayout+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Observable.swift"; sourceTree = "<group>"; };
+		51D530951FFEB1FC0016DADC /* UICollectionViewTransitionLayout+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewTransitionLayout+Observable.swift"; sourceTree = "<group>"; };
+		51D530981FFF5E6B0016DADC /* UICollectionViewLayoutAttributes+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayoutAttributes+Observable.swift"; sourceTree = "<group>"; };
+		51D5309B1FFF60680016DADC /* UICollectionViewLayoutInvalidationContext+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayoutInvalidationContext+Observable.swift"; sourceTree = "<group>"; };
+		51D5309E1FFF61160016DADC /* UICollectionViewFlowLayoutInvalidationContext+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayoutInvalidationContext+Observable.swift"; sourceTree = "<group>"; };
+		51D530A11FFF625A0016DADC /* UICollectionViewPlaceholder+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewPlaceholder+Observable.swift"; sourceTree = "<group>"; };
+		51D530A41FFF62E10016DADC /* UICollectionViewDropPlaceholder+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDropPlaceholder+Observable.swift"; sourceTree = "<group>"; };
+		51D530A71FFF63FC0016DADC /* UIContextualAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContextualAction+Observable.swift"; sourceTree = "<group>"; };
+		51D530AA1FFF65120016DADC /* UIDevice+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Observable.swift"; sourceTree = "<group>"; };
+		51D530AD1FFF66970016DADC /* UIDocument+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocument+Observable.swift"; sourceTree = "<group>"; };
+		51D530B01FFF67530016DADC /* UIManagedDocument+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIManagedDocument+Observable.swift"; sourceTree = "<group>"; };
+		51D530B31FFF7F290016DADC /* UIDocumentBrowserAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentBrowserAction+Observable.swift"; sourceTree = "<group>"; };
+		51D530B61FFF7FC40016DADC /* UIDocumentBrowserTransitionController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentBrowserTransitionController+Observable.swift"; sourceTree = "<group>"; };
+		51D530B91FFF80750016DADC /* UIDocumentInteractionController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentInteractionController+Observable.swift"; sourceTree = "<group>"; };
+		51D530BC1FFF81670016DADC /* UIDragInteraction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDragInteraction+Observable.swift"; sourceTree = "<group>"; };
+		51D530BF1FFF81F30016DADC /* UIDragItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDragItem+Observable.swift"; sourceTree = "<group>"; };
+		51D530C21FFF82650016DADC /* UIDragPreviewParameters+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDragPreviewParameters+Observable.swift"; sourceTree = "<group>"; };
+		51D530C51FFF83230016DADC /* UIDropInteraction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDropInteraction+Observable.swift"; sourceTree = "<group>"; };
+		51D530C81FFF88540016DADC /* UIDropProposal+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDropProposal+Observable.swift"; sourceTree = "<group>"; };
+		51D530CB1FFF89340016DADC /* UITextDropProposal+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDropProposal+Observable.swift"; sourceTree = "<group>"; };
+		51D530CE1FFF8F8C0016DADC /* UIDynamicAnimator+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDynamicAnimator+Observable.swift"; sourceTree = "<group>"; };
+		51D530D11FFF900E0016DADC /* UIDynamicBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDynamicBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530D41FFF90B40016DADC /* UIAttachmentBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAttachmentBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530D71FFF91D80016DADC /* UICollisionBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollisionBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530DA1FFF92820016DADC /* UIDynamicItemBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDynamicItemBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530DD1FFF93B10016DADC /* UIFieldBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFieldBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530E01FFF94A30016DADC /* UIGravityBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGravityBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530E31FFF95490016DADC /* UIPushBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPushBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530E61FFF95B30016DADC /* UISnapBehavior+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISnapBehavior+Observable.swift"; sourceTree = "<group>"; };
+		51D530E91FFF989F0016DADC /* UIGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530EC1FFF99D10016DADC /* UILongPressGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILongPressGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530EF1FFF9A820016DADC /* UIPanGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPanGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530F21FFF9AEE0016DADC /* UIScreenEdgePanGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreenEdgePanGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530F51FFF9B420016DADC /* UIPinchGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPinchGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530F81FFF9BA50016DADC /* UIRotationGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRotationGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530FB1FFF9BF80016DADC /* UISwipeGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwipeGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D530FE1FFF9C660016DADC /* UITapGestureRecognizer+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Observable.swift"; sourceTree = "<group>"; };
+		51D531021FFF9E560016DADC /* UIGraphicsImageRendererFormat+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRendererFormat+Observable.swift"; sourceTree = "<group>"; };
+		51D531051FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsPDFRendererFormat+Observable.swift"; sourceTree = "<group>"; };
+		51D531081FFF9FFF0016DADC /* UIKeyCommand+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKeyCommand+Observable.swift"; sourceTree = "<group>"; };
+		51D5310B1FFFA0B00016DADC /* UILayoutGuide+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutGuide+Observable.swift"; sourceTree = "<group>"; };
+		51D5310E1FFFA1210016DADC /* UIFocusGuide+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFocusGuide+Observable.swift"; sourceTree = "<group>"; };
+		51D531111FFFA4B20016DADC /* UILocalNotification+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Observable.swift"; sourceTree = "<group>"; };
+		51D531141FFFA7950016DADC /* UIMenuController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMenuController+Observable.swift"; sourceTree = "<group>"; };
+		51D531171FFFA8430016DADC /* UIMenuItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMenuItem+Observable.swift"; sourceTree = "<group>"; };
+		51D5311B1FFFA8EE0016DADC /* UIInterpolatingMotionEffect+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInterpolatingMotionEffect+Observable.swift"; sourceTree = "<group>"; };
+		51D5311E1FFFA9490016DADC /* UIMotionEffectGroup+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMotionEffectGroup+Observable.swift"; sourceTree = "<group>"; };
+		51D531211FFFA9D20016DADC /* UINavigationItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Observable.swift"; sourceTree = "<group>"; };
+		51DA80D32000DB28003654D5 /* UIScreen+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Observable.swift"; sourceTree = "<group>"; };
+		51DA80D62000DD11003654D5 /* UISearchDisplayController+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchDisplayController+Observable.swift"; sourceTree = "<group>"; };
+		51DA80D92000DE80003654D5 /* UISwipeActionsConfiguration+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwipeActionsConfiguration+Observable.swift"; sourceTree = "<group>"; };
+		51DA80DC2000DEE6003654D5 /* UITableViewPlaceholder+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewPlaceholder+Observable.swift"; sourceTree = "<group>"; };
+		51DA80DF2000DF3B003654D5 /* UITableViewDropPlaceholder+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDropPlaceholder+Observable.swift"; sourceTree = "<group>"; };
+		51DA80E22000DFA0003654D5 /* UITableViewRowAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewRowAction+Observable.swift"; sourceTree = "<group>"; };
+		51DA80E52000E07B003654D5 /* UITextChecker+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextChecker+Observable.swift"; sourceTree = "<group>"; };
+		51DA80E82000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextInputAssistantItem+Observable.swift"; sourceTree = "<group>"; };
+		51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationAction+Observable.swift"; sourceTree = "<group>"; };
+		51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationCategory+Observable.swift"; sourceTree = "<group>"; };
+		51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Observable.swift"; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EF6A15D16CE4C94C4B9E323875D93D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C48972993041D658830CD48D77CA68 /* Pods-Djessi_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Djessi_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -386,6 +556,63 @@
 		5196F87F1FE50D7E00B9E44D /* UIKit+Observable */ = {
 			isa = PBXGroup;
 			children = (
+				51DA80F22000E486003654D5 /* UIViewPropertyAnimator */,
+				51DA80EE2000E3C9003654D5 /* UIUserNotificationCategory */,
+				51DA80EA2000E2AC003654D5 /* UIUserNotificationAction */,
+				51DA80E72000E0EF003654D5 /* UITextInputAssistantItem */,
+				51DA80E42000E06C003654D5 /* UITextChecker */,
+				51DA80E12000DF94003654D5 /* UITableViewRowAction */,
+				51DA80DB2000DEDA003654D5 /* UITableViewPlaceholder */,
+				51DA80D82000DE75003654D5 /* UISwipeActionsConfiguration */,
+				51DA80D52000DD05003654D5 /* UISearchDisplayController */,
+				51DA80D22000DB1A003654D5 /* UIScreen */,
+				51A8ECEB1FFFF2A500C5E230 /* UIPrintPageRenderer */,
+				51A8ECE81FFFF17F00C5E230 /* UIPrintInteractionController */,
+				51A8ECE51FFFF0B300C5E230 /* UIPrintInfo */,
+				51A8ECDC1FFFEEBF00C5E230 /* UIPrintFormatter */,
+				51A8ECD91FFFEE5600C5E230 /* UIPrinterPickerController */,
+				51A8ECD61FFFEDEF00C5E230 /* UIPreviewInteraction */,
+				51A8ECD01FFFEBB700C5E230 /* UIPresentationController */,
+				51A8ECCD1FFFEA7400C5E230 /* UIPopoverController */,
+				51A8ECCA1FFFE91C00C5E230 /* UIPercentDrivenInteractiveTransition */,
+				51A8ECC71FFFE82100C5E230 /* UIPasteConfiguration */,
+				51A8ECC41FFFE65500C5E230 /* UIPasteboard */,
+				51D531201FFFA9C60016DADC /* UINavigationItem */,
+				51D531191FFFA8D00016DADC /* UIMotionEffect */,
+				51D531161FFFA8380016DADC /* UIMenuItem */,
+				51D531131FFFA7890016DADC /* UIMenuController */,
+				51D531101FFFA4A30016DADC /* UILocalNotification */,
+				51D5310A1FFFA0A50016DADC /* UILayoutGuide */,
+				51D531071FFF9FF40016DADC /* UIKeyCommand */,
+				51D531001FFF9E280016DADC /* UIGraphicsRendererFormat */,
+				51D530E81FFF98900016DADC /* UIGestureRecognizer */,
+				51D530D01FFF8FFD0016DADC /* UIDynamicBehavior */,
+				51D530CD1FFF8F7F0016DADC /* UIDynamicAnimator */,
+				51D530C71FFF88460016DADC /* UIDropProposal */,
+				51D530C41FFF83190016DADC /* UIDropInteraction */,
+				51D530C11FFF825B0016DADC /* UIDragPreviewParameters */,
+				51D530BE1FFF81E80016DADC /* UIDragItem */,
+				51D530BB1FFF815B0016DADC /* UIDragInteraction */,
+				51D530B81FFF80680016DADC /* UIDocumentInteractionController */,
+				51D530B51FFF7FB70016DADC /* UIDocumentBrowserTransitionController */,
+				51D530B21FFF7F1A0016DADC /* UIDocumentBrowserAction */,
+				51D530AC1FFF668A0016DADC /* UIDocument */,
+				51D530A91FFF65030016DADC /* UIDevice */,
+				51D530A61FFF63F10016DADC /* UIContextualAction */,
+				51D530A01FFF624C0016DADC /* UICollectionViewPlaceholder */,
+				51D5309A1FFF60590016DADC /* UICollectionViewLayoutInvalidationContext */,
+				51D530971FFF5E5B0016DADC /* UICollectionViewLayoutAttributes */,
+				51D5307A1FFE9A870016DADC /* UIAlertAction */,
+				51D530771FFE97F20016DADC /* UIAccessibilityElement */,
+				51D5307D1FFE9B9B0016DADC /* UIApplicationShortcutItem */,
+				51D5306E1FFE95B90016DADC /* UIAccessibilityCustomRotor */,
+				51D5306B1FFE90DC0016DADC /* UIAccessibilityCustomAction */,
+				51D530711FFE968F0016DADC /* UIAccessibilityCustomRotorItemResult */,
+				51D530741FFE97270016DADC /* UIAccessibilityCustomRotorSearchPredicate */,
+				51D530841FFE9D4C0016DADC /* UIBarItem */,
+				51D5308D1FFEA0F40016DADC /* UIBezierPath */,
+				51D530811FFE9CB90016DADC /* UIBarButtonItemGroup */,
+				51D530901FFEB0950016DADC /* UICollectionViewLayout */,
 				5196F8AB1FEA454700B9E44D /* UIResponder */,
 			);
 			path = "UIKit+Observable";
@@ -768,6 +995,762 @@
 			path = "Video Editors";
 			sourceTree = "<group>";
 		};
+		51A8ECC41FFFE65500C5E230 /* UIPasteboard */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECC51FFFE66400C5E230 /* UIPasteboard+Observable.swift */,
+			);
+			path = UIPasteboard;
+			sourceTree = "<group>";
+		};
+		51A8ECC71FFFE82100C5E230 /* UIPasteConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECC81FFFE82E00C5E230 /* UIPasteConfiguration+Observable.swift */,
+			);
+			path = UIPasteConfiguration;
+			sourceTree = "<group>";
+		};
+		51A8ECCA1FFFE91C00C5E230 /* UIPercentDrivenInteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECCB1FFFE92800C5E230 /* UIPercentDrivenInteractiveTransition+Observable.swift */,
+			);
+			path = UIPercentDrivenInteractiveTransition;
+			sourceTree = "<group>";
+		};
+		51A8ECCD1FFFEA7400C5E230 /* UIPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECCE1FFFEA8800C5E230 /* UIPopoverController+Observable.swift */,
+			);
+			path = UIPopoverController;
+			sourceTree = "<group>";
+		};
+		51A8ECD01FFFEBB700C5E230 /* UIPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECD11FFFEBC500C5E230 /* UIPresentationController+Observable.swift */,
+				51A8ECD31FFFEC4A00C5E230 /* Popover Presentation Controller */,
+			);
+			path = UIPresentationController;
+			sourceTree = "<group>";
+		};
+		51A8ECD31FFFEC4A00C5E230 /* Popover Presentation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECD41FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift */,
+			);
+			path = "Popover Presentation Controller";
+			sourceTree = "<group>";
+		};
+		51A8ECD61FFFEDEF00C5E230 /* UIPreviewInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECD71FFFEDFB00C5E230 /* UIPreviewInteraction+Observable.swift */,
+			);
+			path = UIPreviewInteraction;
+			sourceTree = "<group>";
+		};
+		51A8ECD91FFFEE5600C5E230 /* UIPrinterPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECDA1FFFEE6200C5E230 /* UIPrinterPickerController+Observable.swift */,
+			);
+			path = UIPrinterPickerController;
+			sourceTree = "<group>";
+		};
+		51A8ECDC1FFFEEBF00C5E230 /* UIPrintFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECDD1FFFEEE700C5E230 /* UIPrintFormatter+Observable.swift */,
+				51A8ECE21FFFF05900C5E230 /* Markup Text Print Formatter */,
+				51A8ECDF1FFFEFAB00C5E230 /* Simple Text Print Formatter */,
+			);
+			path = UIPrintFormatter;
+			sourceTree = "<group>";
+		};
+		51A8ECDF1FFFEFAB00C5E230 /* Simple Text Print Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECE01FFFEFBE00C5E230 /* UISimpleTextPrintFormatter+Observable.swift */,
+			);
+			path = "Simple Text Print Formatter";
+			sourceTree = "<group>";
+		};
+		51A8ECE21FFFF05900C5E230 /* Markup Text Print Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECE31FFFF06A00C5E230 /* UIMarkupTextPrintFormatter+Observable.swift */,
+			);
+			path = "Markup Text Print Formatter";
+			sourceTree = "<group>";
+		};
+		51A8ECE51FFFF0B300C5E230 /* UIPrintInfo */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECE61FFFF0C100C5E230 /* UIPrintInfo+Observable.swift */,
+			);
+			path = UIPrintInfo;
+			sourceTree = "<group>";
+		};
+		51A8ECE81FFFF17F00C5E230 /* UIPrintInteractionController */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECE91FFFF18F00C5E230 /* UIPrintInteractionController+Observable.swift */,
+			);
+			path = UIPrintInteractionController;
+			sourceTree = "<group>";
+		};
+		51A8ECEB1FFFF2A500C5E230 /* UIPrintPageRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				51A8ECEC1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift */,
+			);
+			path = UIPrintPageRenderer;
+			sourceTree = "<group>";
+		};
+		51D5306B1FFE90DC0016DADC /* UIAccessibilityCustomAction */ = {
+			isa = PBXGroup;
+			children = (
+				51D5306C1FFE91080016DADC /* UIAccessibilityCustomAction+Observable.swift */,
+			);
+			path = UIAccessibilityCustomAction;
+			sourceTree = "<group>";
+		};
+		51D5306E1FFE95B90016DADC /* UIAccessibilityCustomRotor */ = {
+			isa = PBXGroup;
+			children = (
+				51D5306F1FFE95CA0016DADC /* UIAccessibilityCustomRotor+Observable.swift */,
+			);
+			path = UIAccessibilityCustomRotor;
+			sourceTree = "<group>";
+		};
+		51D530711FFE968F0016DADC /* UIAccessibilityCustomRotorItemResult */ = {
+			isa = PBXGroup;
+			children = (
+				51D530721FFE969A0016DADC /* UIAccessibilityCustomRotorItemResult+Observable.swift */,
+			);
+			path = UIAccessibilityCustomRotorItemResult;
+			sourceTree = "<group>";
+		};
+		51D530741FFE97270016DADC /* UIAccessibilityCustomRotorSearchPredicate */ = {
+			isa = PBXGroup;
+			children = (
+				51D530751FFE97330016DADC /* UIAccessibilityCustomRotorSearchPredicate+Observable.swift */,
+			);
+			path = UIAccessibilityCustomRotorSearchPredicate;
+			sourceTree = "<group>";
+		};
+		51D530771FFE97F20016DADC /* UIAccessibilityElement */ = {
+			isa = PBXGroup;
+			children = (
+				51D530781FFE98010016DADC /* UIAccessibilityElement+Observable.swift */,
+			);
+			path = UIAccessibilityElement;
+			sourceTree = "<group>";
+		};
+		51D5307A1FFE9A870016DADC /* UIAlertAction */ = {
+			isa = PBXGroup;
+			children = (
+				51D5307B1FFE9A970016DADC /* UIAlertAction+Observable.swift */,
+			);
+			path = UIAlertAction;
+			sourceTree = "<group>";
+		};
+		51D5307D1FFE9B9B0016DADC /* UIApplicationShortcutItem */ = {
+			isa = PBXGroup;
+			children = (
+				51D5307E1FFE9BA60016DADC /* Mutable Application Shortcut Item */,
+			);
+			path = UIApplicationShortcutItem;
+			sourceTree = "<group>";
+		};
+		51D5307E1FFE9BA60016DADC /* Mutable Application Shortcut Item */ = {
+			isa = PBXGroup;
+			children = (
+				51D5307F1FFE9BBD0016DADC /* UIMutableApplicationShortcutItem+Observable.swift */,
+			);
+			path = "Mutable Application Shortcut Item";
+			sourceTree = "<group>";
+		};
+		51D530811FFE9CB90016DADC /* UIBarButtonItemGroup */ = {
+			isa = PBXGroup;
+			children = (
+				51D530821FFE9CC50016DADC /* UIBarButtonItemGroup+Observable.swift */,
+			);
+			path = UIBarButtonItemGroup;
+			sourceTree = "<group>";
+		};
+		51D530841FFE9D4C0016DADC /* UIBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				51D530851FFE9D570016DADC /* UIBarItem+Observable.swift */,
+				51D5308A1FFE9FD80016DADC /* Tab Bar Item */,
+				51D530871FFE9E980016DADC /* Bar Button Item */,
+			);
+			path = UIBarItem;
+			sourceTree = "<group>";
+		};
+		51D530871FFE9E980016DADC /* Bar Button Item */ = {
+			isa = PBXGroup;
+			children = (
+				51D530881FFE9EAA0016DADC /* UIBarButtonItem+Observable.swift */,
+			);
+			path = "Bar Button Item";
+			sourceTree = "<group>";
+		};
+		51D5308A1FFE9FD80016DADC /* Tab Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				51D5308B1FFE9FEA0016DADC /* UITabBarItem+Observable.swift */,
+			);
+			path = "Tab Bar Item";
+			sourceTree = "<group>";
+		};
+		51D5308D1FFEA0F40016DADC /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				51D5308E1FFEA1010016DADC /* UIBezierPath+Observable.swift */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		51D530901FFEB0950016DADC /* UICollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				51D530941FFEB1E70016DADC /* Collection View Transition Layout */,
+				51D530911FFEB0B10016DADC /* Collection View Flow Layout */,
+			);
+			path = UICollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		51D530911FFEB0B10016DADC /* Collection View Flow Layout */ = {
+			isa = PBXGroup;
+			children = (
+				51D530921FFEB0C70016DADC /* UICollectionViewFlowLayout+Observable.swift */,
+			);
+			path = "Collection View Flow Layout";
+			sourceTree = "<group>";
+		};
+		51D530941FFEB1E70016DADC /* Collection View Transition Layout */ = {
+			isa = PBXGroup;
+			children = (
+				51D530951FFEB1FC0016DADC /* UICollectionViewTransitionLayout+Observable.swift */,
+			);
+			path = "Collection View Transition Layout";
+			sourceTree = "<group>";
+		};
+		51D530971FFF5E5B0016DADC /* UICollectionViewLayoutAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				51D530981FFF5E6B0016DADC /* UICollectionViewLayoutAttributes+Observable.swift */,
+			);
+			path = UICollectionViewLayoutAttributes;
+			sourceTree = "<group>";
+		};
+		51D5309A1FFF60590016DADC /* UICollectionViewLayoutInvalidationContext */ = {
+			isa = PBXGroup;
+			children = (
+				51D5309B1FFF60680016DADC /* UICollectionViewLayoutInvalidationContext+Observable.swift */,
+				51D5309D1FFF60F60016DADC /* Collection View Flow Layout Invalidation Context */,
+			);
+			path = UICollectionViewLayoutInvalidationContext;
+			sourceTree = "<group>";
+		};
+		51D5309D1FFF60F60016DADC /* Collection View Flow Layout Invalidation Context */ = {
+			isa = PBXGroup;
+			children = (
+				51D5309E1FFF61160016DADC /* UICollectionViewFlowLayoutInvalidationContext+Observable.swift */,
+			);
+			path = "Collection View Flow Layout Invalidation Context";
+			sourceTree = "<group>";
+		};
+		51D530A01FFF624C0016DADC /* UICollectionViewPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				51D530A11FFF625A0016DADC /* UICollectionViewPlaceholder+Observable.swift */,
+				51D530A31FFF62CF0016DADC /* Collection View Drop Placeholder */,
+			);
+			path = UICollectionViewPlaceholder;
+			sourceTree = "<group>";
+		};
+		51D530A31FFF62CF0016DADC /* Collection View Drop Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				51D530A41FFF62E10016DADC /* UICollectionViewDropPlaceholder+Observable.swift */,
+			);
+			path = "Collection View Drop Placeholder";
+			sourceTree = "<group>";
+		};
+		51D530A61FFF63F10016DADC /* UIContextualAction */ = {
+			isa = PBXGroup;
+			children = (
+				51D530A71FFF63FC0016DADC /* UIContextualAction+Observable.swift */,
+			);
+			path = UIContextualAction;
+			sourceTree = "<group>";
+		};
+		51D530A91FFF65030016DADC /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				51D530AA1FFF65120016DADC /* UIDevice+Observable.swift */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		51D530AC1FFF668A0016DADC /* UIDocument */ = {
+			isa = PBXGroup;
+			children = (
+				51D530AD1FFF66970016DADC /* UIDocument+Observable.swift */,
+				51D530AF1FFF67440016DADC /* Managed Document */,
+			);
+			path = UIDocument;
+			sourceTree = "<group>";
+		};
+		51D530AF1FFF67440016DADC /* Managed Document */ = {
+			isa = PBXGroup;
+			children = (
+				51D530B01FFF67530016DADC /* UIManagedDocument+Observable.swift */,
+			);
+			path = "Managed Document";
+			sourceTree = "<group>";
+		};
+		51D530B21FFF7F1A0016DADC /* UIDocumentBrowserAction */ = {
+			isa = PBXGroup;
+			children = (
+				51D530B31FFF7F290016DADC /* UIDocumentBrowserAction+Observable.swift */,
+			);
+			path = UIDocumentBrowserAction;
+			sourceTree = "<group>";
+		};
+		51D530B51FFF7FB70016DADC /* UIDocumentBrowserTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				51D530B61FFF7FC40016DADC /* UIDocumentBrowserTransitionController+Observable.swift */,
+			);
+			path = UIDocumentBrowserTransitionController;
+			sourceTree = "<group>";
+		};
+		51D530B81FFF80680016DADC /* UIDocumentInteractionController */ = {
+			isa = PBXGroup;
+			children = (
+				51D530B91FFF80750016DADC /* UIDocumentInteractionController+Observable.swift */,
+			);
+			path = UIDocumentInteractionController;
+			sourceTree = "<group>";
+		};
+		51D530BB1FFF815B0016DADC /* UIDragInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				51D530BC1FFF81670016DADC /* UIDragInteraction+Observable.swift */,
+			);
+			path = UIDragInteraction;
+			sourceTree = "<group>";
+		};
+		51D530BE1FFF81E80016DADC /* UIDragItem */ = {
+			isa = PBXGroup;
+			children = (
+				51D530BF1FFF81F30016DADC /* UIDragItem+Observable.swift */,
+			);
+			path = UIDragItem;
+			sourceTree = "<group>";
+		};
+		51D530C11FFF825B0016DADC /* UIDragPreviewParameters */ = {
+			isa = PBXGroup;
+			children = (
+				51D530C21FFF82650016DADC /* UIDragPreviewParameters+Observable.swift */,
+			);
+			path = UIDragPreviewParameters;
+			sourceTree = "<group>";
+		};
+		51D530C41FFF83190016DADC /* UIDropInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				51D530C51FFF83230016DADC /* UIDropInteraction+Observable.swift */,
+			);
+			path = UIDropInteraction;
+			sourceTree = "<group>";
+		};
+		51D530C71FFF88460016DADC /* UIDropProposal */ = {
+			isa = PBXGroup;
+			children = (
+				51D530C81FFF88540016DADC /* UIDropProposal+Observable.swift */,
+				51D530CA1FFF89230016DADC /* Text Drop Proposal */,
+			);
+			path = UIDropProposal;
+			sourceTree = "<group>";
+		};
+		51D530CA1FFF89230016DADC /* Text Drop Proposal */ = {
+			isa = PBXGroup;
+			children = (
+				51D530CB1FFF89340016DADC /* UITextDropProposal+Observable.swift */,
+			);
+			path = "Text Drop Proposal";
+			sourceTree = "<group>";
+		};
+		51D530CD1FFF8F7F0016DADC /* UIDynamicAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				51D530CE1FFF8F8C0016DADC /* UIDynamicAnimator+Observable.swift */,
+			);
+			path = UIDynamicAnimator;
+			sourceTree = "<group>";
+		};
+		51D530D01FFF8FFD0016DADC /* UIDynamicBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530D11FFF900E0016DADC /* UIDynamicBehavior+Observable.swift */,
+				51D530E51FFF95A30016DADC /* Snap Behavior */,
+				51D530E21FFF953A0016DADC /* Push Behavior */,
+				51D530DF1FFF94930016DADC /* Gravity Behavior */,
+				51D530DC1FFF939C0016DADC /* Field Behavior */,
+				51D530D91FFF926F0016DADC /* Dynamic Item Behavior */,
+				51D530D61FFF91C80016DADC /* Collision Behavior */,
+				51D530D31FFF90A20016DADC /* Attachment Behavior */,
+			);
+			path = UIDynamicBehavior;
+			sourceTree = "<group>";
+		};
+		51D530D31FFF90A20016DADC /* Attachment Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530D41FFF90B40016DADC /* UIAttachmentBehavior+Observable.swift */,
+			);
+			path = "Attachment Behavior";
+			sourceTree = "<group>";
+		};
+		51D530D61FFF91C80016DADC /* Collision Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530D71FFF91D80016DADC /* UICollisionBehavior+Observable.swift */,
+			);
+			path = "Collision Behavior";
+			sourceTree = "<group>";
+		};
+		51D530D91FFF926F0016DADC /* Dynamic Item Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530DA1FFF92820016DADC /* UIDynamicItemBehavior+Observable.swift */,
+			);
+			path = "Dynamic Item Behavior";
+			sourceTree = "<group>";
+		};
+		51D530DC1FFF939C0016DADC /* Field Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530DD1FFF93B10016DADC /* UIFieldBehavior+Observable.swift */,
+			);
+			path = "Field Behavior";
+			sourceTree = "<group>";
+		};
+		51D530DF1FFF94930016DADC /* Gravity Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530E01FFF94A30016DADC /* UIGravityBehavior+Observable.swift */,
+			);
+			path = "Gravity Behavior";
+			sourceTree = "<group>";
+		};
+		51D530E21FFF953A0016DADC /* Push Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530E31FFF95490016DADC /* UIPushBehavior+Observable.swift */,
+			);
+			path = "Push Behavior";
+			sourceTree = "<group>";
+		};
+		51D530E51FFF95A30016DADC /* Snap Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				51D530E61FFF95B30016DADC /* UISnapBehavior+Observable.swift */,
+			);
+			path = "Snap Behavior";
+			sourceTree = "<group>";
+		};
+		51D530E81FFF98900016DADC /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530E91FFF989F0016DADC /* UIGestureRecognizer+Observable.swift */,
+				51D530FD1FFF9C530016DADC /* Tap Gesture Recognizer */,
+				51D530FA1FFF9BE50016DADC /* Swipe Gesture Recognizer */,
+				51D530F71FFF9B920016DADC /* Rotation Gesture Recognizer */,
+				51D530F41FFF9B2F0016DADC /* Pinch Gesture Recognizer */,
+				51D530EE1FFF9A6A0016DADC /* Pan Gesture Recognizer */,
+				51D530EB1FFF99BB0016DADC /* Long Press Gesture Recognizer */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		51D530EB1FFF99BB0016DADC /* Long Press Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530EC1FFF99D10016DADC /* UILongPressGestureRecognizer+Observable.swift */,
+			);
+			path = "Long Press Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530EE1FFF9A6A0016DADC /* Pan Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530EF1FFF9A820016DADC /* UIPanGestureRecognizer+Observable.swift */,
+				51D530F11FFF9ADC0016DADC /* Screen Edge Pan Gesture Recognizer */,
+			);
+			path = "Pan Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530F11FFF9ADC0016DADC /* Screen Edge Pan Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530F21FFF9AEE0016DADC /* UIScreenEdgePanGestureRecognizer+Observable.swift */,
+			);
+			path = "Screen Edge Pan Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530F41FFF9B2F0016DADC /* Pinch Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530F51FFF9B420016DADC /* UIPinchGestureRecognizer+Observable.swift */,
+			);
+			path = "Pinch Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530F71FFF9B920016DADC /* Rotation Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530F81FFF9BA50016DADC /* UIRotationGestureRecognizer+Observable.swift */,
+			);
+			path = "Rotation Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530FA1FFF9BE50016DADC /* Swipe Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530FB1FFF9BF80016DADC /* UISwipeGestureRecognizer+Observable.swift */,
+			);
+			path = "Swipe Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D530FD1FFF9C530016DADC /* Tap Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				51D530FE1FFF9C660016DADC /* UITapGestureRecognizer+Observable.swift */,
+			);
+			path = "Tap Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		51D531001FFF9E280016DADC /* UIGraphicsRendererFormat */ = {
+			isa = PBXGroup;
+			children = (
+				51D531041FFF9EDD0016DADC /* Graphics PDF Renderer Format */,
+				51D531011FFF9E400016DADC /* Graphics Image Renderer Format */,
+			);
+			path = UIGraphicsRendererFormat;
+			sourceTree = "<group>";
+		};
+		51D531011FFF9E400016DADC /* Graphics Image Renderer Format */ = {
+			isa = PBXGroup;
+			children = (
+				51D531021FFF9E560016DADC /* UIGraphicsImageRendererFormat+Observable.swift */,
+			);
+			path = "Graphics Image Renderer Format";
+			sourceTree = "<group>";
+		};
+		51D531041FFF9EDD0016DADC /* Graphics PDF Renderer Format */ = {
+			isa = PBXGroup;
+			children = (
+				51D531051FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift */,
+			);
+			path = "Graphics PDF Renderer Format";
+			sourceTree = "<group>";
+		};
+		51D531071FFF9FF40016DADC /* UIKeyCommand */ = {
+			isa = PBXGroup;
+			children = (
+				51D531081FFF9FFF0016DADC /* UIKeyCommand+Observable.swift */,
+			);
+			path = UIKeyCommand;
+			sourceTree = "<group>";
+		};
+		51D5310A1FFFA0A50016DADC /* UILayoutGuide */ = {
+			isa = PBXGroup;
+			children = (
+				51D5310B1FFFA0B00016DADC /* UILayoutGuide+Observable.swift */,
+				51D5310D1FFFA1120016DADC /* Focus Guide */,
+			);
+			path = UILayoutGuide;
+			sourceTree = "<group>";
+		};
+		51D5310D1FFFA1120016DADC /* Focus Guide */ = {
+			isa = PBXGroup;
+			children = (
+				51D5310E1FFFA1210016DADC /* UIFocusGuide+Observable.swift */,
+			);
+			path = "Focus Guide";
+			sourceTree = "<group>";
+		};
+		51D531101FFFA4A30016DADC /* UILocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				51D531111FFFA4B20016DADC /* UILocalNotification+Observable.swift */,
+			);
+			path = UILocalNotification;
+			sourceTree = "<group>";
+		};
+		51D531131FFFA7890016DADC /* UIMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				51D531141FFFA7950016DADC /* UIMenuController+Observable.swift */,
+			);
+			path = UIMenuController;
+			sourceTree = "<group>";
+		};
+		51D531161FFFA8380016DADC /* UIMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				51D531171FFFA8430016DADC /* UIMenuItem+Observable.swift */,
+			);
+			path = UIMenuItem;
+			sourceTree = "<group>";
+		};
+		51D531191FFFA8D00016DADC /* UIMotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				51D5311D1FFFA9370016DADC /* Motion Effect Group */,
+				51D5311A1FFFA8D40016DADC /* Interpolating Motion Effect */,
+			);
+			path = UIMotionEffect;
+			sourceTree = "<group>";
+		};
+		51D5311A1FFFA8D40016DADC /* Interpolating Motion Effect */ = {
+			isa = PBXGroup;
+			children = (
+				51D5311B1FFFA8EE0016DADC /* UIInterpolatingMotionEffect+Observable.swift */,
+			);
+			path = "Interpolating Motion Effect";
+			sourceTree = "<group>";
+		};
+		51D5311D1FFFA9370016DADC /* Motion Effect Group */ = {
+			isa = PBXGroup;
+			children = (
+				51D5311E1FFFA9490016DADC /* UIMotionEffectGroup+Observable.swift */,
+			);
+			path = "Motion Effect Group";
+			sourceTree = "<group>";
+		};
+		51D531201FFFA9C60016DADC /* UINavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				51D531211FFFA9D20016DADC /* UINavigationItem+Observable.swift */,
+			);
+			path = UINavigationItem;
+			sourceTree = "<group>";
+		};
+		51DA80D22000DB1A003654D5 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80D32000DB28003654D5 /* UIScreen+Observable.swift */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
+		51DA80D52000DD05003654D5 /* UISearchDisplayController */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80D62000DD11003654D5 /* UISearchDisplayController+Observable.swift */,
+			);
+			path = UISearchDisplayController;
+			sourceTree = "<group>";
+		};
+		51DA80D82000DE75003654D5 /* UISwipeActionsConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80D92000DE80003654D5 /* UISwipeActionsConfiguration+Observable.swift */,
+			);
+			path = UISwipeActionsConfiguration;
+			sourceTree = "<group>";
+		};
+		51DA80DB2000DEDA003654D5 /* UITableViewPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80DC2000DEE6003654D5 /* UITableViewPlaceholder+Observable.swift */,
+				51DA80DE2000DF2A003654D5 /* Table View Drop Placeholder */,
+			);
+			path = UITableViewPlaceholder;
+			sourceTree = "<group>";
+		};
+		51DA80DE2000DF2A003654D5 /* Table View Drop Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80DF2000DF3B003654D5 /* UITableViewDropPlaceholder+Observable.swift */,
+			);
+			path = "Table View Drop Placeholder";
+			sourceTree = "<group>";
+		};
+		51DA80E12000DF94003654D5 /* UITableViewRowAction */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80E22000DFA0003654D5 /* UITableViewRowAction+Observable.swift */,
+			);
+			path = UITableViewRowAction;
+			sourceTree = "<group>";
+		};
+		51DA80E42000E06C003654D5 /* UITextChecker */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80E52000E07B003654D5 /* UITextChecker+Observable.swift */,
+			);
+			path = UITextChecker;
+			sourceTree = "<group>";
+		};
+		51DA80E72000E0EF003654D5 /* UITextInputAssistantItem */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80E82000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift */,
+			);
+			path = UITextInputAssistantItem;
+			sourceTree = "<group>";
+		};
+		51DA80EA2000E2AC003654D5 /* UIUserNotificationAction */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80EB2000E2B7003654D5 /* Mutable User Notification Action */,
+			);
+			path = UIUserNotificationAction;
+			sourceTree = "<group>";
+		};
+		51DA80EB2000E2B7003654D5 /* Mutable User Notification Action */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */,
+			);
+			path = "Mutable User Notification Action";
+			sourceTree = "<group>";
+		};
+		51DA80EE2000E3C9003654D5 /* UIUserNotificationCategory */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80EF2000E3D5003654D5 /* Mutable User Notification Category */,
+			);
+			path = UIUserNotificationCategory;
+			sourceTree = "<group>";
+		};
+		51DA80EF2000E3D5003654D5 /* Mutable User Notification Category */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */,
+			);
+			path = "Mutable User Notification Category";
+			sourceTree = "<group>";
+		};
+		51DA80F22000E486003654D5 /* UIViewPropertyAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */,
+			);
+			path = UIViewPropertyAnimator;
+			sourceTree = "<group>";
+		};
 		6EC0345741D486E50EDF9AB21F2EAC95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,13 +1930,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DA80ED2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift in Sources */,
 				518D23261FDEAD51005D6E40 /* Observable.swift in Sources */,
+				51A8ECEA1FFFF18F00C5E230 /* UIPrintInteractionController+Observable.swift in Sources */,
+				51D530FC1FFF9BF80016DADC /* UISwipeGestureRecognizer+Observable.swift in Sources */,
+				51D5307C1FFE9A970016DADC /* UIAlertAction+Observable.swift in Sources */,
 				5196F8E91FF1584800B9E44D /* UICloudSharingController+Observable.swift in Sources */,
+				51D5308C1FFE9FEA0016DADC /* UITabBarItem+Observable.swift in Sources */,
 				5196F88C1FE5570A00B9E44D /* UIDatePicker+Observable.swift in Sources */,
 				518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */,
+				51D530E11FFF94A30016DADC /* UIGravityBehavior+Observable.swift in Sources */,
+				51D530C91FFF88540016DADC /* UIDropProposal+Observable.swift in Sources */,
+				51D530791FFE98010016DADC /* UIAccessibilityElement+Observable.swift in Sources */,
+				51D530A21FFF625A0016DADC /* UICollectionViewPlaceholder+Observable.swift in Sources */,
+				51DA80DA2000DE80003654D5 /* UISwipeActionsConfiguration+Observable.swift in Sources */,
+				51D530BA1FFF80750016DADC /* UIDocumentInteractionController+Observable.swift in Sources */,
 				518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */,
+				51DA80F42000E492003654D5 /* UIViewPropertyAnimator+Observable.swift in Sources */,
 				21FBE97805AE4427F2D47F49D950E1B9 /* Djessi-dummy.m in Sources */,
+				51D530DE1FFF93B10016DADC /* UIFieldBehavior+Observable.swift in Sources */,
 				5196F8C71FEA79D700B9E44D /* UITabBar+Observable.swift in Sources */,
+				51D530C61FFF83230016DADC /* UIDropInteraction+Observable.swift in Sources */,
+				51D531121FFFA4B20016DADC /* UILocalNotification+Observable.swift in Sources */,
 				5196F8AA1FE97C2900B9E44D /* UILabel+Observable.swift in Sources */,
 				518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */,
 				5196F8FE1FF15A6D00B9E44D /* UINavigationController+Observable.swift in Sources */,
@@ -961,56 +1959,126 @@
 				5196F8E01FF1510D00B9E44D /* UIViewController+Observable.swift in Sources */,
 				5196F8861FE52BAC00B9E44D /* UIControl+Observable.swift in Sources */,
 				5196F8981FE592FE00B9E44D /* UISwitch+Observable.swift in Sources */,
+				51D530B41FFF7F290016DADC /* UIDocumentBrowserAction+Observable.swift in Sources */,
+				51A8ECD81FFFEDFB00C5E230 /* UIPreviewInteraction+Observable.swift in Sources */,
 				5196F8DD1FF14C3200B9E44D /* UIApplication+Observable.swift in Sources */,
 				5196F9191FF15CD700B9E44D /* UIVideoEditorController+Observable.swift in Sources */,
+				51A8ECCF1FFFEA8800C5E230 /* UIPopoverController+Observable.swift in Sources */,
+				51DA80D72000DD11003654D5 /* UISearchDisplayController+Observable.swift in Sources */,
 				518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */,
+				51D530A81FFF63FC0016DADC /* UIContextualAction+Observable.swift in Sources */,
+				51D5308F1FFEA1010016DADC /* UIBezierPath+Observable.swift in Sources */,
+				51D530C01FFF81F30016DADC /* UIDragItem+Observable.swift in Sources */,
+				51D530831FFE9CC50016DADC /* UIBarButtonItemGroup+Observable.swift in Sources */,
+				51D530F61FFF9B420016DADC /* UIPinchGestureRecognizer+Observable.swift in Sources */,
+				51DA80E32000DFA0003654D5 /* UITableViewRowAction+Observable.swift in Sources */,
+				51D530D81FFF91D80016DADC /* UICollisionBehavior+Observable.swift in Sources */,
+				51D530B71FFF7FC40016DADC /* UIDocumentBrowserTransitionController+Observable.swift in Sources */,
+				51D5311C1FFFA8EE0016DADC /* UIInterpolatingMotionEffect+Observable.swift in Sources */,
 				5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */,
 				5196F90A1FF15B7A00B9E44D /* UISearchController+Observable.swift in Sources */,
 				5196F8881FE53F0C00B9E44D /* UIButton+Observable.swift in Sources */,
+				51D530B11FFF67530016DADC /* UIManagedDocument+Observable.swift in Sources */,
+				51A8ECD51FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift in Sources */,
 				5196F8BC1FEA59C500B9E44D /* UITableView+Observable.swift in Sources */,
 				5196F9161FF15C9F00B9E44D /* UIImagePickerController+Observable.swift in Sources */,
+				51D531061FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift in Sources */,
 				518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */,
 				5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */,
 				5196F8F81FF159F100B9E44D /* UIDocumentPickerViewController+Observable.swift in Sources */,
 				5196F8BE1FEA5E0E00B9E44D /* UITextView+Observable.swift in Sources */,
+				51D531091FFF9FFF0016DADC /* UIKeyCommand+Observable.swift in Sources */,
+				51D531181FFFA8430016DADC /* UIMenuItem+Observable.swift in Sources */,
 				5196F8B71FEA4C8400B9E44D /* UIProgressView+Observable.swift in Sources */,
+				51D530991FFF5E6B0016DADC /* UICollectionViewLayoutAttributes+Observable.swift in Sources */,
+				51D530E71FFF95B30016DADC /* UISnapBehavior+Observable.swift in Sources */,
+				51A8ECDE1FFFEEE700C5E230 /* UIPrintFormatter+Observable.swift in Sources */,
 				518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */,
+				51D530CF1FFF8F8C0016DADC /* UIDynamicAnimator+Observable.swift in Sources */,
+				51A8ECED1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift in Sources */,
 				5196F90D1FF15BAC00B9E44D /* UISplitViewController+Observable.swift in Sources */,
 				5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */,
+				51D530C31FFF82650016DADC /* UIDragPreviewParameters+Observable.swift in Sources */,
 				5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */,
+				51DA80E92000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift in Sources */,
+				51D5310C1FFFA0B00016DADC /* UILayoutGuide+Observable.swift in Sources */,
+				51D530701FFE95CA0016DADC /* UIAccessibilityCustomRotor+Observable.swift in Sources */,
+				51D530A51FFF62E10016DADC /* UICollectionViewDropPlaceholder+Observable.swift in Sources */,
+				51D530D21FFF900E0016DADC /* UIDynamicBehavior+Observable.swift in Sources */,
 				5196F89A1FE5949900B9E44D /* UITextField+Observable.swift in Sources */,
 				5196F8BA1FEA576200B9E44D /* UICollectionView+Observable.swift in Sources */,
+				51D530861FFE9D570016DADC /* UIBarItem+Observable.swift in Sources */,
+				51D530F01FFF9A820016DADC /* UIPanGestureRecognizer+Observable.swift in Sources */,
+				51D530801FFE9BBD0016DADC /* UIMutableApplicationShortcutItem+Observable.swift in Sources */,
 				5196F88E1FE55C2700B9E44D /* UIPageControl+Observable.swift in Sources */,
 				5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */,
+				51D530AB1FFF65120016DADC /* UIDevice+Observable.swift in Sources */,
 				5196F8E31FF156C100B9E44D /* UIActivityViewController+Observable.swift in Sources */,
+				51D530731FFE969A0016DADC /* UIAccessibilityCustomRotorItemResult+Observable.swift in Sources */,
 				5196F8D01FEA7FD600B9E44D /* UIToolbar+Observable.swift in Sources */,
+				51A8ECE71FFFF0C100C5E230 /* UIPrintInfo+Observable.swift in Sources */,
+				51D5309C1FFF60680016DADC /* UICollectionViewLayoutInvalidationContext+Observable.swift in Sources */,
+				51DA80DD2000DEE6003654D5 /* UITableViewPlaceholder+Observable.swift in Sources */,
+				51D530961FFEB1FC0016DADC /* UICollectionViewTransitionLayout+Observable.swift in Sources */,
 				5196F8E61FF157F000B9E44D /* UIAlertController+Observable.swift in Sources */,
 				5196F8CA1FEA7D2400B9E44D /* UITableViewCell+Observable.swift in Sources */,
 				5196F8EF1FF158CF00B9E44D /* UIDocumentBrowserViewController+Observable.swift in Sources */,
 				5196F8841FE50E5200B9E44D /* UIView+Observable.swift in Sources */,
+				51A8ECE11FFFEFBE00C5E230 /* UISimpleTextPrintFormatter+Observable.swift in Sources */,
 				5196F8B41FEA4A0000B9E44D /* UIPopoverBackgroundView+Observable.swift in Sources */,
 				5196F8D61FEA82F800B9E44D /* UIWebView+Observable.swift in Sources */,
+				51A8ECDB1FFFEE6200C5E230 /* UIPrinterPickerController+Observable.swift in Sources */,
+				51DA80E62000E07B003654D5 /* UITextChecker+Observable.swift in Sources */,
+				51D530DB1FFF92820016DADC /* UIDynamicItemBehavior+Observable.swift in Sources */,
 				5196F8FB1FF15A2800B9E44D /* UIInputViewController+Observable.swift in Sources */,
+				51DA80E02000DF3B003654D5 /* UITableViewDropPlaceholder+Observable.swift in Sources */,
 				5196F8901FE55C5500B9E44D /* UIRefreshControl+Observable.swift in Sources */,
+				51D530F31FFF9AEE0016DADC /* UIScreenEdgePanGestureRecognizer+Observable.swift in Sources */,
 				5196F8A11FE9756B00B9E44D /* UICollectionViewCell+Observable.swift in Sources */,
+				51D530CC1FFF89340016DADC /* UITextDropProposal+Observable.swift in Sources */,
+				51D530BD1FFF81670016DADC /* UIDragInteraction+Observable.swift in Sources */,
 				5196F8D31FEA823500B9E44D /* UIVisualEffectView+Observable.swift in Sources */,
+				51D5311F1FFFA9490016DADC /* UIMotionEffectGroup+Observable.swift in Sources */,
+				51D530D51FFF90B40016DADC /* UIAttachmentBehavior+Observable.swift in Sources */,
+				51D531151FFFA7950016DADC /* UIMenuController+Observable.swift in Sources */,
+				51D5309F1FFF61160016DADC /* UICollectionViewFlowLayoutInvalidationContext+Observable.swift in Sources */,
 				518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */,
 				5196F8D91FEA867700B9E44D /* UIWindow+Observable.swift in Sources */,
+				51D530761FFE97330016DADC /* UIAccessibilityCustomRotorSearchPredicate+Observable.swift in Sources */,
 				518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */,
 				5196F8A71FE97A9A00B9E44D /* UIInputView+Observable.swift in Sources */,
+				51D5310F1FFFA1210016DADC /* UIFocusGuide+Observable.swift in Sources */,
 				5196F8A41FE977D500B9E44D /* UIImageView+Observable.swift in Sources */,
+				51A8ECC91FFFE82E00C5E230 /* UIPasteConfiguration+Observable.swift in Sources */,
+				51D5306D1FFE91080016DADC /* UIAccessibilityCustomAction+Observable.swift in Sources */,
+				51A8ECCC1FFFE92800C5E230 /* UIPercentDrivenInteractiveTransition+Observable.swift in Sources */,
+				51A8ECC61FFFE66400C5E230 /* UIPasteboard+Observable.swift in Sources */,
+				51D530E41FFF95490016DADC /* UIPushBehavior+Observable.swift in Sources */,
+				51D531221FFFA9D20016DADC /* UINavigationItem+Observable.swift in Sources */,
+				51A8ECE41FFFF06A00C5E230 /* UIMarkupTextPrintFormatter+Observable.swift in Sources */,
 				5196F89D1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift in Sources */,
 				5196F8CD1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift in Sources */,
 				5196F8AE1FEA458600B9E44D /* UINavigationBar+Observable.swift in Sources */,
+				51A8ECD21FFFEBC500C5E230 /* UIPresentationController+Observable.swift in Sources */,
 				5196F8921FE560DF00B9E44D /* UISegmentedControl+Observable.swift in Sources */,
 				5196F9131FF15C1000B9E44D /* UITableViewController+Observable.swift in Sources */,
+				51D530F91FFF9BA50016DADC /* UIRotationGestureRecognizer+Observable.swift in Sources */,
 				5196F9011FF15A9600B9E44D /* UIPageViewController+Observable.swift in Sources */,
 				5196F9101FF15BE200B9E44D /* UITabBarController+Observable.swift in Sources */,
+				51D530931FFEB0C70016DADC /* UICollectionViewFlowLayout+Observable.swift in Sources */,
+				51D530EA1FFF989F0016DADC /* UIGestureRecognizer+Observable.swift in Sources */,
 				5196F8821FE50DF900B9E44D /* ReactiveExtension.swift in Sources */,
+				51DA80F12000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift in Sources */,
+				51D530ED1FFF99D10016DADC /* UILongPressGestureRecognizer+Observable.swift in Sources */,
 				5196F8EC1FF1587600B9E44D /* UICollectionViewController+Observable.swift in Sources */,
+				51D530891FFE9EAA0016DADC /* UIBarButtonItem+Observable.swift in Sources */,
+				51D530FF1FFF9C660016DADC /* UITapGestureRecognizer+Observable.swift in Sources */,
+				51DA80D42000DB28003654D5 /* UIScreen+Observable.swift in Sources */,
 				5196F8B11FEA48D900B9E44D /* UIPickerView+Observable.swift in Sources */,
+				51D530AE1FFF66970016DADC /* UIDocument+Observable.swift in Sources */,
 				5196F8C41FEA75AD00B9E44D /* UIStackView+Observable.swift in Sources */,
 				518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */,
+				51D531031FFF9E560016DADC /* UIGraphicsImageRendererFormat+Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

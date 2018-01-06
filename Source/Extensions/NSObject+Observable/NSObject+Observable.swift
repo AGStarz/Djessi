@@ -3,7 +3,7 @@
 //  Djessi
 //
 //  Created by Vasily Agafonov on 10.12.2017.
-//  Copyright © 2017 Agafonov. All rights reserved.
+//  Copyright © 2018 Agafonov. All rights reserved.
 //
 
 import Foundation

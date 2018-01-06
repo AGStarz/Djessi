@@ -3,7 +3,7 @@
 //  Djessi_Example
 //
 //  Created by Vasily Agafonov on 12.12.2017.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class BreedImageViewController: UIViewController {
         viewModel
             .observable(at: \ViewModel.title)
             .deliver(on: GCDQueue.asyncMain)
-            .bind(to: navigationItem.observable(at: \UINavigationItem.title))
+            .bind(to: navigationItem.asReactive.title)
             .dispose(in: disposeBag)
         
         viewModel
