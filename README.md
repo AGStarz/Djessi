@@ -133,7 +133,7 @@ obj.field = "123456" // observed
 
 Every `NSObject` have reactive capability accessible via `asReactive` property.
 
-> Reactive extensions proxied properties for `UIResponder` sublasses only (for now). Wait future releases for more.
+> Reactive extensions proxied properties for 90% of `UIKit` classes. Wait future releases for more.
 
 ```swift
 let model = Model()

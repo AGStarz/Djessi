@@ -1,3 +1,9 @@
+0.3.3
+---------
+
+* Proxied properties for 90% of `UIKit` classes.
+* Update jazzy docs
+
 0.3.2
 ---------
 
