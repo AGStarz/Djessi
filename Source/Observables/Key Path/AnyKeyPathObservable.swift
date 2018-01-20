@@ -11,8 +11,10 @@ import Foundation
 /// Implementation of `KeyPathObservable` protocol.
 public class AnyKeyPathObservable<Source: NSObject, Value>: KeyPathObservable {
     
-    /// Source object whose field will be observed.
-    public let source: Source
+    /// Source object whose property will be observed.
+    /// - warning:
+    /// That property stored with NOT strong reference to source object.
+    public unowned let source: Source
     
     /// Smart key path to observe.
     public let keyPath: ReferenceWritableKeyPath<Source, Value>
