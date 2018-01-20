@@ -121,6 +121,27 @@
                       <div class="abstract">
                         <p>Implementation of <code><a href="Protocols/KeyPathObservable.html">KeyPathObservable</a></code> protocol.</p>
 
+<p>You can manually create observables (through initializer):</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = AnyKeyPathObservable(source: label, keyPath: \UILabel.text)
+</code></pre>
+
+<p>Or use <code>NSObject</code> support method:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text)
+</code></pre>
+
+<p>To start listen changes call <code>observe</code> method:</p>
+<pre class="highlight plaintext"><code>let token = observable.observe { (value) in
+    // do some stuff with observed value
+}
+</code></pre>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You should keep strong reference to token&rsquo;s which was returned by calling <code>observe</code> method or use <code><a href="Classes/DisposeBag.html">DisposeBag</a></code> because object will be finished generate observation changes if token deallocated.
+
+</div>
+
                         <a href="Classes/AnyKeyPathObservable.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -151,7 +172,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define mapping values for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define mapping values for observables.</p>
+
+<p>You can use <code>MapTransformObservable</code> only by calling <code>map</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).map(transform: { $0?.count ?? 0 })
+</code></pre>
 
                         <a href="Classes/MapTransformObservable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -183,7 +211,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define multi-threading ability for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define multi-threading ability for observables and can be used only with any other <code><a href="Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+
+<p>You can use <code>ThreadObservable</code> only by calling <code>deliver</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let queue = GCDQueue.asyncMain // or your implementation of Queue
+let observable = label.observable(at: \UILabel.text).deliver(on: queue)
+</code></pre>
 
                         <a href="Classes/ThreadObservable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -215,7 +251,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define flat mapping transformations for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define flat mapping transformations for observables.</p>
+
+<p>You can use <code>FlatMapTransformObservable</code> only by calling <code>flatMap</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).flatMap(transform: { $0 })
+</code></pre>
 
                         <a href="Classes/FlatMapTransformObservable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -247,7 +290,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>DisposeBag</code> define mechanism to manage your <code><a href="Protocols/Disposable.html">Disposable</a></code> objects. Bag keep all disposables in memory while you not deinited the bag.</p>
+                        <p><code>DisposeBag</code> define mechanism to manage your <code><a href="Protocols/Disposable.html">Disposable</a></code> objects.</p>
+
+<p>Bag keep all disposables in memory while it not deallocated.</p>
+
+<p>Bag gives you &lsquo;chain&rsquo; mechanism for observation logic:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let disposeBag = DisposeBag()
+
+label
+    .observable(at: \UILabel.text)
+    .observe(onNext: { "Observed text currently have a \($0) characters" })
+    .dispose(in: disposeBag)
+</code></pre>
 
                         <a href="Classes/DisposeBag.html" class="slightly-smaller">See more</a>
                       </div>
@@ -279,7 +334,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol. Define filtering values for observables.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define filtration rule for observed values.</p>
+
+<p>You can use <code>FilterConditionObservable</code> only by calling <code>filter</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.count ?? 0 &gt; 3 })
+</code></pre>
 
                         <a href="Classes/FilterConditionObservable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -311,7 +373,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>GCD wrapper for <code>DispatchQueue</code>&lsquo;s.</p>
+                        <p>Implementation of <code><a href="Protocols/Queue.html">Queue</a></code> protocol and represents <code>DispatchQueue</code> wrapper.</p>
+
+<p><code>GCDQueue</code> already have wrapper&rsquo;s for <code>DispatchQueue.main</code> queue with sync &amp; async behaviour and accessible through static properties by <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC9asyncMainACvZ">GCDQueue.asyncMain</a></code> or <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC8syncMainACvZ">GCDQueue.syncMain</a></code></p>
 
                         <a href="Classes/GCDQueue.html" class="slightly-smaller">See more</a>
                       </div>
@@ -331,7 +395,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-06)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

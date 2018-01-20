@@ -8,19 +8,9 @@
 
 import Foundation
 
-/// Core protocol for all observables.
+/// Core protocol for all disposables.
 public protocol Disposable {
     
     /// Invalidation method. It should be called when you dont need this disposable.
     func invalidate()
-}
-
-extension Disposable {
-    
-    /// Append this disposable to specified dispose bag.
-    ///
-    /// - Parameter disposeBag: Bag to append disposable.
-    public func dispose(in disposeBag: DisposeBag) {
-        disposeBag.append(disposable: self)
-    }
 }

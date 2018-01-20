@@ -8,7 +8,16 @@
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define multi-threading ability for observables.
+/// Implementation of `Observable` protocol.
+///
+/// Define multi-threading ability for observables and can be used only with any other `KeyPathObservable`.
+///
+/// You can use `ThreadObservable` only by calling `deliver` method defined for all `Observable` types:
+///
+///     let label = UILabel()
+///     let queue = GCDQueue.asyncMain // or your implementation of Queue
+///     let observable = label.observable(at: \UILabel.text).deliver(on: queue)
+///
 public class ThreadObservable<O: Observable>: Observable {
     
     /// Observing value type
@@ -20,10 +29,10 @@ public class ThreadObservable<O: Observable>: Observable {
     /// Queue which will be used for callback's
     private let queue: Queue
     
-    /// Create new thread supported observable of source observable on specified queue.
+    /// Create new observable with thread support on specified queue.
     ///
     /// - Parameters:
-    ///   - source: Source observable whose changes should be called on specified queue.
+    ///   - source: Source observable whose changes should be passed to specified queue.
     ///   - queue: Queue for callbacks.
     init(source: O, queue q: Queue) {
         associatedObservable = source

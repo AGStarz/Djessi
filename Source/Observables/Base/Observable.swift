@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Core protocol of all observables.
+/// Base protocol for all observables.
 public protocol Observable: class {
     associatedtype Value
     

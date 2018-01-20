@@ -8,7 +8,9 @@
 
 import Foundation
 
-/// GCD wrapper for `DispatchQueue`'s.
+/// Implementation of `Queue` protocol and represents `DispatchQueue` wrapper.
+///
+/// `GCDQueue` already have wrapper's for `DispatchQueue.main` queue with sync & async behaviour and accessible through static properties by `GCDQueue.asyncMain` or `GCDQueue.syncMain`
 public class GCDQueue: Queue {
     
     /// Dispatch style.

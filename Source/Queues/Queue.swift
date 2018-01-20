@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Core protocol for observables to support multi-threads.
+/// Base protocol for multi-thread support.
 public protocol Queue {
     
     /// Execution function on specifed thread.

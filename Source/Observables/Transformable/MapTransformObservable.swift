@@ -8,7 +8,15 @@
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define mapping values for observables.
+/// Implementation of `Observable` protocol.
+///
+/// Define mapping values for observables.
+///
+/// You can use `MapTransformObservable` only by calling `map` method defined for all `Observable` types:
+///
+///     let label = UILabel()
+///     let observable = label.observable(at: \UILabel.text).map(transform: { $0?.count ?? 0 })
+///
 public class MapTransformObservable<To, K: Observable>: Observable {
     
     /// Observing value type

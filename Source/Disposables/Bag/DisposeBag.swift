@@ -8,13 +8,26 @@
 
 import Foundation
 
-/// `DisposeBag` define mechanism to manage your `Disposable` objects. Bag keep all disposables in memory while you not deinited the bag.
+/// `DisposeBag` define mechanism to manage your `Disposable` objects.
+///
+/// Bag keep all disposables in memory while it not deallocated.
+///
+/// Bag gives you 'chain' mechanism for observation logic:
+///
+///     let label = UILabel()
+///     let disposeBag = DisposeBag()
+///
+///     label
+///         .observable(at: \UILabel.text)
+///         .observe(onNext: { "Observed text currently have a \($0) characters" })
+///         .dispose(in: disposeBag)
+///
 public class DisposeBag {
     
     /// Array of appended disposables.
     private(set) var disposables: [Disposable]
     
-    /// Initialize new object with empty bag.
+    /// Initialize new bag.
     public init() {
         disposables = []
     }
@@ -32,5 +45,15 @@ public class DisposeBag {
     /// - Parameter disposable: Disposable to append.
     func append(disposable: Disposable) {
         disposables.append(disposable)
+    }
+}
+
+extension Disposable {
+    
+    /// Append this disposable to specified dispose bag.
+    ///
+    /// - Parameter disposeBag: Bag to append disposable.
+    public func dispose(in disposeBag: DisposeBag) {
+        disposeBag.append(disposable: self)
     }
 }

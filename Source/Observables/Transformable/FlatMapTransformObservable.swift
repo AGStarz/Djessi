@@ -8,7 +8,15 @@
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define flat mapping transformations for observables.
+/// Implementation of `Observable` protocol.
+///
+/// Define flat mapping transformations for observables.
+///
+/// You can use `FlatMapTransformObservable` only by calling `flatMap` method defined for all `Observable` types:
+///
+///     let label = UILabel()
+///     let observable = label.observable(at: \UILabel.text).flatMap(transform: { $0 })
+///
 public class FlatMapTransformObservable<To, K: Observable>: Observable {
     
     /// Observing value type

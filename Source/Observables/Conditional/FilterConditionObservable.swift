@@ -8,7 +8,15 @@
 
 import Foundation
 
-/// Implementation of `Observable` protocol. Define filtering values for observables.
+/// Implementation of `Observable` protocol.
+///
+/// Define filtration rule for observed values.
+///
+/// You can use `FilterConditionObservable` only by calling `filter` method defined for all `Observable` types:
+///
+///     let label = UILabel()
+///     let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.count ?? 0 > 3 })
+///
 public class FilterConditionObservable<O: Observable>: Observable {
     
     /// Observing value type

@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Core observable for smart key path observing.
+/// Base protocol for key path observing.
 public protocol KeyPathObservable: Observable {
     associatedtype Source: NSObject
     
@@ -21,7 +21,7 @@ public protocol KeyPathObservable: Observable {
 
 extension KeyPathObservable {
     
-    /// Value setter/getter by provided key path of source object.
+    /// Internal value setter/getter by provided key path of source object.
     internal var value: Value {
         get {
             return source[keyPath: keyPath]
