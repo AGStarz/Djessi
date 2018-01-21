@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Djessi'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'Djessi is lightweight reactive framework based on smart key paths.'
 
   s.description      = <<-DESC
@@ -11,10 +11,21 @@ Djessi is reactive abstraction over NSObject based on [smart key paths](https://
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AGStarz' => 'agafonov.vasya.93@gmail.com' }
   s.source           = { :git => 'https://github.com/AGStarz/Djessi.git', :tag => s.version.to_s }
+  s.requires_arc     = true
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Source/**/*'
+  s.subspec 'Core' do |core|
+    core.source_files = 'Source/Core/**/*'
+    core.framework = 'Foundation'
+  end
 
-  s.frameworks = 'Foundation', 'UIKit'
+  s.subspec 'ReactiveExtensions' do |rx|
+    rx.ios.source_files = 'Source/ReactiveExtensions/ReactiveExtension.swift', 'Source/ReactiveExtensions/iOS/**/*'
+    rx.ios.frameworks = 'Foundation', 'UIKit'
+
+    rx.dependency 'Djessi/Core'
+  end
+
+  s.default_subspecs = 'Core', 'ReactiveExtensions'
 end

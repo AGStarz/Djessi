@@ -439,10 +439,8 @@
 		518D23031FDEAD28005D6E40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				518D23071FDEAD51005D6E40 /* Disposables */,
-				518D230D1FDEAD51005D6E40 /* Extensions */,
-				518D230F1FDEAD51005D6E40 /* Observables */,
-				518D23041FDEAD51005D6E40 /* Queues */,
+				51C0D2AA2014890100E122DF /* Core */,
+				518D230D1FDEAD51005D6E40 /* ReactiveExtensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -482,13 +480,13 @@
 			path = Bag;
 			sourceTree = "<group>";
 		};
-		518D230D1FDEAD51005D6E40 /* Extensions */ = {
+		518D230D1FDEAD51005D6E40 /* ReactiveExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				5196F8801FE50DE000B9E44D /* Reactive */,
-				5196F87E1FE50D5800B9E44D /* NSObject+Observable */,
+				5196F8811FE50DF900B9E44D /* ReactiveExtension.swift */,
+				51C0D2AC2014895A00E122DF /* iOS */,
 			);
-			path = Extensions;
+			path = ReactiveExtensions;
 			sourceTree = "<group>";
 		};
 		518D230F1FDEAD51005D6E40 /* Observables */ = {
@@ -616,15 +614,6 @@
 				5196F8AB1FEA454700B9E44D /* UIResponder */,
 			);
 			path = "UIKit+Observable";
-			sourceTree = "<group>";
-		};
-		5196F8801FE50DE000B9E44D /* Reactive */ = {
-			isa = PBXGroup;
-			children = (
-				5196F8811FE50DF900B9E44D /* ReactiveExtension.swift */,
-				5196F87F1FE50D7E00B9E44D /* UIKit+Observable */,
-			);
-			path = Reactive;
 			sourceTree = "<group>";
 		};
 		5196F8891FE554A600B9E44D /* UIView */ = {
@@ -1108,6 +1097,33 @@
 				51A8ECEC1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift */,
 			);
 			path = UIPrintPageRenderer;
+			sourceTree = "<group>";
+		};
+		51C0D2AA2014890100E122DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				518D230F1FDEAD51005D6E40 /* Observables */,
+				518D23071FDEAD51005D6E40 /* Disposables */,
+				518D23041FDEAD51005D6E40 /* Queues */,
+				51C0D2AB2014891A00E122DF /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		51C0D2AB2014891A00E122DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5196F87E1FE50D5800B9E44D /* NSObject+Observable */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		51C0D2AC2014895A00E122DF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5196F87F1FE50D7E00B9E44D /* UIKit+Observable */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		51D5306B1FFE90DC0016DADC /* UIAccessibilityCustomAction */ = {

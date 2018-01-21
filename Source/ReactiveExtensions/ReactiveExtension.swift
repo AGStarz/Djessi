@@ -16,7 +16,7 @@ public protocol Reactive { }
 
 extension Reactive {
     
-    /// Main point to access available reactive functions for current object.
+    /// Main point to access reactive functions for current object.
     public var asReactive: ReactiveExtension<Self> {
         return ReactiveExtension<Self>(source: self)
     }

@@ -19,7 +19,7 @@ import Foundation
 ///
 ///     label
 ///         .observable(at: \UILabel.text)
-///         .observe(onNext: { "Observed text currently have a \($0) characters" })
+///         .observe(onNext: { "Observed text: \($0 ?? <none>)" })
 ///         .dispose(in: disposeBag)
 ///
 public class DisposeBag {
