@@ -168,7 +168,7 @@ pod 'Djessi/Core'
 
 ## Author
 
-Agafonov Vasily, [Gmail](agafonov.vasya.93@gmail.com) | [Telegram](https://t.me/ag_starz)
+Agafonov Vasily, [Gmail](mailto:agafonov.vasya.93@gmail.com) | [Telegram](https://t.me/ag_starz)
 
 ## License
 
