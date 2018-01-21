@@ -1,3 +1,9 @@
+0.3.4
+---------
+
+* Separate all files to two categories `Core` & `ReactiveExtensions` through subspecs.
+* Core subspec accessible via `pod Djessi/Core`, reactive extensions subspec accessible via `pod Djessi/ReactiveExtensions`, default pod `pod Djessi` retrieve both core & extension sources.
+
 0.3.3
 ---------
 

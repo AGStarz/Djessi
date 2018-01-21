@@ -160,9 +160,15 @@ it, simply add the following line to your Podfile:
 pod 'Djessi'
 ```
 
+To get only core functions & models use the following line in your Podfile:
+
+```
+pod 'Djessi/Core'
+```
+
 ## Author
 
-AGStarz, agafonov.vasya.93@gmail.com
+Agafonov Vasily, [Gmail](agafonov.vasya.93@gmail.com) | [Telegram](https://t.me/ag_starz)
 
 ## License
 
