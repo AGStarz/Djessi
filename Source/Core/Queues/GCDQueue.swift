@@ -10,7 +10,7 @@ import Foundation
 
 /// Implementation of `Queue` protocol and represents `DispatchQueue` wrapper.
 ///
-/// `GCDQueue` already have wrapper's for `DispatchQueue.main` queue with sync & async behaviour and accessible through static properties by `GCDQueue.asyncMain` or `GCDQueue.syncMain`
+/// `GCDQueue` already have wrapper's for `DispatchQueue.main` queue with sync & async behaviour and accessible through static properties via `GCDQueue.asyncMain` or `GCDQueue.syncMain`
 public class GCDQueue: Queue {
     
     /// Dispatch style.
@@ -30,8 +30,8 @@ public class GCDQueue: Queue {
     /// Init GCD wrapper with custom `DispatchQueue` & `DispatchStyle`.
     ///
     /// - Parameters:
-    ///   - queue: Concrete `DispatchQueue` to execute block's.
-    ///   - style: Dispatch style.
+    ///   - queue: Concrete `DispatchQueue` to execute block's. Default value is `DispatchQueue.main`.
+    ///   - style: Dispatch style. Default value is `DispatchStyle.async`.
     public init(queue q: DispatchQueue = .main, style s: DispatchStyle = .async) {
         queue = q
         style = s
