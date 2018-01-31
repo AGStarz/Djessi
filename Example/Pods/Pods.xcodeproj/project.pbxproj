@@ -492,11 +492,11 @@
 		518D230F1FDEAD51005D6E40 /* Observables */ = {
 			isa = PBXGroup;
 			children = (
+				518D23191FDEAD51005D6E40 /* Base */,
 				518D23101FDEAD51005D6E40 /* Key Path */,
 				518D23131FDEAD51005D6E40 /* Transformable */,
 				518D23151FDEAD51005D6E40 /* Conditional */,
 				518D23171FDEAD51005D6E40 /* Thread */,
-				518D23191FDEAD51005D6E40 /* Base */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
