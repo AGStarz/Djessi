@@ -12,43 +12,43 @@ import UIKit
 extension ReactiveExtension where Source: UIButton {
     
     /// Observable for `contentEdgeInsets` property of `UIButton` source.
-    public var contentEdgeInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var contentEdgeInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.contentEdgeInsets)
     }
     
     /// Observable for `titleEdgeInsets` property of `UIButton` source.
-    public var titleEdgeInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var titleEdgeInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.titleEdgeInsets)
     }
     
     /// Observable for `imageEdgeInsets` property of `UIButton` source.
-    public var imageEdgeInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var imageEdgeInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.imageEdgeInsets)
     }
     
     /// Observable for `reversesTitleShadowWhenHighlighted` property of `UIButton` source.
-    public var reversesTitleShadowWhenHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var reversesTitleShadowWhenHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.reversesTitleShadowWhenHighlighted)
     }
     
     /// Observable for `adjustsImageWhenHighlighted` property of `UIButton` source.
-    public var adjustsImageWhenHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var adjustsImageWhenHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.adjustsImageWhenHighlighted)
     }
     
     /// Observable for `adjustsImageWhenDisabled` property of `UIButton` source.
-    public var adjustsImageWhenDisabled: AnyKeyPathObservable<Source, Bool> {
+    public var adjustsImageWhenDisabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.adjustsImageWhenDisabled)
     }
     
     /// Observable for `showsTouchWhenHighlighted` property of `UIButton` source.
-    public var showsTouchWhenHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var showsTouchWhenHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.showsTouchWhenHighlighted)
     }
     
     /// Observable for `tintColor` property of `UIButton` source.
     @available(iOS 5.0, *)
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
 }

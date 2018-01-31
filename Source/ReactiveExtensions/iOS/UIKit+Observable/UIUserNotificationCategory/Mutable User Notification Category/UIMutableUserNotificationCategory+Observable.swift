@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIMutableUserNotificationCategory {
     
     /// Observable for `identifier` property of `UIMutableUserNotificationCategory` source.
-    public var identifier: AnyKeyPathObservable<Source, String?> {
+    public var identifier: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.identifier)
     }
 }

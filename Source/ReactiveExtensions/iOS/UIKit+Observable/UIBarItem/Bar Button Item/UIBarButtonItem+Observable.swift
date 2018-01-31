@@ -12,38 +12,38 @@ import UIKit
 extension ReactiveExtension where Source: UIBarButtonItem {
     
     /// Observable for `style` property of `UIBarButtonItem` source.
-    public var style: AnyKeyPathObservable<Source, UIBarButtonItemStyle> {
+    public var style: KeyPathObservable<Source, UIBarButtonItemStyle> {
         return source.observable(at: \Source.style)
     }
     
     /// Observable for `width` property of `UIBarButtonItem` source.
-    public var width: AnyKeyPathObservable<Source, CGFloat> {
+    public var width: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.width)
     }
     
     /// Observable for `possibleTitles` property of `UIBarButtonItem` source.
-    public var possibleTitles: AnyKeyPathObservable<Source, Set<String>?> {
+    public var possibleTitles: KeyPathObservable<Source, Set<String>?> {
         return source.observable(at: \Source.possibleTitles)
     }
     
     /// Observable for `customView` property of `UIBarButtonItem` source.
-    public var customView: AnyKeyPathObservable<Source, UIView?> {
+    public var customView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.customView)
     }
     
     /// Observable for `action` property of `UIBarButtonItem` source.
-    public var action: AnyKeyPathObservable<Source, Selector?> {
+    public var action: KeyPathObservable<Source, Selector?> {
         return source.observable(at: \Source.action)
     }
     
     /// Observable for `target` property of `UIBarButtonItem` source.
-    public var target: AnyKeyPathObservable<Source, AnyObject?> {
+    public var target: KeyPathObservable<Source, AnyObject?> {
         return source.observable(at: \Source.target)
     }
     
     /// Observable for `tintColor` property of `UIBarButtonItem` source.
     @available(iOS 5.0, *)
-    public var tintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var tintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.tintColor)
     }
 }

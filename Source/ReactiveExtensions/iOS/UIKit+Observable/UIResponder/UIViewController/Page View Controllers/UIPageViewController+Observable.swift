@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIPageViewController {
     
     /// Observable for `isDoubleSided` property of `UIPageViewController` source.
-    public var isDoubleSided: AnyKeyPathObservable<Source, Bool> {
+    public var isDoubleSided: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isDoubleSided)
     }
 }

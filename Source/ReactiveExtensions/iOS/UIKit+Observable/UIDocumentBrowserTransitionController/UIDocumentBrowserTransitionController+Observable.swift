@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIDocumentBrowserTransitionController {
     
     /// Observable for `loadingProgress` property of `UIDocumentBrowserTransitionController` source.
-    public var loadingProgress: AnyKeyPathObservable<Source, Progress?> {
+    public var loadingProgress: KeyPathObservable<Source, Progress?> {
         return source.observable(at: \Source.loadingProgress)
     }
     
     /// Observable for `targetView` property of `UIDocumentBrowserTransitionController` source.
-    public var targetView: AnyKeyPathObservable<Source, UIView?> {
+    public var targetView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.targetView)
     }
 }

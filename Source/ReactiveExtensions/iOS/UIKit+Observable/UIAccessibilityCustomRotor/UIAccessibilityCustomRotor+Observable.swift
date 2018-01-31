@@ -12,18 +12,18 @@ import UIKit
 extension ReactiveExtension where Source: UIAccessibilityCustomRotor {
 
     /// Observable for `name` property of `UIAccessibilityCustomRotor` source.
-    public var name: AnyKeyPathObservable<Source, String> {
+    public var name: KeyPathObservable<Source, String> {
         return source.observable(at: \Source.name)
     }
     
     /// Observable for `attributedName` property of `UIAccessibilityCustomRotor` source.
     @available(iOS 11.0, *)
-    public var attributedName: AnyKeyPathObservable<Source, NSAttributedString> {
+    public var attributedName: KeyPathObservable<Source, NSAttributedString> {
         return source.observable(at: \Source.attributedName)
     }
     
     /// Observable for `itemSearchBlock` property of `UIAccessibilityCustomRotor` source.
-    public var itemSearchBlock: AnyKeyPathObservable<Source, UIKit.UIAccessibilityCustomRotorSearch> {
+    public var itemSearchBlock: KeyPathObservable<Source, UIKit.UIAccessibilityCustomRotorSearch> {
         return source.observable(at: \Source.itemSearchBlock)
     }
 }

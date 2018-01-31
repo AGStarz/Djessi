@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIVisualEffectView {
     
     /// Observable for `effect` property of `UIVisualEffectView` source.
-    public var effect: AnyKeyPathObservable<Source, UIVisualEffect?> {
+    public var effect: KeyPathObservable<Source, UIVisualEffect?> {
         return source.observable(at: \Source.effect)
     }
 }

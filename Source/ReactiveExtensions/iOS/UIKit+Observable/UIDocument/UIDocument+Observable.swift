@@ -12,18 +12,18 @@ import UIKit
 extension ReactiveExtension where Source: UIDocument {
     
     /// Observable for `fileModificationDate` property of `UIDocument` source.
-    public var fileModificationDate: AnyKeyPathObservable<Source, Date?> {
+    public var fileModificationDate: KeyPathObservable<Source, Date?> {
         return source.observable(at: \Source.fileModificationDate)
     }
     
     /// Observable for `undoManager` property of `UIDocument` source.
-    public var undoManager: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UndoManager>> {
+    public var undoManager: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UndoManager>> {
         return source.observable(at: \Source.undoManager)
     }
     
     /// Observable for `userActivity` property of `UIDocument` source.
     @available(iOS 8.0, *)
-    public var userActivity: AnyKeyPathObservable<Source, NSUserActivity?> {
+    public var userActivity: KeyPathObservable<Source, NSUserActivity?> {
         return source.observable(at: \Source.userActivity)
     }
 }

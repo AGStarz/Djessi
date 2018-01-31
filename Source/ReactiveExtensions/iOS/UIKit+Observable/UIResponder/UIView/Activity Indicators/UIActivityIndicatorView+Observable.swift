@@ -12,23 +12,23 @@ import UIKit
 extension ReactiveExtension where Source: UIActivityIndicatorView {
     
     /// Observable for `isAnimating` property of `UIActivityIndicatorView` source.
-    public var isAnimating: AnyKeyPathObservable<Source, Bool> {
+    public var isAnimating: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.djessi_isAnimating)
     }
 
     /// Observable for `hidesWhenStopped` property of `UIActivityIndicatorView` source.
-    public var hidesWhenStopped: AnyKeyPathObservable<Source, Bool> {
+    public var hidesWhenStopped: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hidesWhenStopped)
     }
     
     /// Observable for `color` property of `UIActivityIndicatorView` source.
     @available(iOS 5.0, *)
-    public var color: AnyKeyPathObservable<Source, UIColor?> {
+    public var color: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.color)
     }
     
     /// Observable for `activityIndicatorViewStyle` property of `UIActivityIndicatorView` source.
-    public var activityIndicatorViewStyle: AnyKeyPathObservable<Source, UIActivityIndicatorViewStyle> {
+    public var activityIndicatorViewStyle: KeyPathObservable<Source, UIActivityIndicatorViewStyle> {
         return source.observable(at: \Source.activityIndicatorViewStyle)
     }
 }

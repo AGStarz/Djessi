@@ -14,7 +14,7 @@ import UIKit
 extension ReactiveExtension where Source: UIPickerView {
 
     /// Observable for `showsSelectionIndicator` property of `UIPickerView` source.
-    public var showsSelectionIndicator: AnyKeyPathObservable<Source, Bool> {
+    public var showsSelectionIndicator: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.showsSelectionIndicator)
     }
 }

@@ -14,23 +14,23 @@ import UIKit
 extension ReactiveExtension where Source: UISegmentedControl {
     
     /// Observable for `selectedSegmentIndex` property of `UISegmentedControl` source.
-    public var selectedSegmentIndex: AnyKeyPathObservable<Source, Int> {
+    public var selectedSegmentIndex: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.selectedSegmentIndex)
     }
     
     /// Observable for `tintColor` property of `UISegmentedControl` source.
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     
     /// Observable for `isMomentary` property of `UISegmentedControl` source.
-    public var isMomentary: AnyKeyPathObservable<Source, Bool> {
+    public var isMomentary: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isMomentary)
     }
     
     /// Observable for `apportionsSegmentWidthsByContent` property of `UISegmentedControl` source.
     @available(iOS 5.0, *)
-    public var apportionsSegmentWidthsByContent: AnyKeyPathObservable<Source, Bool> {
+    public var apportionsSegmentWidthsByContent: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.apportionsSegmentWidthsByContent)
     }
 }

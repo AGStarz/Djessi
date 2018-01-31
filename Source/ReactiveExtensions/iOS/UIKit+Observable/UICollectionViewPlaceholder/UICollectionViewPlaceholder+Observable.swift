@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UICollectionViewPlaceholder {
     
     /// Observable for `cellUpdateHandler` property of `UICollectionViewPlaceholder` source.
-    public var cellUpdateHandler: AnyKeyPathObservable<Source, ((UICollectionViewCell) -> Swift.Void)?> {
+    public var cellUpdateHandler: KeyPathObservable<Source, ((UICollectionViewCell) -> Swift.Void)?> {
         return source.observable(at: \Source.cellUpdateHandler)
     }
 }

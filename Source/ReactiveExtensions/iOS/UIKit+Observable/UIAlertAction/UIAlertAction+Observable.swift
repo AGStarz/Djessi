@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIAlertAction {
     
     /// Observable for `isEnabled` property of `UIAlertAction` source.
-    public var isEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isEnabled)
     }
 }

@@ -8,15 +8,62 @@
 
 import Foundation
 
-/// Base protocol for key path observing.
-public protocol KeyPathObservable: Observable {
-    associatedtype Source: NSObject
+/// Implementation of `Observable` protocol.
+///
+/// You can manually create observables (through initializer):
+///
+///     let label = UILabel()
+///     let observable = KeyPathObservable(source: label, keyPath: \UILabel.text)
+///
+/// Or use `NSObject` support method:
+///
+///     let label = UILabel()
+///     let observable = label.observable(at: \UILabel.text)
+///
+/// To start listen changes call `observe` method:
+///
+///     let token = observable.observe { (value) in
+///         // do some stuff with observed value
+///     }
+///
+/// - Warning:
+/// You should keep strong reference to token's which was returned by calling `observe` method or use `DisposeBag` because object will be finished generate observation changes if token deallocated.
+public class KeyPathObservable<Source: NSObject, Value>: Observable {
     
-    /// Source object whose field will be observed. It constrained to `NSObject` because only `NSObject` support smart key path observing.
-    var source: Source { get }
+    /// Source object whose property will be observed.
+    /// - warning:
+    /// This property stored with NOT strong reference to source object.
+    private unowned let source: Source
     
-    /// Smart key path which used to produce observing.
-    var keyPath: ReferenceWritableKeyPath<Source, Value> { get }
+    /// Key path to observe.
+    private let keyPath: ReferenceWritableKeyPath<Source, Value>
+    
+    /// Observing options which will be used to create observable.
+    private let observingOptions: NSKeyValueObservingOptions
+    
+    /// Create new observable at key path of source.
+    ///
+    /// - Parameters:
+    ///   - source: Source object whose field will be observed.
+    ///   - keyPath: Key path of field which will be observed.
+    ///   - shouldObserveInitialValue: Indicates that observing block should be called for initial value or not. Default value is `true`.
+    init(source: Source, keyPath: ReferenceWritableKeyPath<Source, Value>, shouldObserveInitialValue: Bool = true) {
+        self.source = source
+        self.keyPath = keyPath
+        observingOptions = shouldObserveInitialValue ? [.new, .old, .initial] : [.new, .old]
+    }
+    
+    /// Start observe changes.
+    ///
+    /// - Parameter onNext: Block which will be called on each value change while token alive.
+    /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
+    public func observe(onNext: @escaping (Value) -> Void) -> Disposable {
+        let token = source.observe(keyPath, options: observingOptions) { (source, _) in
+            onNext(source[keyPath: self.keyPath])
+        }
+        
+        return KPODisposable(token: token)
+    }
 }
 
 extension KeyPathObservable {
@@ -38,8 +85,8 @@ extension Observable where Value: Equatable {
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<T: KeyPathObservable>(to another: T) -> Disposable
-        where T.Value == Value {
+    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, ObservableValue>) -> Disposable
+        where ObservableValue == Value {
             return observe { (value) in
                 guard another.value != value else { return }
                 
@@ -51,8 +98,8 @@ extension Observable where Value: Equatable {
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<T: KeyPathObservable>(to another: T) -> Disposable
-        where T.Value == Optional<Value> {
+    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, Optional<ObservableValue>>) -> Disposable
+        where ObservableValue == Value {
             return observe { (value) in
                 guard another.value != value else { return }
                 
@@ -64,8 +111,8 @@ extension Observable where Value: Equatable {
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<T: KeyPathObservable>(to another: T) -> Disposable
-        where T.Value == ImplicitlyUnwrappedOptional<Value> {
+    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<ObservableValue>>) -> Disposable
+        where ObservableValue == Value {
             return observe { (value) in
                 guard another.value != value else { return }
                 

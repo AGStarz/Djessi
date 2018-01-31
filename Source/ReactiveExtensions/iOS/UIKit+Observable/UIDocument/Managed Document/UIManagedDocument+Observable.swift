@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIManagedDocument {
     
     /// Observable for `persistentStoreOptions` property of `UIManagedDocument` source.
-    public var persistentStoreOptions: AnyKeyPathObservable<Source, [AnyHashable: Any]?> {
+    public var persistentStoreOptions: KeyPathObservable<Source, [AnyHashable: Any]?> {
         return source.observable(at: \Source.persistentStoreOptions)
     }
     
     /// Observable for `modelConfiguration` property of `UIManagedDocument` source.
-    public var modelConfiguration: AnyKeyPathObservable<Source, String?> {
+    public var modelConfiguration: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.modelConfiguration)
     }
 }

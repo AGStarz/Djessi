@@ -13,17 +13,17 @@ extension ReactiveExtension where Source: UIAlertController {
 
     /// Observable for `preferredAction` property of `UIAlertController` source.
     @available(iOS 9.0, *)
-    public var preferredAction: AnyKeyPathObservable<Source, UIAlertAction?> {
+    public var preferredAction: KeyPathObservable<Source, UIAlertAction?> {
         return source.observable(at: \Source.preferredAction)
     }
     
     /// Observable for `title` property of `UIAlertController` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `message` property of `UIAlertController` source.
-    public var message: AnyKeyPathObservable<Source, String?> {
+    public var message: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.message)
     }
 }

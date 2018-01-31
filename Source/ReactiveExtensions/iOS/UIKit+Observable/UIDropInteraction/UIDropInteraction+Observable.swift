@@ -14,7 +14,7 @@ extension ReactiveExtension where Source: UIDropInteraction {
     // TODO: delegate
     
     /// Observable for `allowsSimultaneousDropSessions` property of `UIDropInteraction` source.
-    public var allowsSimultaneousDropSessions: AnyKeyPathObservable<Source, Bool> {
+    public var allowsSimultaneousDropSessions: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.allowsSimultaneousDropSessions)
     }
 }

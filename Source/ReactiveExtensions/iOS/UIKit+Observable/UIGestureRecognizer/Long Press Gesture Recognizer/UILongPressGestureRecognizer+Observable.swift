@@ -12,22 +12,22 @@ import UIKit
 extension ReactiveExtension where Source: UILongPressGestureRecognizer {
     
     /// Observable for `numberOfTapsRequired` property of `UILongPressGestureRecognizer` source.
-    public var numberOfTapsRequired: AnyKeyPathObservable<Source, Int> {
+    public var numberOfTapsRequired: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfTapsRequired)
     }
     
     /// Observable for `numberOfTouchesRequired` property of `UILongPressGestureRecognizer` source.
-    public var numberOfTouchesRequired: AnyKeyPathObservable<Source, Int> {
+    public var numberOfTouchesRequired: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfTouchesRequired)
     }
     
     /// Observable for `minimumPressDuration` property of `UILongPressGestureRecognizer` source.
-    public var minimumPressDuration: AnyKeyPathObservable<Source, CFTimeInterval> {
+    public var minimumPressDuration: KeyPathObservable<Source, CFTimeInterval> {
         return source.observable(at: \Source.minimumPressDuration)
     }
     
     /// Observable for `allowableMovement` property of `UILongPressGestureRecognizer` source.
-    public var allowableMovement: AnyKeyPathObservable<Source, CGFloat> {
+    public var allowableMovement: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.allowableMovement)
     }
 }

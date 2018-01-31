@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIPanGestureRecognizer {
     
     /// Observable for `minimumNumberOfTouches` property of `UIPanGestureRecognizer` source.
-    public var minimumNumberOfTouches: AnyKeyPathObservable<Source, Int> {
+    public var minimumNumberOfTouches: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.minimumNumberOfTouches)
     }
     
     /// Observable for `maximumNumberOfTouches` property of `UIPanGestureRecognizer` source.
-    public var maximumNumberOfTouches: AnyKeyPathObservable<Source, Int> {
+    public var maximumNumberOfTouches: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.maximumNumberOfTouches)
     }
 }

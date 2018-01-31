@@ -12,51 +12,51 @@ import UIKit
 extension ReactiveExtension where Source: UIBarItem {
     
     /// Observable for `isEnabled` property of `UIBarItem` source.
-    public var isEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isEnabled)
     }
     
     /// Observable for `title` property of `UIBarItem` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `image` property of `UIBarItem` source.
-    public var image: AnyKeyPathObservable<Source, UIImage?> {
+    public var image: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.image)
     }
     
     /// Observable for `landscapeImagePhone` property of `UIBarItem` source.
     @available(iOS 5.0, *)
-    public var landscapeImagePhone: AnyKeyPathObservable<Source, UIImage?> {
+    public var landscapeImagePhone: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.landscapeImagePhone)
     }
     
     /// Observable for `largeContentSizeImage` property of `UIBarItem` source.
     @available(iOS 11.0, *)
-    public var largeContentSizeImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var largeContentSizeImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.largeContentSizeImage)
     }
     
     /// Observable for `imageInsets` property of `UIBarItem` source.
-    public var imageInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var imageInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.imageInsets)
     }
     
     /// Observable for `landscapeImagePhoneInsets` property of `UIBarItem` source.
     @available(iOS 5.0, *)
-    public var landscapeImagePhoneInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var landscapeImagePhoneInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.landscapeImagePhoneInsets)
     }
     
     /// Observable for `largeContentSizeImageInsets` property of `UIBarItem` source.
     @available(iOS 11.0, *)
-    public var largeContentSizeImageInsets: AnyKeyPathObservable<Source, UIEdgeInsets> {
+    public var largeContentSizeImageInsets: KeyPathObservable<Source, UIEdgeInsets> {
         return source.observable(at: \Source.largeContentSizeImageInsets)
     }
     
     /// Observable for `tag` property of `UIBarItem` source.
-    public var tag: AnyKeyPathObservable<Source, Int> {
+    public var tag: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.tag)
     }
 }

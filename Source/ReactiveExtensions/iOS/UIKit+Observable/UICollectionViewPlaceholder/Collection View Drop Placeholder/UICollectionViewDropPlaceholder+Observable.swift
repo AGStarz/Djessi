@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UICollectionViewDropPlaceholder {
     
     /// Observable for `previewParametersProvider` property of `UICollectionViewDropPlaceholder` source.
-    public var previewParametersProvider: AnyKeyPathObservable<Source, ((UICollectionViewCell) -> UIDragPreviewParameters?)?> {
+    public var previewParametersProvider: KeyPathObservable<Source, ((UICollectionViewCell) -> UIDragPreviewParameters?)?> {
         return source.observable(at: \Source.previewParametersProvider)
     }
 }

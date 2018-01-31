@@ -12,35 +12,35 @@ import UIKit
 extension ReactiveExtension where Source: UIApplication {
     
     /// Observable for `isIdleTimerDisabled` property of `UIApplication` source.
-    public var isIdleTimerDisabled: AnyKeyPathObservable<Source, Bool> {
+    public var isIdleTimerDisabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isIdleTimerDisabled)
     }
     
     /// Observable for `isNetworkActivityIndicatorVisible` property of `UIApplication` source.
-    public var isNetworkActivityIndicatorVisible: AnyKeyPathObservable<Source, Bool> {
+    public var isNetworkActivityIndicatorVisible: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isNetworkActivityIndicatorVisible)
     }
     
     /// Observable for `applicationIconBadgeNumber` property of `UIApplication` source.
-    public var applicationIconBadgeNumber: AnyKeyPathObservable<Source, Int> {
+    public var applicationIconBadgeNumber: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.applicationIconBadgeNumber)
     }
     
     /// Observable for `applicationSupportsShakeToEdit` property of `UIApplication` source.
     @available(iOS 3.0, *)
-    public var applicationSupportsShakeToEdit: AnyKeyPathObservable<Source, Bool> {
+    public var applicationSupportsShakeToEdit: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.applicationSupportsShakeToEdit)
     }
     
     /// Observable for `scheduledLocalNotifications` property of `UIApplication` source.
     @available(iOS, introduced: 4.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenter getPendingNotificationRequestsWithCompletionHandler:]")
-    public var scheduledLocalNotifications: AnyKeyPathObservable<Source, [UILocalNotification]?> {
+    public var scheduledLocalNotifications: KeyPathObservable<Source, [UILocalNotification]?> {
         return source.observable(at: \Source.scheduledLocalNotifications)
     }
     
     /// Observable for `shortcutItems` property of `UIApplication` source.
     @available(iOS 9.0, *)
-    public var shortcutItems: AnyKeyPathObservable<Source, [UIApplicationShortcutItem]?> {
+    public var shortcutItems: KeyPathObservable<Source, [UIApplicationShortcutItem]?> {
         return source.observable(at: \Source.shortcutItems)
     }
 }

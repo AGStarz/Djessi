@@ -12,39 +12,39 @@ import UIKit
 extension ReactiveExtension where Source: UIMutableUserNotificationAction {
     
     /// Observable for `identifier` property of `UIMutableUserNotificationAction` source.
-    public var identifier: AnyKeyPathObservable<Source, String?> {
+    public var identifier: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.identifier)
     }
     
     /// Observable for `title` property of `UIMutableUserNotificationAction` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `behavior` property of `UIMutableUserNotificationAction` source.
     @available(iOS 9.0, *)
-    public var behavior: AnyKeyPathObservable<Source, UIUserNotificationActionBehavior> {
+    public var behavior: KeyPathObservable<Source, UIUserNotificationActionBehavior> {
         return source.observable(at: \Source.behavior)
     }
     
     /// Observable for `parameters` property of `UIMutableUserNotificationAction` source.
     @available(iOS 9.0, *)
-    public var parameters: AnyKeyPathObservable<Source, [AnyHashable: Any]> {
+    public var parameters: KeyPathObservable<Source, [AnyHashable: Any]> {
         return source.observable(at: \Source.parameters)
     }
     
     /// Observable for `activationMode` property of `UIMutableUserNotificationAction` source.
-    public var activationMode: AnyKeyPathObservable<Source, UIUserNotificationActivationMode> {
+    public var activationMode: KeyPathObservable<Source, UIUserNotificationActivationMode> {
         return source.observable(at: \Source.activationMode)
     }
     
     /// Observable for `isAuthenticationRequired` property of `UIMutableUserNotificationAction` source.
-    public var isAuthenticationRequired: AnyKeyPathObservable<Source, Bool> {
+    public var isAuthenticationRequired: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isAuthenticationRequired)
     }
     
     /// Observable for `isDestructive` property of `UIMutableUserNotificationAction` source.
-    public var isDestructive: AnyKeyPathObservable<Source, Bool> {
+    public var isDestructive: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isDestructive)
     }
 }

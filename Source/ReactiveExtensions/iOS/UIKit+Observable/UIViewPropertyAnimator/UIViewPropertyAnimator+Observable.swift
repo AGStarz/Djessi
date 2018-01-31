@@ -12,29 +12,29 @@ import UIKit
 extension ReactiveExtension where Source: UIViewPropertyAnimator {
     
     /// Observable for `isUserInteractionEnabled` property of `UIViewPropertyAnimator` source.
-    public var isUserInteractionEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isUserInteractionEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isUserInteractionEnabled)
     }
     
     /// Observable for `isManualHitTestingEnabled` property of `UIViewPropertyAnimator` source.
-    public var isManualHitTestingEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isManualHitTestingEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isManualHitTestingEnabled)
     }
     
     /// Observable for `isInterruptible` property of `UIViewPropertyAnimator` source.
-    public var isInterruptible: AnyKeyPathObservable<Source, Bool> {
+    public var isInterruptible: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isInterruptible)
     }
     
     /// Observable for `scrubsLinearly` property of `UIViewPropertyAnimator` source.
     @available(iOS 11.0, *)
-    public var scrubsLinearly: AnyKeyPathObservable<Source, Bool> {
+    public var scrubsLinearly: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.scrubsLinearly)
     }
     
     /// Observable for `pausesOnCompletion` property of `UIViewPropertyAnimator` source.
     @available(iOS 11.0, *)
-    public var pausesOnCompletion: AnyKeyPathObservable<Source, Bool> {
+    public var pausesOnCompletion: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.pausesOnCompletion)
     }
 }

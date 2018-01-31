@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIDropProposal {
     
     /// Observable for `isPrecise` property of `UIDropProposal` source.
-    public var isPrecise: AnyKeyPathObservable<Source, Bool> {
+    public var isPrecise: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isPrecise)
     }
     
     /// Observable for `prefersFullSizePreview` property of `UIDropProposal` source.
-    public var prefersFullSizePreview: AnyKeyPathObservable<Source, Bool> {
+    public var prefersFullSizePreview: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.prefersFullSizePreview)
     }
 }

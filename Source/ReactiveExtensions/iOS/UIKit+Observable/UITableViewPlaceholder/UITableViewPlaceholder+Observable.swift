@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UITableViewPlaceholder {
     
     /// Observable for `cellUpdateHandler` property of `UITableViewPlaceholder` source.
-    public var cellUpdateHandler: AnyKeyPathObservable<Source, ((UITableViewCell) -> Swift.Void)?> {
+    public var cellUpdateHandler: KeyPathObservable<Source, ((UITableViewCell) -> Swift.Void)?> {
         return source.observable(at: \Source.cellUpdateHandler)
     }
 }

@@ -20,7 +20,6 @@
 		518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230A1FDEAD51005D6E40 /* KPODisposable.swift */; };
 		518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230C1FDEAD51005D6E40 /* DisposeBag.swift */; };
 		518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */; };
-		518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */; };
 		518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */; };
 		518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23181FDEAD51005D6E40 /* ThreadObservable.swift */; };
 		518D23261FDEAD51005D6E40 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D231A1FDEAD51005D6E40 /* Observable.swift */; };
@@ -197,7 +196,6 @@
 		518D230A1FDEAD51005D6E40 /* KPODisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPODisposable.swift; sourceTree = "<group>"; };
 		518D230C1FDEAD51005D6E40 /* DisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposeBag.swift; sourceTree = "<group>"; };
 		518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Observable.swift"; sourceTree = "<group>"; };
-		518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyKeyPathObservable.swift; sourceTree = "<group>"; };
 		518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathObservable.swift; sourceTree = "<group>"; };
 		518D23181FDEAD51005D6E40 /* ThreadObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadObservable.swift; sourceTree = "<group>"; };
 		518D231A1FDEAD51005D6E40 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -509,7 +507,6 @@
 			isa = PBXGroup;
 			children = (
 				518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */,
-				518D23111FDEAD51005D6E40 /* AnyKeyPathObservable.swift */,
 			);
 			path = "Key Path";
 			sourceTree = "<group>";
@@ -1984,7 +1981,6 @@
 				5196F8E91FF1584800B9E44D /* UICloudSharingController+Observable.swift in Sources */,
 				51D5308C1FFE9FEA0016DADC /* UITabBarItem+Observable.swift in Sources */,
 				5196F88C1FE5570A00B9E44D /* UIDatePicker+Observable.swift in Sources */,
-				518D23211FDEAD51005D6E40 /* AnyKeyPathObservable.swift in Sources */,
 				51D530E11FFF94A30016DADC /* UIGravityBehavior+Observable.swift in Sources */,
 				51D530C91FFF88540016DADC /* UIDropProposal+Observable.swift in Sources */,
 				51D530791FFE98010016DADC /* UIAccessibilityElement+Observable.swift in Sources */,

@@ -16,7 +16,7 @@ extension NSObjectProtocol where Self: NSObject {
     ///   - keyPath: Key path of field which will be observed.
     ///   - shouldObserveInitialValue: Indicates that observing block should be called for initial value or not. Default value is `true`
     /// - Returns: New key path observable instance.
-    public func observable<V>(at keyPath: ReferenceWritableKeyPath<Self, V>, shouldObserveInitialValue: Bool = true) -> AnyKeyPathObservable<Self, V> {
-        return AnyKeyPathObservable(source: self, keyPath: keyPath, shouldObserveInitialValue: shouldObserveInitialValue)
+    public func observable<V>(at keyPath: ReferenceWritableKeyPath<Self, V>, shouldObserveInitialValue: Bool = true) -> KeyPathObservable<Self, V> {
+        return KeyPathObservable(source: self, keyPath: keyPath, shouldObserveInitialValue: shouldObserveInitialValue)
     }
 }

@@ -32,7 +32,7 @@ import Djessi
 class ViewModel {
 
     let associatedModel: Model
-    let observable: AnyKeyPathObservable<Model, String>
+    let observable: KeyPathObservable<Model, String>
 
     init(model: Model) {
         associatedModel = model

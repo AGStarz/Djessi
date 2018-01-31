@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UISwipeGestureRecognizer {
     
     /// Observable for `numberOfTouchesRequired` property of `UISwipeGestureRecognizer` source.
-    public var numberOfTouchesRequired: AnyKeyPathObservable<Source, Int> {
+    public var numberOfTouchesRequired: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfTouchesRequired)
     }
     
     /// Observable for `direction` property of `UISwipeGestureRecognizer` source.
-    public var direction: AnyKeyPathObservable<Source, UISwipeGestureRecognizerDirection> {
+    public var direction: KeyPathObservable<Source, UISwipeGestureRecognizerDirection> {
         return source.observable(at: \Source.direction)
     }
 }

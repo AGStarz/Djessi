@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIDragItem {
     
     /// Observable for `localObject` property of `UIDragItem` source.
-    public var localObject: AnyKeyPathObservable<Source, Any?> {
+    public var localObject: KeyPathObservable<Source, Any?> {
         return source.observable(at: \Source.localObject)
     }
     
     /// Observable for `previewProvider` property of `UIDragItem` source.
-    public var previewProvider: AnyKeyPathObservable<Source, (() -> UIDragPreview?)?> {
+    public var previewProvider: KeyPathObservable<Source, (() -> UIDragPreview?)?> {
         return source.observable(at: \Source.previewProvider)
     }
 }

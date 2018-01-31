@@ -14,32 +14,32 @@ import UIKit
 extension ReactiveExtension where Source: UIStackView {
     
     /// Observable for `axis` property of `UIStackView` source.
-    public var axis: AnyKeyPathObservable<Source, UILayoutConstraintAxis> {
+    public var axis: KeyPathObservable<Source, UILayoutConstraintAxis> {
         return source.observable(at: \Source.axis)
     }
     
     /// Observable for `distribution` property of `UIStackView` source.
-    public var distribution: AnyKeyPathObservable<Source, UIStackViewDistribution> {
+    public var distribution: KeyPathObservable<Source, UIStackViewDistribution> {
         return source.observable(at: \Source.distribution)
     }
     
     /// Observable for `alignment` property of `UIStackView` source.
-    public var alignment: AnyKeyPathObservable<Source, UIStackViewAlignment> {
+    public var alignment: KeyPathObservable<Source, UIStackViewAlignment> {
         return source.observable(at: \Source.alignment)
     }
     
     /// Observable for `spacing` property of `UIStackView` source.
-    public var spacing: AnyKeyPathObservable<Source, CGFloat> {
+    public var spacing: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.spacing)
     }
     
     /// Observable for `isBaselineRelativeArrangement` property of `UIStackView` source.
-    public var isBaselineRelativeArrangement: AnyKeyPathObservable<Source, Bool> {
+    public var isBaselineRelativeArrangement: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isBaselineRelativeArrangement)
     }
     
     /// Observable for `isLayoutMarginsRelativeArrangement` property of `UIStackView` source.
-    public var isLayoutMarginsRelativeArrangement: AnyKeyPathObservable<Source, Bool> {
+    public var isLayoutMarginsRelativeArrangement: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isLayoutMarginsRelativeArrangement)
     }
 }

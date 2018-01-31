@@ -12,27 +12,27 @@ import UIKit
 extension ReactiveExtension where Source: UIControl {
     
     /// Observable for `isEnabled` property of `UIControl` source.
-    public var isEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isEnabled)
     }
     
     /// Observable for `isSelected` property of `UIControl` source.
-    public var isSelected: AnyKeyPathObservable<Source, Bool> {
+    public var isSelected: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isSelected)
     }
     
     /// Observable for `isHighlighted` property of `UIControl` source.
-    public var isHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var isHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isHighlighted)
     }
     
     /// Observable for `contentVerticalAlignment` property of `UIControl` source.
-    public var contentVerticalAlignment: AnyKeyPathObservable<Source, UIControlContentVerticalAlignment> {
+    public var contentVerticalAlignment: KeyPathObservable<Source, UIControlContentVerticalAlignment> {
         return source.observable(at: \Source.contentVerticalAlignment)
     }
     
     /// Observable for `contentHorizontalAlignment` property of `UIControl` source.
-    public var contentHorizontalAlignment: AnyKeyPathObservable<Source, UIControlContentHorizontalAlignment> {
+    public var contentHorizontalAlignment: KeyPathObservable<Source, UIControlContentHorizontalAlignment> {
         return source.observable(at: \Source.contentHorizontalAlignment)
     }
 }

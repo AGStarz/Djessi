@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIMenuItem {
     
     /// Observable for `title` property of `UIMenuItem` source.
-    public var title: AnyKeyPathObservable<Source, String> {
+    public var title: KeyPathObservable<Source, String> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `action` property of `UIMenuItem` source.
-    public var action: AnyKeyPathObservable<Source, Selector> {
+    public var action: KeyPathObservable<Source, Selector> {
         return source.observable(at: \Source.action)
     }
 }

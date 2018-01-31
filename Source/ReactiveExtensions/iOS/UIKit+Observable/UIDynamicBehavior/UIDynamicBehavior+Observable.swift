@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIDynamicBehavior {
     
     /// Observable for `action` property of `UIDynamicBehavior` source.
-    public var action: AnyKeyPathObservable<Source, (() -> Swift.Void)?> {
+    public var action: KeyPathObservable<Source, (() -> Swift.Void)?> {
         return source.observable(at: \Source.action)
     }
 }

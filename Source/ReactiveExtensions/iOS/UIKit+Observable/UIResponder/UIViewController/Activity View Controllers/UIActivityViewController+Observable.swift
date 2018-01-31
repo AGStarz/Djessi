@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIActivityViewController {
     
     /// Observable for `excludedActivityTypes` property of `UIActivityViewController` source.
-    public var excludedActivityTypes: AnyKeyPathObservable<Source, [UIActivityType]?> {
+    public var excludedActivityTypes: KeyPathObservable<Source, [UIActivityType]?> {
         return source.observable(at: \Source.excludedActivityTypes)
     }
 }

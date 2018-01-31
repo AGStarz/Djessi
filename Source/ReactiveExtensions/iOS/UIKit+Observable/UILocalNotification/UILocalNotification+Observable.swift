@@ -13,82 +13,82 @@ import CoreLocation
 extension ReactiveExtension where Source: UILocalNotification {
     
     /// Observable for `fireDate` property of `UILocalNotification` source.
-    public var fireDate: AnyKeyPathObservable<Source, Date?> {
+    public var fireDate: KeyPathObservable<Source, Date?> {
         return source.observable(at: \Source.fireDate)
     }
     
     /// Observable for `timeZone` property of `UILocalNotification` source.
-    public var timeZone: AnyKeyPathObservable<Source, TimeZone?> {
+    public var timeZone: KeyPathObservable<Source, TimeZone?> {
         return source.observable(at: \Source.timeZone)
     }
     
     /// Observable for `repeatInterval` property of `UILocalNotification` source.
-    public var repeatInterval: AnyKeyPathObservable<Source, NSCalendar.Unit> {
+    public var repeatInterval: KeyPathObservable<Source, NSCalendar.Unit> {
         return source.observable(at: \Source.repeatInterval)
     }
     
     /// Observable for `repeatCalendar` property of `UILocalNotification` source.
-    public var repeatCalendar: AnyKeyPathObservable<Source, Calendar?> {
+    public var repeatCalendar: KeyPathObservable<Source, Calendar?> {
         return source.observable(at: \Source.repeatCalendar)
     }
     
     /// Observable for `region` property of `UILocalNotification` source.
     @available(iOS 8.0, *)
-    public var region: AnyKeyPathObservable<Source, CLRegion?> {
+    public var region: KeyPathObservable<Source, CLRegion?> {
         return source.observable(at: \Source.region)
     }
     
     /// Observable for `regionTriggersOnce` property of `UILocalNotification` source.
     @available(iOS 8.0, *)
-    public var regionTriggersOnce: AnyKeyPathObservable<Source, Bool> {
+    public var regionTriggersOnce: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.regionTriggersOnce)
     }
     
     /// Observable for `alertBody` property of `UILocalNotification` source.
-    public var alertBody: AnyKeyPathObservable<Source, String?> {
+    public var alertBody: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.alertBody)
     }
     
     // hasAction: Bool
     /// Observable for `hasAction` property of `UILocalNotification` source.
-    public var hasAction: AnyKeyPathObservable<Source, Bool> {
+    public var hasAction: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hasAction)
     }
     
     /// Observable for `alertAction` property of `UILocalNotification` source.
-    public var alertAction: AnyKeyPathObservable<Source, String?> {
+    public var alertAction: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.alertAction)
     }
     
     /// Observable for `alertLaunchImage` property of `UILocalNotification` source.
-    public var alertLaunchImage: AnyKeyPathObservable<Source, String?> {
+    public var alertLaunchImage: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.alertLaunchImage)
     }
     
     /// Observable for `alertTitle` property of `UILocalNotification` source.
     @available(iOS 8.2, *)
-    public var alertTitle: AnyKeyPathObservable<Source, String?> {
+    public var alertTitle: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.alertTitle)
     }
     
     /// Observable for `soundName` property of `UILocalNotification` source.
-    public var soundName: AnyKeyPathObservable<Source, String?> {
+    public var soundName: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.soundName)
     }
     
     /// Observable for `applicationIconBadgeNumber` property of `UILocalNotification` source.
-    public var applicationIconBadgeNumber: AnyKeyPathObservable<Source, Int> {
+    public var applicationIconBadgeNumber: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.applicationIconBadgeNumber)
     }
     
     /// Observable for `userInfo` property of `UILocalNotification` source.
-    public var userInfo: AnyKeyPathObservable<Source, [AnyHashable: Any]?> {
+    public var userInfo: KeyPathObservable<Source, [AnyHashable: Any]?> {
         return source.observable(at: \Source.userInfo)
     }
     
     /// Observable for `category` property of `UILocalNotification` source.
     @available(iOS 8.0, *)
-    public var category: AnyKeyPathObservable<Source, String?> {
+    public var category: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.category)
     }
 }

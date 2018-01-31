@@ -12,27 +12,27 @@ import UIKit
 extension ReactiveExtension where Source: UIPrintInfo {
     
     /// Observable for `printerID` property of `UIPrintInfo` source.
-    public var printerID: AnyKeyPathObservable<Source, String?> {
+    public var printerID: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.printerID)
     }
     
     /// Observable for `jobName` property of `UIPrintInfo` source.
-    public var jobName: AnyKeyPathObservable<Source, String> {
+    public var jobName: KeyPathObservable<Source, String> {
         return source.observable(at: \Source.jobName)
     }
     
     /// Observable for `outputType` property of `UIPrintInfo` source.
-    public var outputType: AnyKeyPathObservable<Source, UIPrintInfoOutputType> {
+    public var outputType: KeyPathObservable<Source, UIPrintInfoOutputType> {
         return source.observable(at: \Source.outputType)
     }
     
     /// Observable for `orientation` property of `UIPrintInfo` source.
-    public var orientation: AnyKeyPathObservable<Source, UIPrintInfoOrientation> {
+    public var orientation: KeyPathObservable<Source, UIPrintInfoOrientation> {
         return source.observable(at: \Source.orientation)
     }
     
     /// Observable for `duplex` property of `UIPrintInfo` source.
-    public var duplex: AnyKeyPathObservable<Source, UIPrintInfoDuplex> {
+    public var duplex: KeyPathObservable<Source, UIPrintInfoDuplex> {
         return source.observable(at: \Source.duplex)
     }
 }

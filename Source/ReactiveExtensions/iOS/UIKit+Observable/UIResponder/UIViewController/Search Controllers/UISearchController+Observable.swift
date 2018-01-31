@@ -12,23 +12,23 @@ import UIKit
 extension ReactiveExtension where Source: UISearchController {
 
     /// Observable for `isActive` property of `UISearchController` source.
-    public var isActive: AnyKeyPathObservable<Source, Bool> {
+    public var isActive: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isActive)
     }
     
     /// Observable for `dimsBackgroundDuringPresentation` property of `UISearchController` source.
-    public var dimsBackgroundDuringPresentation: AnyKeyPathObservable<Source, Bool> {
+    public var dimsBackgroundDuringPresentation: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.dimsBackgroundDuringPresentation)
     }
     
     /// Observable for `obscuresBackgroundDuringPresentation` property of `UISearchController` source.
     @available(iOS 9.1, *)
-    public var obscuresBackgroundDuringPresentation: AnyKeyPathObservable<Source, Bool> {
+    public var obscuresBackgroundDuringPresentation: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.obscuresBackgroundDuringPresentation)
     }
     
     /// Observable for `hidesNavigationBarDuringPresentation` property of `UISearchController` source.
-    public var hidesNavigationBarDuringPresentation: AnyKeyPathObservable<Source, Bool> {
+    public var hidesNavigationBarDuringPresentation: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hidesNavigationBarDuringPresentation)
     }
 }

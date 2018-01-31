@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIRotationGestureRecognizer {
     
     /// Observable for `rotation` property of `UIRotationGestureRecognizer` source.
-    public var rotation: AnyKeyPathObservable<Source, CGFloat> {
+    public var rotation: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.rotation)
     }
 }

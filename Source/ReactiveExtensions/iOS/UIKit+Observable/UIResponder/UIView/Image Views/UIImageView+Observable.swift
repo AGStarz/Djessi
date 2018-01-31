@@ -12,52 +12,52 @@ import UIKit
 extension ReactiveExtension where Source: UIImageView {
 
     /// Observable for `image` property of `UIImageView` source.
-    public var image: AnyKeyPathObservable<Source, UIImage?> {
+    public var image: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.image)
     }
     
     /// Observable for `highlightedImage` property of `UIImageView` source.
     @available(iOS 3.0, *)
-    public var highlightedImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var highlightedImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.highlightedImage)
     }
     
     /// Observable for `isHighlighted` property of `UIImageView` source.
     @available(iOS 3.0, *)
-    public var isHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var isHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isHighlighted)
     }
     
     /// Observable for `animationImages` property of `UIImageView` source.
-    public var animationImages: AnyKeyPathObservable<Source, [UIImage]?> {
+    public var animationImages: KeyPathObservable<Source, [UIImage]?> {
         return source.observable(at: \Source.animationImages)
     }
     
     /// Observable for `highlightedAnimationImages` property of `UIImageView` source.
     @available(iOS 3.0, *)
-    public var highlightedAnimationImages: AnyKeyPathObservable<Source, [UIImage]?> {
+    public var highlightedAnimationImages: KeyPathObservable<Source, [UIImage]?> {
         return source.observable(at: \Source.highlightedAnimationImages)
     }
     
     // animationDuration: TimeInterval
     /// Observable for `animationDuration` property of `UIImageView` source.
-    public var animationDuration: AnyKeyPathObservable<Source, TimeInterval> {
+    public var animationDuration: KeyPathObservable<Source, TimeInterval> {
         return source.observable(at: \Source.animationDuration)
     }
     
     /// Observable for `animationRepeatCount` property of `UIImageView` source.
-    public var animationRepeatCount: AnyKeyPathObservable<Source, Int> {
+    public var animationRepeatCount: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.animationRepeatCount)
     }
     
     /// Observable for `tintColor` property of `UIImageView` source.
     @available(iOS 7.0, *)
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     
     /// Observable for `isAnimating` property of `UIImageView` source.
-    public var isAnimating: AnyKeyPathObservable<Source, Bool> {
+    public var isAnimating: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.djessi_isAnimating)
     }
 }

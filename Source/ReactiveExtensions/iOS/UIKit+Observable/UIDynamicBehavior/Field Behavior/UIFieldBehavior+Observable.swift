@@ -12,42 +12,42 @@ import UIKit
 extension ReactiveExtension where Source: UIFieldBehavior {
     
     /// Observable for `strength` property of `UIFieldBehavior` source.
-    public var strength: AnyKeyPathObservable<Source, CGFloat> {
+    public var strength: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.strength)
     }
     
     /// Observable for `position` property of `UIFieldBehavior` source.
-    public var position: AnyKeyPathObservable<Source, CGPoint> {
+    public var position: KeyPathObservable<Source, CGPoint> {
         return source.observable(at: \Source.position)
     }
     
     /// Observable for `region` property of `UIFieldBehavior` source.
-    public var region: AnyKeyPathObservable<Source, UIRegion> {
+    public var region: KeyPathObservable<Source, UIRegion> {
         return source.observable(at: \Source.region)
     }
     
     /// Observable for `falloff` property of `UIFieldBehavior` source.
-    public var falloff: AnyKeyPathObservable<Source, CGFloat> {
+    public var falloff: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.falloff)
     }
     
     /// Observable for `minimumRadius` property of `UIFieldBehavior` source.
-    public var minimumRadius: AnyKeyPathObservable<Source, CGFloat> {
+    public var minimumRadius: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.minimumRadius)
     }
     
     /// Observable for `direction` property of `UIFieldBehavior` source.
-    public var direction: AnyKeyPathObservable<Source, CGVector> {
+    public var direction: KeyPathObservable<Source, CGVector> {
         return source.observable(at: \Source.direction)
     }
     
     /// Observable for `smoothness` property of `UIFieldBehavior` source.
-    public var smoothness: AnyKeyPathObservable<Source, CGFloat> {
+    public var smoothness: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.smoothness)
     }
     
     /// Observable for `animationSpeed` property of `UIFieldBehavior` source.
-    public var animationSpeed: AnyKeyPathObservable<Source, CGFloat> {
+    public var animationSpeed: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.animationSpeed)
     }
 }

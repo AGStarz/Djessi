@@ -12,22 +12,22 @@ import UIKit
 extension ReactiveExtension where Source: UICollectionViewCell {
 
     /// Observable for `isSelected` property of `UICollectionViewCell` source.
-    public var isSelected: AnyKeyPathObservable<Source, Bool> {
+    public var isSelected: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isSelected)
     }
     
     /// Observable for `isHighlighted` property of `UICollectionViewCell` source.
-    public var isHighlighted: AnyKeyPathObservable<Source, Bool> {
+    public var isHighlighted: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isHighlighted)
     }
     
     /// Observable for `backgroundView` property of `UICollectionViewCell` source.
-    public var backgroundView: AnyKeyPathObservable<Source, UIView?> {
+    public var backgroundView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.backgroundView)
     }
     
     /// Observable for `selectedBackgroundView` property of `UICollectionViewCell` source.
-    public var selectedBackgroundView: AnyKeyPathObservable<Source, UIView?> {
+    public var selectedBackgroundView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.selectedBackgroundView)
     }
 }

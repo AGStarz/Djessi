@@ -11,62 +11,62 @@ import UIKit
 extension DelegateProxy where Source: UIScrollViewDelegateHandler {
     
     /// <#Description#>
-    public var scrollViewDidScroll: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidScroll: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidScroll, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidEndZooming: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewDidEndZoomingContainer> {
+    public var scrollViewDidEndZooming: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewDidEndZoomingContainer> {
         return source.observable(at: \Source.scrollViewDidEndZooming, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidEndDragging: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewDidEndDraggingContainer> {
+    public var scrollViewDidEndDragging: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewDidEndDraggingContainer> {
         return source.observable(at: \Source.scrollViewDidEndDragging, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidScrollToTop: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidScrollToTop: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidScrollToTop, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewWillEndDragging: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewWillEndDraggingContainer> {
+    public var scrollViewWillEndDragging: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewWillEndDraggingContainer> {
         return source.observable(at: \Source.scrollViewWillEndDragging, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewWillBeginZooming: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewWillBeginZoomingContainer> {
+    public var scrollViewWillBeginZooming: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewWillBeginZoomingContainer> {
         return source.observable(at: \Source.scrollViewWillBeginZooming, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewWillBeginDragging: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewWillBeginDragging: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewWillBeginDragging, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidEndDecelerating: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidEndDecelerating: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidEndDecelerating, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewWillBeginDecelerating: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewWillBeginDecelerating: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewWillBeginDecelerating, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidEndScrollingAnimation: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidEndScrollingAnimation: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidEndScrollingAnimation, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidChangeAdjustedContentInset: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidChangeAdjustedContentInset: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidChangeAdjustedContentInset, shouldObserveInitialValue: false)
     }
     
     /// <#Description#>
-    public var scrollViewDidZoom: AnyKeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
+    public var scrollViewDidZoom: KeyPathObservable<Source, UIScrollViewDelegateHandler.ScrollViewContainer> {
         return source.observable(at: \Source.scrollViewDidZoom, shouldObserveInitialValue: false)
     }
 }

@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIMotionEffectGroup {
     
     /// Observable for `motionEffects` property of `UIMotionEffectGroup` source.
-    public var motionEffects: AnyKeyPathObservable<Source, [UIMotionEffect]?> {
+    public var motionEffects: KeyPathObservable<Source, [UIMotionEffect]?> {
         return source.observable(at: \Source.motionEffects)
     }
 }

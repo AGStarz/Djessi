@@ -13,7 +13,7 @@ extension ReactiveExtension where Source: UIDocumentPickerViewController {
 
     /// Observable for `allowsMultipleSelection` property of `UIDocumentPickerViewController` source.
     @available(iOS 11.0, *)
-    public var allowsMultipleSelection: AnyKeyPathObservable<Source, Bool> {
+    public var allowsMultipleSelection: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.allowsMultipleSelection)
     }
 }

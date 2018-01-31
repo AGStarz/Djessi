@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UILayoutGuide {
     
     /// Observable for `identifier` property of `UILayoutGuide` source.
-    public var identifier: AnyKeyPathObservable<Source, String> {
+    public var identifier: KeyPathObservable<Source, String> {
         return source.observable(at: \Source.identifier)
     }
 }

@@ -14,50 +14,50 @@ import UIKit
 extension ReactiveExtension where Source: UISlider {
     
     /// Observable for `value` property of `UISlider` source.
-    public var value: AnyKeyPathObservable<Source, Float> {
+    public var value: KeyPathObservable<Source, Float> {
         return source.observable(at: \Source.value)
     }
     
     /// Observable for `minimumValue` property of `UISlider` source.
-    public var minimumValue: AnyKeyPathObservable<Source, Float> {
+    public var minimumValue: KeyPathObservable<Source, Float> {
         return source.observable(at: \Source.minimumValue)
     }
     
     /// Observable for `maximumValue` property of `UISlider` source.
-    public var maximumValue: AnyKeyPathObservable<Source, Float> {
+    public var maximumValue: KeyPathObservable<Source, Float> {
         return source.observable(at: \Source.maximumValue)
     }
     
     /// Observable for `minimumValueImage` property of `UISlider` source.
-    public var minimumValueImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var minimumValueImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.minimumValueImage)
     }
     
     /// Observable for `maximumValueImage` property of `UISlider` source.
-    public var maximumValueImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var maximumValueImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.maximumValueImage)
     }
     
     /// Observable for `isContinuous` property of `UISlider` source.
-    public var isContinuous: AnyKeyPathObservable<Source, Bool> {
+    public var isContinuous: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isContinuous)
     }
     
     /// Observable for `minimumTrackTintColor` property of `UISlider` source.
     @available(iOS 5.0, *)
-    public var minimumTrackTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var minimumTrackTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.minimumTrackTintColor)
     }
     
     /// Observable for `maximumTrackTintColor` property of `UISlider` source.
     @available(iOS 5.0, *)
-    public var maximumTrackTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var maximumTrackTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.maximumTrackTintColor)
     }
     
     /// Observable for `thumbTintColor` property of `UISlider` source.
     @available(iOS 5.0, *)
-    public var thumbTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var thumbTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.thumbTintColor)
     }
 }

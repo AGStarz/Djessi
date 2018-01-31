@@ -15,18 +15,18 @@ extension ReactiveExtension where Source: UISearchDisplayController {
     
     /// Observable for `searchResultsTitle` property of `UISearchDisplayController` source.
     @available(iOS 5.0, *)
-    public var searchResultsTitle: AnyKeyPathObservable<Source, String?> {
+    public var searchResultsTitle: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.searchResultsTitle)
     }
     
     /// Observable for `displaysSearchBarInNavigationBar` property of `UISearchDisplayController` source.
     @available(iOS 7.0, *)
-    public var displaysSearchBarInNavigationBar: AnyKeyPathObservable<Source, Bool> {
+    public var displaysSearchBarInNavigationBar: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.displaysSearchBarInNavigationBar)
     }
     
     /// Observable for `isActive` property of `UISearchDisplayController` source.
-    public var isActive: AnyKeyPathObservable<Source, Bool> {
+    public var isActive: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isActive)
     }
 }

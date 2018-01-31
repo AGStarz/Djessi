@@ -169,14 +169,6 @@ class Tests: XCTestCase {
         
         wait(for: [expectation], timeout: 1)
     }
-    
-    func testCreation() {
-        let object = Test(value: initialValueConstant)
-        let observable = object.observable(at: \Test.optionalField)
-        
-        XCTAssert(observable.source == object)
-        XCTAssert(observable.keyPath == \Test.optionalField)
-    }
 }
 
 // MARK: - Reactive extensions

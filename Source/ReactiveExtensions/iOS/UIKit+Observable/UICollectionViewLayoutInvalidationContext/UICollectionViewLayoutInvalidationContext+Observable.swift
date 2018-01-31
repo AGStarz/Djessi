@@ -13,13 +13,13 @@ extension ReactiveExtension where Source: UICollectionViewLayoutInvalidationCont
     
     /// Observable for `contentOffsetAdjustment` property of `UICollectionViewLayoutInvalidationContext` source.
     @available(iOS 8.0, *)
-    public var contentOffsetAdjustment: AnyKeyPathObservable<Source, CGPoint> {
+    public var contentOffsetAdjustment: KeyPathObservable<Source, CGPoint> {
         return source.observable(at: \Source.contentOffsetAdjustment)
     }
     
     /// Observable for `contentSizeAdjustment` property of `UICollectionViewLayoutInvalidationContext` source.
     @available(iOS 8.0, *)
-    public var contentSizeAdjustment: AnyKeyPathObservable<Source, CGSize> {
+    public var contentSizeAdjustment: KeyPathObservable<Source, CGSize> {
         return source.observable(at: \Source.contentSizeAdjustment)
     }
 }

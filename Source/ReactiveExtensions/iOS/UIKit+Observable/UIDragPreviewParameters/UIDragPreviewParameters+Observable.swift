@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIDragPreviewParameters {
     
     /// Observable for `visiblePath` property of `UIDragPreviewParameters` source.
-    public var visiblePath: AnyKeyPathObservable<Source, UIBezierPath?> {
+    public var visiblePath: KeyPathObservable<Source, UIBezierPath?> {
         return source.observable(at: \Source.visiblePath)
     }
     
     /// Observable for `backgroundColor` property of `UIDragPreviewParameters` source.
-    public var backgroundColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var backgroundColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.backgroundColor)
     }
 }

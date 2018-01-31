@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIInterpolatingMotionEffect {
     
     /// Observable for `minimumRelativeValue` property of `UIInterpolatingMotionEffect` source.
-    public var minimumRelativeValue: AnyKeyPathObservable<Source, Any?> {
+    public var minimumRelativeValue: KeyPathObservable<Source, Any?> {
         return source.observable(at: \Source.minimumRelativeValue)
     }
     
     /// Observable for `maximumRelativeValue` property of `UIInterpolatingMotionEffect` source.
-    public var maximumRelativeValue: AnyKeyPathObservable<Source, Any?> {
+    public var maximumRelativeValue: KeyPathObservable<Source, Any?> {
         return source.observable(at: \Source.maximumRelativeValue)
     }
 }

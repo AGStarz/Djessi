@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UIRefreshControl {
     
     /// Observable for `tintColor` property of `UIRefreshControl` source.
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     
     /// Observable for `attributedTitle` property of `UIRefreshControl` source.
-    public var attributedTitle: AnyKeyPathObservable<Source, NSAttributedString?> {
+    public var attributedTitle: KeyPathObservable<Source, NSAttributedString?> {
         return source.observable(at: \Source.attributedTitle)
     }
     
     /// Observable for `isRefreshing` property of `UIRefreshControl` source.
-    public var isRefreshing: AnyKeyPathObservable<Source, Bool> {
+    public var isRefreshing: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.djessi_isRefreshing)
     }
 }

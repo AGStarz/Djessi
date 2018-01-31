@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIMarkupTextPrintFormatter {
     
     /// Observable for `markupText` property of `UIMarkupTextPrintFormatter` source.
-    public var markupText: AnyKeyPathObservable<Source, String?> {
+    public var markupText: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.markupText)
     }
 }

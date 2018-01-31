@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UIContextualAction {
     
     /// Observable for `title` property of `UIContextualAction` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `backgroundColor` property of `UIContextualAction` source.
-    public var backgroundColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var backgroundColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.backgroundColor)
     }
     
     /// Observable for `image` property of `UIContextualAction` source.
-    public var image: AnyKeyPathObservable<Source, UIImage?> {
+    public var image: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.image)
     }
 }

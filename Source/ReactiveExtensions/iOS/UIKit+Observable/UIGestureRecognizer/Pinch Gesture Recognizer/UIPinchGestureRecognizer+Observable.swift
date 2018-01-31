@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIPinchGestureRecognizer {
     
     /// Observable for `scale` property of `UIPinchGestureRecognizer` source.
-    public var scale: AnyKeyPathObservable<Source, CGFloat> {
+    public var scale: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.scale)
     }
 }

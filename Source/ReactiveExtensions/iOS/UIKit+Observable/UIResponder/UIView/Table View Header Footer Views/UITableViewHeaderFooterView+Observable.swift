@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UITableViewHeaderFooterView {
     
     /// Observable for `backgroundView` property of `UITableViewCell` source.
-    public var backgroundView: AnyKeyPathObservable<Source, UIView?> {
+    public var backgroundView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.backgroundView)
     }
 }

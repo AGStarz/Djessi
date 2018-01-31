@@ -13,7 +13,7 @@ extension ReactiveExtension where Source: UIInputView {
     
     /// Observable for `allowsSelfSizing` property of `UIInputView` source.
     @available(iOS 9.0, *)
-    public var allowsSelfSizing: AnyKeyPathObservable<Source, Bool> {
+    public var allowsSelfSizing: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.allowsSelfSizing)
     }
 }

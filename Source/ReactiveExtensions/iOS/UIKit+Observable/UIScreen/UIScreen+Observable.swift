@@ -13,25 +13,25 @@ extension ReactiveExtension where Source: UIScreen {
     
     /// Observable for `currentMode` property of `UIScreen` source.
     @available(iOS 3.2, *)
-    public var currentMode: AnyKeyPathObservable<Source, UIScreenMode?> {
+    public var currentMode: KeyPathObservable<Source, UIScreenMode?> {
         return source.observable(at: \Source.currentMode)
     }
     
     /// Observable for `overscanCompensation` property of `UIScreen` source.
     @available(iOS 5.0, *)
-    public var overscanCompensation: AnyKeyPathObservable<Source, UIScreenOverscanCompensation> {
+    public var overscanCompensation: KeyPathObservable<Source, UIScreenOverscanCompensation> {
         return source.observable(at: \Source.overscanCompensation)
     }
     
     /// Observable for `brightness` property of `UIScreen` source.
     @available(iOS 5.0, *)
-    public var brightness: AnyKeyPathObservable<Source, CGFloat> {
+    public var brightness: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.brightness)
     }
     
     /// Observable for `wantsSoftwareDimming` property of `UIScreen` source.
     @available(iOS 5.0, *)
-    public var wantsSoftwareDimming: AnyKeyPathObservable<Source, Bool> {
+    public var wantsSoftwareDimming: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.wantsSoftwareDimming)
     }
 }

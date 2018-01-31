@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UIInputViewController {
  
     /// Observable for `inputView` property of `UIInputViewController` source.
-    public var inputView: AnyKeyPathObservable<Source, UIInputView?> {
+    public var inputView: KeyPathObservable<Source, UIInputView?> {
         return source.observable(at: \Source.inputView)
     }
     
     /// Observable for `primaryLanguage` property of `UIInputViewController` source.
-    public var primaryLanguage: AnyKeyPathObservable<Source, String?> {
+    public var primaryLanguage: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.primaryLanguage)
     }
     
     /// Observable for `hasDictationKey` property of `UIInputViewController` source.
-    public var hasDictationKey: AnyKeyPathObservable<Source, Bool> {
+    public var hasDictationKey: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hasDictationKey)
     }
 }

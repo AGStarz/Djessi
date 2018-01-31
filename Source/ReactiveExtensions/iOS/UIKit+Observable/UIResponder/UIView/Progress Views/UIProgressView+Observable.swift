@@ -12,42 +12,42 @@ import UIKit
 extension ReactiveExtension where Source: UIProgressView {
 
     /// Observable for `progressViewStyle` property of `UIProgressView` source.
-    public var progressViewStyle: AnyKeyPathObservable<Source, UIProgressViewStyle> {
+    public var progressViewStyle: KeyPathObservable<Source, UIProgressViewStyle> {
         return source.observable(at: \Source.progressViewStyle)
     }
     
     /// Observable for `progress` property of `UIProgressView` source.
-    public var progress: AnyKeyPathObservable<Source, Float> {
+    public var progress: KeyPathObservable<Source, Float> {
         return source.observable(at: \Source.progress)
     }
     
     /// Observable for `progressTintColor` property of `UIProgressView` source.
     @available(iOS 5.0, *)
-    public var progressTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var progressTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.progressTintColor)
     }
     
     /// Observable for `trackTintColor` property of `UIProgressView` source.
     @available(iOS 5.0, *)
-    public var trackTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var trackTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.trackTintColor)
     }
     
     /// Observable for `progressImage` property of `UIProgressView` source.
     @available(iOS 5.0, *)
-    public var progressImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var progressImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.progressImage)
     }
     
     /// Observable for `trackImage` property of `UIProgressView` source.
     @available(iOS 5.0, *)
-    public var trackImage: AnyKeyPathObservable<Source, UIImage?> {
+    public var trackImage: KeyPathObservable<Source, UIImage?> {
         return source.observable(at: \Source.trackImage)
     }
     
     /// Observable for `observedProgress` property of `UIProgressView` source.
     @available(iOS 9.0, *)
-    public var observedProgress: AnyKeyPathObservable<Source, Progress?> {
+    public var observedProgress: KeyPathObservable<Source, Progress?> {
         return source.observable(at: \Source.observedProgress)
     }
 }

@@ -13,13 +13,13 @@ extension ReactiveExtension where Source: UIDevice {
     
     /// Observable for `isBatteryMonitoringEnabled` property of `UIDevice` source.
     @available(iOS 3.0, *)
-    public var isBatteryMonitoringEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isBatteryMonitoringEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isBatteryMonitoringEnabled)
     }
     
     /// Observable for `isProximityMonitoringEnabled` property of `UIDevice` source.
     @available(iOS 3.0, *)
-    public var isProximityMonitoringEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isProximityMonitoringEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isProximityMonitoringEnabled)
     }
 }

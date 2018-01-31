@@ -12,29 +12,29 @@ import UIKit
 extension ReactiveExtension where Source: UIToolbar {
     
     /// Observable for `barStyle` property of `UIToolbar` source.
-    public var barStyle: AnyKeyPathObservable<Source, UIBarStyle> {
+    public var barStyle: KeyPathObservable<Source, UIBarStyle> {
         return source.observable(at: \Source.barStyle)
     }
     
     /// Observable for `items` property of `UIToolbar` source.
-    public var items: AnyKeyPathObservable<Source, [UIBarButtonItem]?> {
+    public var items: KeyPathObservable<Source, [UIBarButtonItem]?> {
         return source.observable(at: \Source.items)
     }
     
     /// Observable for `isTranslucent` property of `UIToolbar` source.
     @available(iOS 3.0, *)
-    public var isTranslucent: AnyKeyPathObservable<Source, Bool> {
+    public var isTranslucent: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isTranslucent)
     }
     
     /// Observable for `tintColor` property of `UIToolbar` source.
-    public var tintColor: AnyKeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     
     /// Observable for `barTintColor` property of `UIToolbar` source.
     @available(iOS 7.0, *)
-    public var barTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var barTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.barTintColor)
     }
 }

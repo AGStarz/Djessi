@@ -12,34 +12,34 @@ import UIKit
 extension ReactiveExtension where Source: UIPageControl {
     
     /// Observable for `currentPage` property of `UIPageControl` source.
-    public var currentPage: AnyKeyPathObservable<Source, Int> {
+    public var currentPage: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.currentPage)
     }
     
     /// Observable for `hidesForSinglePage` property of `UIPageControl` source.
-    public var hidesForSinglePage: AnyKeyPathObservable<Source, Bool> {
+    public var hidesForSinglePage: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hidesForSinglePage)
     }
     
     /// Observable for `defersCurrentPageDisplay` property of `UIPageControl` source.
-    public var defersCurrentPageDisplay: AnyKeyPathObservable<Source, Bool> {
+    public var defersCurrentPageDisplay: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.defersCurrentPageDisplay)
     }
     
     /// Observable for `pageIndicatorTintColor` property of `UIPageControl` source.
     @available(iOS 6.0, *)
-    public var pageIndicatorTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var pageIndicatorTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.pageIndicatorTintColor)
     }
     
     /// Observable for `currentPageIndicatorTintColor` property of `UIPageControl` source.
     @available(iOS 6.0, *)
-    public var currentPageIndicatorTintColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var currentPageIndicatorTintColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.currentPageIndicatorTintColor)
     }
     
     /// Observable for `numberOfPages` property of `UIPageControl` source.
-    public var numberOfPages: AnyKeyPathObservable<Source, Int> {
+    public var numberOfPages: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfPages)
     }
 }

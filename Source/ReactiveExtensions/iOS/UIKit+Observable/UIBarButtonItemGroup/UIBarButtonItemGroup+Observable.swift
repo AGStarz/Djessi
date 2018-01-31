@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIBarButtonItemGroup {
     
     /// Observable for `barButtonItems` property of `UIBarButtonItemGroup` source.
-    public var barButtonItems: AnyKeyPathObservable<Source, [UIBarButtonItem]> {
+    public var barButtonItems: KeyPathObservable<Source, [UIBarButtonItem]> {
         return source.observable(at: \Source.barButtonItems)
     }
     
     /// Observable for `representativeItem` property of `UIBarButtonItemGroup` source.
-    public var representativeItem: AnyKeyPathObservable<Source, UIBarButtonItem?> {
+    public var representativeItem: KeyPathObservable<Source, UIBarButtonItem?> {
         return source.observable(at: \Source.representativeItem)
     }
 }

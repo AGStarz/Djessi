@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIAccessibilityCustomRotorSearchPredicate {
     
     /// Observable for `currentItem` property of `UIAccessibilityCustomRotorSearchPredicate` source.
-    public var currentItem: AnyKeyPathObservable<Source, UIAccessibilityCustomRotorItemResult> {
+    public var currentItem: KeyPathObservable<Source, UIAccessibilityCustomRotorItemResult> {
         return source.observable(at: \Source.currentItem)
     }
     
     /// Observable for `searchDirection` property of `UIAccessibilityCustomRotorSearchPredicate` source.
-    public var searchDirection: AnyKeyPathObservable<Source, UIAccessibilityCustomRotorDirection> {
+    public var searchDirection: KeyPathObservable<Source, UIAccessibilityCustomRotorDirection> {
         return source.observable(at: \Source.searchDirection)
     }
 }

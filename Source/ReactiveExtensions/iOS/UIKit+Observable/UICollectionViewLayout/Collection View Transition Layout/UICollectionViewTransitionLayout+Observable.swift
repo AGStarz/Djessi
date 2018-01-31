@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UICollectionViewTransitionLayout {
     
     /// Observable for `transitionProgress` property of `UICollectionViewTransitionLayout` source.
-    public var transitionProgress: AnyKeyPathObservable<Source, CGFloat> {
+    public var transitionProgress: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.transitionProgress)
     }
 }

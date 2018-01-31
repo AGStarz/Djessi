@@ -13,12 +13,12 @@ extension ReactiveExtension where Source: UISnapBehavior {
     
     /// Observable for `snapPoint` property of `UISnapBehavior` source.
     @available(iOS 9.0, *)
-    public var snapPoint: AnyKeyPathObservable<Source, CGPoint> {
+    public var snapPoint: KeyPathObservable<Source, CGPoint> {
         return source.observable(at: \Source.snapPoint)
     }
     
     /// Observable for `damping` property of `UISnapBehavior` source.
-    public var damping: AnyKeyPathObservable<Source, CGFloat> {
+    public var damping: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.damping)
     }
 }

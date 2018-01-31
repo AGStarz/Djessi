@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UIGraphicsImageRendererFormat {
     
     /// Observable for `prefersExtendedRange` property of `UIGraphicsImageRendererFormat` source.
-    public var prefersExtendedRange: AnyKeyPathObservable<Source, Bool> {
+    public var prefersExtendedRange: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.prefersExtendedRange)
     }
     
     /// Observable for `scale` property of `UIGraphicsImageRendererFormat` source.
-    public var scale: AnyKeyPathObservable<Source, CGFloat> {
+    public var scale: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.scale)
     }
     
     /// Observable for `opaque` property of `UIGraphicsImageRendererFormat` source.
-    public var opaque: AnyKeyPathObservable<Source, Bool> {
+    public var opaque: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.opaque)
     }
 }

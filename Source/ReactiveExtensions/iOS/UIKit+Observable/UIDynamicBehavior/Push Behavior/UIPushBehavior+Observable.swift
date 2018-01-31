@@ -12,22 +12,22 @@ import UIKit
 extension ReactiveExtension where Source: UIPushBehavior {
     
     /// Observable for `angle` property of `UIPushBehavior` source.
-    public var angle: AnyKeyPathObservable<Source, CGFloat> {
+    public var angle: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.angle)
     }
     
     /// Observable for `pushDirection` property of `UIPushBehavior` source.
-    public var pushDirection: AnyKeyPathObservable<Source, CGVector> {
+    public var pushDirection: KeyPathObservable<Source, CGVector> {
         return source.observable(at: \Source.pushDirection)
     }
     
     /// Observable for `magnitude` property of `UIPushBehavior` source.
-    public var magnitude: AnyKeyPathObservable<Source, CGFloat> {
+    public var magnitude: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.magnitude)
     }
     
     /// Observable for `active` property of `UIPushBehavior` source.
-    public var active: AnyKeyPathObservable<Source, Bool> {
+    public var active: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.active)
     }
 }

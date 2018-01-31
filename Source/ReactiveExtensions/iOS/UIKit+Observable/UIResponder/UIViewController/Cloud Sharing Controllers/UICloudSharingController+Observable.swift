@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UICloudSharingController {
 
     /// Observable for `availablePermissions` property of `UICloudSharingController` source.
-    public var availablePermissions: AnyKeyPathObservable<Source, UICloudSharingPermissionOptions> {
+    public var availablePermissions: KeyPathObservable<Source, UICloudSharingPermissionOptions> {
         return source.observable(at: \Source.availablePermissions)
     }
 }

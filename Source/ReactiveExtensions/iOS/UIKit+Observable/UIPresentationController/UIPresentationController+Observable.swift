@@ -14,7 +14,7 @@ extension ReactiveExtension where Source: UIPresentationController {
     // TODO: delegate
     
     /// Observable for `overrideTraitCollection` property of `UIPresentationController` source.
-    public var overrideTraitCollection: AnyKeyPathObservable<Source, UITraitCollection?> {
+    public var overrideTraitCollection: KeyPathObservable<Source, UITraitCollection?> {
         return source.observable(at: \Source.overrideTraitCollection)
     }
 }

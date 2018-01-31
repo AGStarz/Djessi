@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UITextInputAssistantItem {
     
     /// Observable for `allowsHidingShortcuts` property of `UITextInputAssistantItem` source.
-    public var allowsHidingShortcuts: AnyKeyPathObservable<Source, Bool> {
+    public var allowsHidingShortcuts: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.allowsHidingShortcuts)
     }
     
     /// Observable for `leadingBarButtonGroups` property of `UITextInputAssistantItem` source.
-    public var leadingBarButtonGroups: AnyKeyPathObservable<Source, [UIBarButtonItemGroup]> {
+    public var leadingBarButtonGroups: KeyPathObservable<Source, [UIBarButtonItemGroup]> {
         return source.observable(at: \Source.leadingBarButtonGroups)
     }
     
     /// Observable for `trailingBarButtonGroups` property of `UITextInputAssistantItem` source.
-    public var trailingBarButtonGroups: AnyKeyPathObservable<Source, [UIBarButtonItemGroup]> {
+    public var trailingBarButtonGroups: KeyPathObservable<Source, [UIBarButtonItemGroup]> {
         return source.observable(at: \Source.trailingBarButtonGroups)
     }
 }

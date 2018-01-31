@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIPopoverBackgroundView {
 
     /// Observable for `arrowOffset` property of `UIPopoverBackgroundView` source.
-    public var arrowOffset: AnyKeyPathObservable<Source, CGFloat> {
+    public var arrowOffset: KeyPathObservable<Source, CGFloat> {
         return source.observable(at: \Source.arrowOffset)
     }
     
     /// Observable for `arrowDirection` property of `UIPopoverBackgroundView` source.
-    public var arrowDirection: AnyKeyPathObservable<Source, UIPopoverArrowDirection> {
+    public var arrowDirection: KeyPathObservable<Source, UIPopoverArrowDirection> {
         return source.observable(at: \Source.arrowDirection)
     }
 }

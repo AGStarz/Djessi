@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UICollectionViewFlowLayoutInvalidationContext {
     
     /// Observable for `invalidateFlowLayoutDelegateMetrics` property of `UICollectionViewFlowLayoutInvalidationContext` source.
-    public var invalidateFlowLayoutDelegateMetrics: AnyKeyPathObservable<Source, Bool> {
+    public var invalidateFlowLayoutDelegateMetrics: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.invalidateFlowLayoutDelegateMetrics)
     }
     
     /// Observable for `invalidateFlowLayoutAttributes` property of `UICollectionViewFlowLayoutInvalidationContext` source.
-    public var invalidateFlowLayoutAttributes: AnyKeyPathObservable<Source, Bool> {
+    public var invalidateFlowLayoutAttributes: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.invalidateFlowLayoutAttributes)
     }
 }

@@ -14,12 +14,12 @@ extension ReactiveExtension where Source: UICollisionBehavior {
     // TODO: delegate
     
     /// Observable for `collisionMode` property of `UICollisionBehavior` source.
-    public var collisionMode: AnyKeyPathObservable<Source, UICollisionBehaviorMode> {
+    public var collisionMode: KeyPathObservable<Source, UICollisionBehaviorMode> {
         return source.observable(at: \Source.collisionMode)
     }
     
     /// Observable for `translatesReferenceBoundsIntoBoundary` property of `UICollisionBehavior` source.
-    public var translatesReferenceBoundsIntoBoundary: AnyKeyPathObservable<Source, Bool> {
+    public var translatesReferenceBoundsIntoBoundary: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.translatesReferenceBoundsIntoBoundary)
     }
 }

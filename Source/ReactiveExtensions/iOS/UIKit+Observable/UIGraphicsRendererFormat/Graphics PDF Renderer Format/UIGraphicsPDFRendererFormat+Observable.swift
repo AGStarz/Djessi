@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIGraphicsPDFRendererFormat {
     
     /// Observable for `documentInfo` property of `UIGraphicsPDFRendererFormat` source.
-    public var documentInfo: AnyKeyPathObservable<Source, [String: Any]> {
+    public var documentInfo: KeyPathObservable<Source, [String: Any]> {
         return source.observable(at: \Source.documentInfo)
     }
 }

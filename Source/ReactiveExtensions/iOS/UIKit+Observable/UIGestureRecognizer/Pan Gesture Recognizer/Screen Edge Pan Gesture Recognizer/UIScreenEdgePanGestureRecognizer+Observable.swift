@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIScreenEdgePanGestureRecognizer {
     
     /// Observable for `edges` property of `UIScreenEdgePanGestureRecognizer` source.
-    public var edges: AnyKeyPathObservable<Source, UIRectEdge> {
+    public var edges: KeyPathObservable<Source, UIRectEdge> {
         return source.observable(at: \Source.edges)
     }
 }

@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UITableViewRowAction {
     
     /// Observable for `title` property of `UITableViewRowAction` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `backgroundColor` property of `UITableViewRowAction` source.
-    public var backgroundColor: AnyKeyPathObservable<Source, UIColor?> {
+    public var backgroundColor: KeyPathObservable<Source, UIColor?> {
         return source.observable(at: \Source.backgroundColor)
     }
     
     /// Observable for `backgroundEffect` property of `UITableViewRowAction` source.
-    public var backgroundEffect: AnyKeyPathObservable<Source, UIVisualEffect?> {
+    public var backgroundEffect: KeyPathObservable<Source, UIVisualEffect?> {
         return source.observable(at: \Source.backgroundEffect)
     }
 }

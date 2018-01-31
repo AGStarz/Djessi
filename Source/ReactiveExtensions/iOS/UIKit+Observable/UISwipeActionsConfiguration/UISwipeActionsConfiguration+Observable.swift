@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UISwipeActionsConfiguration {
     
     /// Observable for `performsFirstActionWithFullSwipe` property of `UISwipeActionsConfiguration` source.
-    public var performsFirstActionWithFullSwipe: AnyKeyPathObservable<Source, Bool> {
+    public var performsFirstActionWithFullSwipe: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.performsFirstActionWithFullSwipe)
     }
 }

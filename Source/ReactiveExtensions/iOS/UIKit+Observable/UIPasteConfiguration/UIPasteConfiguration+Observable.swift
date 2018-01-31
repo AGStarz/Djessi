@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIPasteConfiguration {
     
     /// Observable for `acceptableTypeIdentifiers` property of `UIPasteConfiguration` source.
-    public var acceptableTypeIdentifiers: AnyKeyPathObservable<Source, [String]> {
+    public var acceptableTypeIdentifiers: KeyPathObservable<Source, [String]> {
         return source.observable(at: \Source.acceptableTypeIdentifiers)
     }
 }

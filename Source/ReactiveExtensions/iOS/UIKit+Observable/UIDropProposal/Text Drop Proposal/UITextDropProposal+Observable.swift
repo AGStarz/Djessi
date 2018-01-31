@@ -12,22 +12,22 @@ import UIKit
 extension ReactiveExtension where Source: UITextDropProposal {
     
     /// Observable for `dropAction` property of `UITextDropProposal` source.
-    public var dropAction: AnyKeyPathObservable<Source, UITextDropAction> {
+    public var dropAction: KeyPathObservable<Source, UITextDropAction> {
         return source.observable(at: \Source.dropAction)
     }
     
     /// Observable for `dropProgressMode` property of `UITextDropProposal` source.
-    public var dropProgressMode: AnyKeyPathObservable<Source, UITextDropProgressMode> {
+    public var dropProgressMode: KeyPathObservable<Source, UITextDropProgressMode> {
         return source.observable(at: \Source.dropProgressMode)
     }
     
     /// Observable for `useFastSameViewOperations` property of `UITextDropProposal` source.
-    public var useFastSameViewOperations: AnyKeyPathObservable<Source, Bool> {
+    public var useFastSameViewOperations: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.useFastSameViewOperations)
     }
     
     /// Observable for `dropPerformer` property of `UITextDropProposal` source.
-    public var dropPerformer: AnyKeyPathObservable<Source, UITextDropPerformer> {
+    public var dropPerformer: KeyPathObservable<Source, UITextDropPerformer> {
         return source.observable(at: \Source.dropPerformer)
     }
 }

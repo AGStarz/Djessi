@@ -12,17 +12,17 @@ import UIKit
 extension ReactiveExtension where Source: UIVideoEditorController {
 
     /// Observable for `videoPath` property of `UIVideoEditorController` source.
-    public var videoPath: AnyKeyPathObservable<Source, String> {
+    public var videoPath: KeyPathObservable<Source, String> {
         return source.observable(at: \Source.videoPath)
     }
     
     /// Observable for `videoMaximumDuration` property of `UIVideoEditorController` source.
-    public var videoMaximumDuration: AnyKeyPathObservable<Source, TimeInterval> {
+    public var videoMaximumDuration: KeyPathObservable<Source, TimeInterval> {
         return source.observable(at: \Source.videoMaximumDuration)
     }
     
     /// Observable for `videoQuality` property of `UIVideoEditorController` source.
-    public var videoQuality: AnyKeyPathObservable<Source, UIImagePickerControllerQualityType> {
+    public var videoQuality: KeyPathObservable<Source, UIImagePickerControllerQualityType> {
         return source.observable(at: \Source.videoQuality)
     }
 }

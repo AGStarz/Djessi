@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UITapGestureRecognizer {
     
     /// Observable for `numberOfTouchesRequired` property of `UITapGestureRecognizer` source.
-    public var numberOfTouchesRequired: AnyKeyPathObservable<Source, Int> {
+    public var numberOfTouchesRequired: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfTouchesRequired)
     }
     
     /// Observable for `numberOfTapsRequired` property of `UITapGestureRecognizer` source.
-    public var numberOfTapsRequired: AnyKeyPathObservable<Source, Int> {
+    public var numberOfTapsRequired: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.numberOfTapsRequired)
     }
 }

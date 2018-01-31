@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UIAccessibilityCustomRotorItemResult {
     
     /// Observable for `targetElement` property of `UIAccessibilityCustomRotorItemResult` source.
-    public var targetElement: AnyKeyPathObservable<Source, NSObjectProtocol?> {
+    public var targetElement: KeyPathObservable<Source, NSObjectProtocol?> {
         return source.observable(at: \Source.targetElement)
     }
     
     /// Observable for `targetRange` property of `UIAccessibilityCustomRotorItemResult` source.
-    public var targetRange: AnyKeyPathObservable<Source, UITextRange?> {
+    public var targetRange: KeyPathObservable<Source, UITextRange?> {
         return source.observable(at: \Source.targetRange)
     }
 }

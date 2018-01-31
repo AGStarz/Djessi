@@ -12,22 +12,22 @@ import UIKit
 extension ReactiveExtension where Source: UITabBarController {
 
     /// Observable for `viewControllers` property of `UITabBarController` source.
-    public var viewControllers: AnyKeyPathObservable<Source, [UIViewController]?> {
+    public var viewControllers: KeyPathObservable<Source, [UIViewController]?> {
         return source.observable(at: \Source.viewControllers)
     }
     
     /// Observable for `selectedViewController` property of `UITabBarController` source.
-    public var selectedViewController: AnyKeyPathObservable<Source, UIViewController?> {
+    public var selectedViewController: KeyPathObservable<Source, UIViewController?> {
         return source.observable(at: \Source.selectedViewController)
     }
     
     /// Observable for `selectedIndex` property of `UITabBarController` source.
-    public var selectedIndex: AnyKeyPathObservable<Source, Int> {
+    public var selectedIndex: KeyPathObservable<Source, Int> {
         return source.observable(at: \Source.selectedIndex)
     }
     
     /// Observable for `customizableViewControllers` property of `UITabBarController` source.
-    public var customizableViewControllers: AnyKeyPathObservable<Source, [UIViewController]?> {
+    public var customizableViewControllers: KeyPathObservable<Source, [UIViewController]?> {
         return source.observable(at: \Source.customizableViewControllers)
     }
 }

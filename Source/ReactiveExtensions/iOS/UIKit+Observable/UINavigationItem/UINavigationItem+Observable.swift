@@ -12,73 +12,73 @@ import UIKit
 extension ReactiveExtension where Source: UINavigationItem {
     
     /// Observable for `title` property of `UINavigationItem` source.
-    public var title: AnyKeyPathObservable<Source, String?> {
+    public var title: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.title)
     }
     
     /// Observable for `titleView` property of `UINavigationItem` source.
-    public var titleView: AnyKeyPathObservable<Source, UIView?> {
+    public var titleView: KeyPathObservable<Source, UIView?> {
         return source.observable(at: \Source.titleView)
     }
     
     /// Observable for `prompt` property of `UINavigationItem` source.
-    public var prompt: AnyKeyPathObservable<Source, String?> {
+    public var prompt: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.prompt)
     }
     
     /// Observable for `backBarButtonItem` property of `UINavigationItem` source.
-    public var backBarButtonItem: AnyKeyPathObservable<Source, UIBarButtonItem?> {
+    public var backBarButtonItem: KeyPathObservable<Source, UIBarButtonItem?> {
         return source.observable(at: \Source.backBarButtonItem)
     }
     
     /// Observable for `hidesBackButton` property of `UINavigationItem` source.
-    public var hidesBackButton: AnyKeyPathObservable<Source, Bool> {
+    public var hidesBackButton: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hidesBackButton)
     }
     
     /// Observable for `leftBarButtonItems` property of `UINavigationItem` source.
     @available(iOS 5.0, *)
-    public var leftBarButtonItems: AnyKeyPathObservable<Source, [UIBarButtonItem]?> {
+    public var leftBarButtonItems: KeyPathObservable<Source, [UIBarButtonItem]?> {
         return source.observable(at: \Source.leftBarButtonItems)
     }
     
     /// Observable for `rightBarButtonItems` property of `UINavigationItem` source.
     @available(iOS 5.0, *)
-    public var rightBarButtonItems: AnyKeyPathObservable<Source, [UIBarButtonItem]?> {
+    public var rightBarButtonItems: KeyPathObservable<Source, [UIBarButtonItem]?> {
         return source.observable(at: \Source.rightBarButtonItems)
     }
     
     /// Observable for `leftItemsSupplementBackButton` property of `UINavigationItem` source.
     @available(iOS 5.0, *)
-    public var leftItemsSupplementBackButton: AnyKeyPathObservable<Source, Bool> {
+    public var leftItemsSupplementBackButton: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.leftItemsSupplementBackButton)
     }
     
     /// Observable for `leftBarButtonItem` property of `UINavigationItem` source.
-    public var leftBarButtonItem: AnyKeyPathObservable<Source, UIBarButtonItem?> {
+    public var leftBarButtonItem: KeyPathObservable<Source, UIBarButtonItem?> {
         return source.observable(at: \Source.leftBarButtonItem)
     }
     
     /// Observable for `rightBarButtonItem` property of `UINavigationItem` source.
-    public var rightBarButtonItem: AnyKeyPathObservable<Source, UIBarButtonItem?> {
+    public var rightBarButtonItem: KeyPathObservable<Source, UIBarButtonItem?> {
         return source.observable(at: \Source.rightBarButtonItem)
     }
     
     /// Observable for `largeTitleDisplayMode` property of `UINavigationItem` source.
     @available(iOS 11.0, *)
-    public var largeTitleDisplayMode: AnyKeyPathObservable<Source, UINavigationItem.LargeTitleDisplayMode> {
+    public var largeTitleDisplayMode: KeyPathObservable<Source, UINavigationItem.LargeTitleDisplayMode> {
         return source.observable(at: \Source.largeTitleDisplayMode)
     }
     
     /// Observable for `searchController` property of `UINavigationItem` source.
     @available(iOS 11.0, *)
-    public var searchController: AnyKeyPathObservable<Source, UISearchController?> {
+    public var searchController: KeyPathObservable<Source, UISearchController?> {
         return source.observable(at: \Source.searchController)
     }
     
     /// Observable for `hidesSearchBarWhenScrolling` property of `UINavigationItem` source.
     @available(iOS 11.0, *)
-    public var hidesSearchBarWhenScrolling: AnyKeyPathObservable<Source, Bool> {
+    public var hidesSearchBarWhenScrolling: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.hidesSearchBarWhenScrolling)
     }
 }

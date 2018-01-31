@@ -13,7 +13,7 @@ extension ReactiveExtension where Source: UIKeyCommand {
     
     /// Observable for `discoverabilityTitle` property of `UIKeyCommand` source.
     @available(iOS 9.0, *)
-    public var discoverabilityTitle: AnyKeyPathObservable<Source, String?> {
+    public var discoverabilityTitle: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.discoverabilityTitle)
     }
 }

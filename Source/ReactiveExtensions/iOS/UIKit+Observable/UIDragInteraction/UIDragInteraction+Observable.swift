@@ -14,12 +14,12 @@ extension ReactiveExtension where Source: UIDragInteraction {
     // TODO: delegate
     
     /// Observable for `allowsSimultaneousRecognitionDuringLift` property of `UIDragInteraction` source.
-    public var allowsSimultaneousRecognitionDuringLift: AnyKeyPathObservable<Source, Bool> {
+    public var allowsSimultaneousRecognitionDuringLift: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.allowsSimultaneousRecognitionDuringLift)
     }
     
     /// Observable for `isEnabled` property of `UIDragInteraction` source.
-    public var isEnabled: AnyKeyPathObservable<Source, Bool> {
+    public var isEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.isEnabled)
     }
 }

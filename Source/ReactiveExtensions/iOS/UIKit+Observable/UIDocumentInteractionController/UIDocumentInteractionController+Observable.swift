@@ -14,23 +14,23 @@ extension ReactiveExtension where Source: UIDocumentInteractionController {
     // TODO: delegate
     
     /// Observable for `uti` property of `UIDocumentInteractionController` source.
-    public var uti: AnyKeyPathObservable<Source, String?> {
+    public var uti: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.uti)
     }
     
     /// Observable for `name` property of `UIDocumentInteractionController` source.
-    public var name: AnyKeyPathObservable<Source, String?> {
+    public var name: KeyPathObservable<Source, String?> {
         return source.observable(at: \Source.name)
     }
     
     // annotation: Any?
     /// Observable for `annotation` property of `UIDocumentInteractionController` source.
-    public var annotation: AnyKeyPathObservable<Source, Any?> {
+    public var annotation: KeyPathObservable<Source, Any?> {
         return source.observable(at: \Source.annotation)
     }
     
     /// Observable for `url` property of `UIDocumentInteractionController` source.
-    public var url: AnyKeyPathObservable<Source, URL?> {
+    public var url: KeyPathObservable<Source, URL?> {
         return source.observable(at: \Source.url)
     }
 }

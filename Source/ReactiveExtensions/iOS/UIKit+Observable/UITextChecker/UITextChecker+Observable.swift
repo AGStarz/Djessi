@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UITextChecker {
     
     /// Observable for `ignoredWords` property of `UITextChecker` source.
-    public var ignoredWords: AnyKeyPathObservable<Source, [String]?> {
+    public var ignoredWords: KeyPathObservable<Source, [String]?> {
         return source.observable(at: \Source.ignoredWords)
     }
 }
