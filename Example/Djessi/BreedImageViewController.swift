@@ -3,7 +3,7 @@
 //  Djessi_Example
 //
 //  Created by Vasily Agafonov on 12.12.2017.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright © 2018 AGStarz. All rights reserved.
 //
 
 import UIKit

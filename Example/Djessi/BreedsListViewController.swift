@@ -3,7 +3,7 @@
 //  Djessi
 //
 //  Created by JStarz on 12/11/2017.
-//  Copyright (c) 2017 JStarz. All rights reserved.
+//  Copyright © 2018 AGStarz. All rights reserved.
 //
 
 import UIKit
