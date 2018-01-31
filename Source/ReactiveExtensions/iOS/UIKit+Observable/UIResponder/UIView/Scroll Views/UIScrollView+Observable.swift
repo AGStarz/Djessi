@@ -142,15 +142,15 @@ extension ReactiveExtension where Source: UIScrollView {
     }
     
     /// Observable for `delegate` property of `UIScrollView` source.
-    public var delegate: DelegateProxy<UIScrollViewDelegateHandler> {
-        let key = "djessi_sharedAssociatedDelegate"
+    public var scrollViewDelegate: AnyScrollViewDelegateProxy {
+        var key = UIScrollViewDelegateHandler.associationKey
         
-        guard let handler = objc_getAssociatedObject(source, key) as? UIScrollViewDelegateHandler else {
-            let newOne = UIScrollViewDelegateHandler(source: source)
-            objc_setAssociatedObject(source, key, newOne, .OBJC_ASSOCIATION_RETAIN)
-            return DelegateProxy(source: newOne)
+        guard let handler = objc_getAssociatedObject(source, &key) as? UIScrollViewDelegateHandler else {
+            let newOne = UIScrollViewDelegateHandler(scrollView: source)
+            objc_setAssociatedObject(source, &key, newOne, .OBJC_ASSOCIATION_RETAIN)
+            return AnyScrollViewDelegateProxy(source: newOne)
         }
         
-        return DelegateProxy(source: handler)
+        return AnyScrollViewDelegateProxy(source: handler)
     }
 }

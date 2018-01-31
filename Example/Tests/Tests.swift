@@ -576,4 +576,76 @@ extension Tests {
         
         XCTAssert(!view.translatesAutoresizingMaskIntoConstraints)
     }
+    
+    // MARK: - Delegate
+    
+    func testScrollViewDelegate() {
+        let scrollView = UIScrollView()
+        let offset = CGPoint(x: 50, y: 50)
+        
+        let didScrollExpectation = XCTestExpectation(description: "Did scroll expectation")
+        let didEndScrollingAnimation = XCTestExpectation(description: "Did end scrolling animation expectation")
+        
+        scrollView.asReactive
+            .scrollViewDelegate
+            .scrollViewDidScroll
+            .observe { (container) in
+                XCTAssert(container.scrollView == scrollView)
+                
+                didScrollExpectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        scrollView.asReactive
+            .scrollViewDelegate
+            .scrollViewDidEndScrollingAnimation
+            .observe { (container) in
+                XCTAssert(container.scrollView == scrollView)
+                XCTAssert(container.scrollView.contentOffset == offset)
+                
+                didEndScrollingAnimation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        scrollView.setContentOffset(offset, animated: true)
+        
+        wait(for: [didScrollExpectation, didEndScrollingAnimation], timeout: 1)
+    }
+    
+    func testTableViewDelegate() {
+        let tableView = UITableView()
+        
+        let selectionIndexPath = IndexPath(row: 0, section: 0)
+        let selectionExpectation = XCTestExpectation(description: "Selection expectation")
+        
+        let deselectionIndexPath = IndexPath(row: 1, section: 0)
+        let deselectionExpectation = XCTestExpectation(description: "Selection expectation")
+        
+        tableView.asReactive
+            .tableViewDelegate
+            .didSelectRowAt
+            .observe { (container) in
+                XCTAssert(container.tableView == tableView)
+                XCTAssert(container.indexPath == selectionIndexPath)
+                
+                selectionExpectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        tableView.asReactive
+            .tableViewDelegate
+            .didDeselectRowAt
+            .observe { (container) in
+                XCTAssert(container.tableView == tableView)
+                XCTAssert(container.indexPath == deselectionIndexPath)
+                
+                deselectionExpectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        tableView.delegate?.tableView?(tableView, didSelectRowAt: selectionIndexPath)
+        tableView.delegate?.tableView?(tableView, didDeselectRowAt: deselectionIndexPath)
+
+        wait(for: [selectionExpectation, deselectionExpectation], timeout: 1)
+    }
 }

@@ -160,6 +160,7 @@
 		51DA80F42000E492003654D5 /* UIViewPropertyAnimator+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */; };
 		51F357942015C8E90024835C /* UIScrollView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F357932015C8E90024835C /* UIScrollView+Observable.swift */; };
 		51F35799201771330024835C /* UIScrollView+DelegateObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F35798201771330024835C /* UIScrollView+DelegateObservable.swift */; };
+		51F3579B20179C8C0024835C /* UITableView+DelegateObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3579A20179C8C0024835C /* UITableView+DelegateObservable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
 		90766A5AFC0A084EDE8D8B63A4FCB3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E50CF6275BB383838C6FBA031D62FC7E /* Pods-Djessi_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88C72476EFC3D344661D5051ACB99E87 /* Pods-Djessi_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -336,6 +337,7 @@
 		51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Observable.swift"; sourceTree = "<group>"; };
 		51F357932015C8E90024835C /* UIScrollView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Observable.swift"; sourceTree = "<group>"; };
 		51F35798201771330024835C /* UIScrollView+DelegateObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+DelegateObservable.swift"; sourceTree = "<group>"; };
+		51F3579A20179C8C0024835C /* UITableView+DelegateObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DelegateObservable.swift"; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EF6A15D16CE4C94C4B9E323875D93D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C48972993041D658830CD48D77CA68 /* Pods-Djessi_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Djessi_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -1782,6 +1784,7 @@
 			isa = PBXGroup;
 			children = (
 				5196F8BB1FEA59C500B9E44D /* UITableView+Observable.swift */,
+				51F3579A20179C8C0024835C /* UITableView+DelegateObservable.swift */,
 			);
 			path = "Table View";
 			sourceTree = "<group>";
@@ -2007,6 +2010,7 @@
 				5196F9191FF15CD700B9E44D /* UIVideoEditorController+Observable.swift in Sources */,
 				51A8ECCF1FFFEA8800C5E230 /* UIPopoverController+Observable.swift in Sources */,
 				51DA80D72000DD11003654D5 /* UISearchDisplayController+Observable.swift in Sources */,
+				51F3579B20179C8C0024835C /* UITableView+DelegateObservable.swift in Sources */,
 				518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */,
 				51D530A81FFF63FC0016DADC /* UIContextualAction+Observable.swift in Sources */,
 				51D5308F1FFEA1010016DADC /* UIBezierPath+Observable.swift in Sources */,

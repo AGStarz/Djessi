@@ -162,40 +162,17 @@ extension ReactiveExtension where Source: UITableView {
     public var dragInteractionEnabled: KeyPathObservable<Source, Bool> {
         return source.observable(at: \Source.dragInteractionEnabled)
     }
-}
-
-@objcMembers
-public class UITableViewDelegateHandler: UIScrollViewDelegateHandler, UITableViewDelegate {
     
-    public class TableViewContainer: NSObject {
-        unowned let tableView: UITableView
+    /// Observable for `delegate` property of `UITableView` source.
+    public var tableViewDelegate: AnyTableViewDelegateProxy {
+        var key = UITableViewDelegateHandler.associationKey
         
-        init(tableView t: UITableView) {
-            tableView = t
+        guard let handler = objc_getAssociatedObject(source, &key) as? UITableViewDelegateHandler else {
+            let newOne = UITableViewDelegateHandler(tableView: source)
+            objc_setAssociatedObject(source, &key, newOne, .OBJC_ASSOCIATION_RETAIN)
+            return AnyTableViewDelegateProxy(source: newOne)
         }
-    }
-    
-    public class TableViewDidSelectRowContainer: TableViewContainer {
-        let indexPath: IndexPath
         
-        init(tableView: UITableView, didSelectRowAt: IndexPath) {
-            indexPath = didSelectRowAt
-            
-            super.init(tableView: tableView)
-        }
-    }
-    
-    dynamic var didSelectRowAt: TableViewDidSelectRowContainer
-    
-    init(tableView: UITableView) {
-        didSelectRowAt = TableViewDidSelectRowContainer(tableView: tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
-        
-        super.init(source: tableView)
-        
-        tableView.delegate = self
-    }
-    
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        didSelectRowAt = TableViewDidSelectRowContainer(tableView: tableView, didSelectRowAt: indexPath)
+        return AnyTableViewDelegateProxy(source: handler)
     }
 }

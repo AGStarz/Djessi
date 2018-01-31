@@ -6,7 +6,15 @@
 //  Copyright © 2018 Agafonov. All rights reserved.
 //
 
+import Foundation
 import UIKit
+
+/// <#Description#>
+public struct AnyScrollViewDelegateProxy: DelegateProxy {
+    
+    /// <#Description#>
+    unowned public let source: UIScrollViewDelegateHandler
+}
 
 extension DelegateProxy where Source: UIScrollViewDelegateHandler {
     
@@ -74,6 +82,23 @@ extension DelegateProxy where Source: UIScrollViewDelegateHandler {
 /// <#Description#>
 @objcMembers
 public class UIScrollViewDelegateHandler: NSObject {
+    
+    static var associationKey = "djessi_sharedAssociatedDelegate"
+    
+    class Test<O: Observable> where O.Value == Bool {
+        
+        let disposeBag = DisposeBag()
+        
+        init(scrollView: UIScrollView, observable: O) {
+            let delegateSelector = #selector(scrollView.delegate?.scrollViewShouldScrollToTop(_:))
+            
+            observable
+                .observe { (value) in
+                    NSObject().perform(delegateSelector, with: scrollView)
+                }
+                .dispose(in: disposeBag)
+        }
+    }
     
     /// <#Description#>
     public class ScrollViewContainer: NSObject {
@@ -206,25 +231,25 @@ public class UIScrollViewDelegateHandler: NSObject {
     /// <#Description#>
     ///
     /// - Parameter source: <#source description#>
-    init(source: UIScrollView) {
-        scrollViewDidZoom = ScrollViewContainer(scrollView: source)
-        scrollViewDidScroll = ScrollViewContainer(scrollView: source)
-        scrollViewDidScrollToTop = ScrollViewContainer(scrollView: source)
-        scrollViewWillBeginDragging = ScrollViewContainer(scrollView: source)
-        scrollViewDidEndDecelerating = ScrollViewContainer(scrollView: source)
-        scrollViewWillBeginDecelerating = ScrollViewContainer(scrollView: source)
-        scrollViewDidEndScrollingAnimation = ScrollViewContainer(scrollView: source)
-        scrollViewDidChangeAdjustedContentInset = ScrollViewContainer(scrollView: source)
-        scrollViewWillBeginZooming = ScrollViewWillBeginZoomingContainer(scrollView: source, with: nil)
-        scrollViewDidEndDragging = ScrollViewDidEndDraggingContainer(scrollView: source, willDecelerate: true)
-        scrollViewDidEndZooming = ScrollViewDidEndZoomingContainer(scrollView: source, with: nil, atScale: 1)
+    init(scrollView: UIScrollView) {
+        scrollViewDidZoom = ScrollViewContainer(scrollView: scrollView)
+        scrollViewDidScroll = ScrollViewContainer(scrollView: scrollView)
+        scrollViewDidScrollToTop = ScrollViewContainer(scrollView: scrollView)
+        scrollViewWillBeginDragging = ScrollViewContainer(scrollView: scrollView)
+        scrollViewDidEndDecelerating = ScrollViewContainer(scrollView: scrollView)
+        scrollViewWillBeginDecelerating = ScrollViewContainer(scrollView: scrollView)
+        scrollViewDidEndScrollingAnimation = ScrollViewContainer(scrollView: scrollView)
+        scrollViewDidChangeAdjustedContentInset = ScrollViewContainer(scrollView: scrollView)
+        scrollViewWillBeginZooming = ScrollViewWillBeginZoomingContainer(scrollView: scrollView, with: nil)
+        scrollViewDidEndDragging = ScrollViewDidEndDraggingContainer(scrollView: scrollView, willDecelerate: true)
+        scrollViewDidEndZooming = ScrollViewDidEndZoomingContainer(scrollView: scrollView, with: nil, atScale: 1)
         
         var point: CGPoint = .zero
-        scrollViewWillEndDragging = ScrollViewWillEndDraggingContainer(scrollView: source, withVelocity: point, targetContentOffset: &point)
+        scrollViewWillEndDragging = ScrollViewWillEndDraggingContainer(scrollView: scrollView, withVelocity: point, targetContentOffset: &point)
         
         super.init()
         
-        source.delegate = self
+        scrollView.delegate = self
     }
 }
 
