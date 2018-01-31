@@ -31,9 +31,6 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/AnyKeyPathObservable.html">AnyKeyPathObservable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
@@ -47,6 +44,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GCDQueue/DispatchStyle.html">– DispatchStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyPathObservable.html">KeyPathObservable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapTransformObservable.html">MapTransformObservable</a>
@@ -69,9 +69,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Protocols/Disposable.html">Disposable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/Observable.html">Observable</a>
@@ -170,9 +167,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AEQyd__AFRSlF"></a>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__qd_0_G2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AEQyd__AFRSlF">bind(to:)</a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__qd_0_G2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF">bind(to:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -190,8 +187,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
-    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">ObservableValue</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt"><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">ObservableValue</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">ObservableValue</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
 
                         </div>
                       </div>
@@ -207,7 +204,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
                                 </div>
                               </td>
                             </tr>
@@ -224,9 +221,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AFSgAERtd__lF"></a>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__qd_0_SgG2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__AFSgAERtd__lF">bind(to:)</a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__qd_0_SgG2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF">bind(to:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -244,8 +241,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
-    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">ObservableValue</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt"><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">ObservableValue</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">ObservableValue</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
 
                         </div>
                       </div>
@@ -261,7 +258,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
                                 </div>
                               </td>
                             </tr>
@@ -278,9 +275,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__SQyAFGAERtd__lF"></a>
+                    <a name="/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__SQyqd_0_GG2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pqd__2to_tAA07KeyPathB0Rd__SQyAFGAERtd__lF">bind(to:)</a>
+                    <a class="token" href="#/s:6Djessi10ObservablePA2aBRzs9Equatable5ValueRpzlE4bindAA10Disposable_pAA07KeyPathB0Cyqd__SQyqd_0_GG2to_tSo8NSObjectCRbd__sADRd_0_AFRsd_0_r0_lF">bind(to:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -298,8 +295,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
-    <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">ImplicitlyUnwrappedOptional</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">ObservableValue</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">another</span><span class="p">:</span> <span class="kt"><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">,</span> <span class="kt">ImplicitlyUnwrappedOptional</span><span class="o">&lt;</span><span class="kt">ObservableValue</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span>
+    <span class="k">where</span> <span class="kt">ObservableValue</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
 
                         </div>
                       </div>
@@ -315,7 +312,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+                                  <p>Another observable which should handle source changes. It constrained to <code><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
                                 </div>
                               </td>
                             </tr>
@@ -336,9 +333,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePAAE3mapAA012MapTransformB0Cyqd__xGqd__5ValueQzc9transform_tlF"></a>
-                    <a name="//apple_ref/swift/Method/map(transform:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePAAE3mapAA012MapTransformB0Cyqd__xGqd__5ValueQzc9transform_tlF">map(transform:)</a>
+                    <a name="/s:6Djessi10ObservablePAAE3mapAA012MapTransformB0Cyqd__xGqd__5ValueQzclF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE3mapAA012MapTransformB0Cyqd__xGqd__5ValueQzclF">map(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -356,7 +353,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">To</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">To</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MapTransformObservable.html">MapTransformObservable</a></span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">To</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MapTransformObservable.html">MapTransformObservable</a></span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -450,9 +447,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePAAE7flatMapAA04Flatd9TransformB0Cyqd__xGqd__Sg5ValueQzc9transform_tlF"></a>
-                    <a name="//apple_ref/swift/Method/flatMap(transform:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePAAE7flatMapAA04Flatd9TransformB0Cyqd__xGqd__Sg5ValueQzc9transform_tlF">flatMap(transform:)</a>
+                    <a name="/s:6Djessi10ObservablePAAE7flatMapAA04Flatd9TransformB0Cyqd__xGqd__Sg5ValueQzclF"></a>
+                    <a name="//apple_ref/swift/Method/flatMap(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE7flatMapAA04Flatd9TransformB0Cyqd__xGqd__Sg5ValueQzclF">flatMap(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -470,7 +467,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">flatMap</span><span class="o">&lt;</span><span class="kt">To</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">To</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FlatMapTransformObservable.html">FlatMapTransformObservable</a></span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">flatMap</span><span class="o">&lt;</span><span class="kt">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">To</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FlatMapTransformObservable.html">FlatMapTransformObservable</a></span><span class="o">&lt;</span><span class="kt">To</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -507,9 +504,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi10ObservablePAAE6filterAA015FilterConditionB0CyxGSb5ValueQzc9condition_tF"></a>
-                    <a name="//apple_ref/swift/Method/filter(condition:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi10ObservablePAAE6filterAA015FilterConditionB0CyxGSb5ValueQzc9condition_tF">filter(condition:)</a>
+                    <a name="/s:6Djessi10ObservablePAAE6filterAA015FilterConditionB0CyxGSb5ValueQzcF"></a>
+                    <a name="//apple_ref/swift/Method/filter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi10ObservablePAAE6filterAA015FilterConditionB0CyxGSb5ValueQzcF">filter(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -527,7 +524,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="nv">condition</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FilterConditionObservable.html">FilterConditionObservable</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="n">_</span> <span class="nv">condition</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FilterConditionObservable.html">FilterConditionObservable</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -562,7 +559,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-21)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-01)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

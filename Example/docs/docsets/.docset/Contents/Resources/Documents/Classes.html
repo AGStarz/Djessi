@@ -30,9 +30,6 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/AnyKeyPathObservable.html">AnyKeyPathObservable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
@@ -46,6 +43,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/GCDQueue/DispatchStyle.html">– DispatchStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/KeyPathObservable.html">KeyPathObservable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/MapTransformObservable.html">MapTransformObservable</a>
@@ -68,9 +68,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Protocols/Disposable.html">Disposable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/KeyPathObservable.html">KeyPathObservable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/Observable.html">Observable</a>
@@ -109,9 +106,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Djessi20AnyKeyPathObservableC"></a>
-                    <a name="//apple_ref/swift/Class/AnyKeyPathObservable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Djessi20AnyKeyPathObservableC">AnyKeyPathObservable</a>
+                    <a name="/s:6Djessi17KeyPathObservableC"></a>
+                    <a name="//apple_ref/swift/Class/KeyPathObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi17KeyPathObservableC">KeyPathObservable</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -119,11 +116,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Implementation of <code><a href="Protocols/KeyPathObservable.html">KeyPathObservable</a></code> protocol.</p>
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
 
 <p>You can manually create observables (through initializer):</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
-let observable = AnyKeyPathObservable(source: label, keyPath: \UILabel.text)
+let observable = KeyPathObservable(source: label, keyPath: \UILabel.text)
 </code></pre>
 
 <p>Or use <code>NSObject</code> support method:</p>
@@ -142,13 +139,13 @@ let observable = label.observable(at: \UILabel.text)
 
 </div>
 
-                        <a href="Classes/AnyKeyPathObservable.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/KeyPathObservable.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AnyKeyPathObservable</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/KeyPathObservable.html">KeyPathObservable</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeyPathObservable</span><span class="o">&lt;</span><span class="kt">Source</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -178,7 +175,7 @@ let observable = label.observable(at: \UILabel.text)
 
 <p>You can use <code>MapTransformObservable</code> only by calling <code>map</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
-let observable = label.observable(at: \UILabel.text).map(transform: { $0?.count ?? 0 })
+let observable = label.observable(at: \UILabel.text).map({ $0?.count ?? 0 })
 </code></pre>
 
                         <a href="Classes/MapTransformObservable.html" class="slightly-smaller">See more</a>
@@ -213,7 +210,7 @@ let observable = label.observable(at: \UILabel.text).map(transform: { $0?.count 
                       <div class="abstract">
                         <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
 
-<p>Define multi-threading ability for observables and can be used only with any other <code><a href="Protocols/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
+<p>Define multi-threading ability for observables and can be used only with any other <code><a href="Classes/KeyPathObservable.html">KeyPathObservable</a></code>.</p>
 
 <p>You can use <code>ThreadObservable</code> only by calling <code>deliver</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
@@ -257,7 +254,7 @@ let observable = label.observable(at: \UILabel.text).deliver(on: queue)
 
 <p>You can use <code>FlatMapTransformObservable</code> only by calling <code>flatMap</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
-let observable = label.observable(at: \UILabel.text).flatMap(transform: { $0 })
+let observable = label.observable(at: \UILabel.text).flatMap({ $0 })
 </code></pre>
 
                         <a href="Classes/FlatMapTransformObservable.html" class="slightly-smaller">See more</a>
@@ -300,7 +297,7 @@ let disposeBag = DisposeBag()
 
 label
     .observable(at: \UILabel.text)
-    .observe(onNext: { "Observed text currently have a \($0) characters" })
+    .observe(onNext: { "Observed text: \($0 ?? &lt;none&gt;)" })
     .dispose(in: disposeBag)
 </code></pre>
 
@@ -340,7 +337,7 @@ label
 
 <p>You can use <code>FilterConditionObservable</code> only by calling <code>filter</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
-let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.count ?? 0 &gt; 3 })
+let observable = label.observable(at: \UILabel.text).filter({ $0?.count ?? 0 &gt; 3 })
 </code></pre>
 
                         <a href="Classes/FilterConditionObservable.html" class="slightly-smaller">See more</a>
@@ -375,7 +372,7 @@ let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.cou
                       <div class="abstract">
                         <p>Implementation of <code><a href="Protocols/Queue.html">Queue</a></code> protocol and represents <code>DispatchQueue</code> wrapper.</p>
 
-<p><code>GCDQueue</code> already have wrapper&rsquo;s for <code>DispatchQueue.main</code> queue with sync &amp; async behaviour and accessible through static properties by <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC9asyncMainACvZ">GCDQueue.asyncMain</a></code> or <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC8syncMainACvZ">GCDQueue.syncMain</a></code></p>
+<p><code>GCDQueue</code> already have wrapper&rsquo;s for <code>DispatchQueue.main</code> queue with sync &amp; async behaviour and accessible through static properties via <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC9asyncMainACvZ">GCDQueue.asyncMain</a></code> or <code><a href="Classes/GCDQueue.html#/s:6Djessi8GCDQueueC8syncMainACvZ">GCDQueue.syncMain</a></code></p>
 
                         <a href="Classes/GCDQueue.html" class="slightly-smaller">See more</a>
                       </div>
@@ -395,7 +392,7 @@ let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.cou
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-21)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-01)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
