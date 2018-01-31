@@ -51,14 +51,14 @@ class BreedImageViewController: UIViewController {
         viewModel
             .observable(at: \ViewModel.breedImage)
             .deliver(on: GCDQueue.asyncMain)
-            .map(transform: { $0 != nil })
+            .map({ $0 != nil })
             .bind(to: activityIndicator.asReactive.isHidden)
             .dispose(in: disposeBag)
         
         viewModel
             .observable(at: \ViewModel.breedImage)
             .deliver(on: GCDQueue.asyncMain)
-            .flatMap(transform: { $0 })
+            .flatMap({ $0 })
             .bind(to: imageView.asReactive.image)
             .dispose(in: disposeBag)
     }

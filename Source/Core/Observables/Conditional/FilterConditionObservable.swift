@@ -57,7 +57,7 @@ extension Observable {
     ///
     /// - Parameter condition: Condition that observed values should satisfy.
     /// - Returns: Wrapped current observable with condition support.
-    public func filter(condition: @escaping (Value) -> Bool) -> FilterConditionObservable<Self> {
+    public func filter(_ condition: @escaping (Value) -> Bool) -> FilterConditionObservable<Self> {
         return FilterConditionObservable(observable: self, condition: condition)
     }
 }

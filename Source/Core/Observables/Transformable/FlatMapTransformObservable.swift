@@ -57,7 +57,7 @@ extension Observable {
     ///
     /// - Parameter transform: Transformation block.
     /// - Returns: Wrapped current observable with flat map transformation support.
-    public func flatMap<To>(transform: @escaping (Value) -> To?) -> FlatMapTransformObservable<To, Self> {
+    public func flatMap<To>(_ transform: @escaping (Value) -> To?) -> FlatMapTransformObservable<To, Self> {
         return FlatMapTransformObservable<To, Self>(source: self, transform: transform)
     }
 }

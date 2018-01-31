@@ -115,7 +115,7 @@ class Tests: XCTestCase {
         
         object
             .observable(at: Test.keyPath)
-            .filter(condition: { $0.count > 10 })
+            .filter({ $0.count > 10 })
             .observe { (value) in
                 XCTAssert(value.count > 10)
                 
@@ -140,7 +140,7 @@ class Tests: XCTestCase {
         
         object
             .observable(at: Test.keyPath)
-            .map(transform: { ($0, $0.count as Int) })
+            .map({ ($0, $0.count as Int) })
             .observe { (value) in
                 XCTAssert(value.0.count == value.1)
                 
@@ -157,7 +157,7 @@ class Tests: XCTestCase {
         
         object
             .observable(at: \Test.optionalField)
-            .flatMap(transform: { $0 })
+            .flatMap({ $0 })
             .observe { (value) in
                 XCTAssert(value == self.newValueConstant)
                 

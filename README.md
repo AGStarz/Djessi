@@ -105,7 +105,7 @@ let obj = Model()
 obj.field = "Message"
 
 let token = obj.observable(at: \Model.field)
-    .map(transform: { $0.count as Int })
+    .map({ $0.count as Int })
     .observe { (value) in
         print(value) // prints '7'
     }
@@ -119,7 +119,7 @@ You can specify condition to observe values
 let obj = Model()
 
 let token = obj.observable(at: \Model.field)
-    .filter(condition: { $0.count > 5 })
+    .filter({ $0.count > 5 })
     .observe { (value) in
         print(value) // prints '123456'
     }

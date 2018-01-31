@@ -55,7 +55,7 @@ extension Observable {
     ///
     /// - Parameter transform: Map transformation block.
     /// - Returns: Wrapped current observable with map transformation support.
-    public func map<To>(transform: @escaping (Value) -> To) -> MapTransformObservable<To, Self> {
+    public func map<To>(_ transform: @escaping (Value) -> To) -> MapTransformObservable<To, Self> {
         return MapTransformObservable<To, Self>(source: self, transform: transform)
     }
 }
