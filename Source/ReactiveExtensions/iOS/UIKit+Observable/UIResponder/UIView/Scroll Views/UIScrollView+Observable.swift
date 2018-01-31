@@ -140,17 +140,4 @@ extension ReactiveExtension where Source: UIScrollView {
     public var refreshControl: KeyPathObservable<Source, UIRefreshControl?> {
         return source.observable(at: \Source.refreshControl)
     }
-    
-    /// Observable for `delegate` property of `UIScrollView` source.
-    public var delegate: DelegateProxy<UIScrollViewDelegateHandler> {
-        let key = "djessi_sharedAssociatedDelegate"
-        
-        guard let handler = objc_getAssociatedObject(source, key) as? UIScrollViewDelegateHandler else {
-            let newOne = UIScrollViewDelegateHandler(source: source)
-            objc_setAssociatedObject(source, key, newOne, .OBJC_ASSOCIATION_RETAIN)
-            return DelegateProxy(source: newOne)
-        }
-        
-        return DelegateProxy(source: handler)
-    }
 }

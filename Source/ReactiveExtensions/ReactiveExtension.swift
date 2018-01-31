@@ -11,11 +11,6 @@ public struct ReactiveExtension<Source> {
     let source: Source
 }
 
-/// Delegate proxy container object.
-public struct DelegateProxy<Source: NSObject> {
-    unowned let source: Source
-}
-
 /// Reactive compatible objects protocol. To add reactive support for your objects adopt it to this protocol.
 public protocol Reactive { }
 
