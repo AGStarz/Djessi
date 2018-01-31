@@ -15,7 +15,7 @@ import Foundation
 /// You can use `FlatMapTransformObservable` only by calling `flatMap` method defined for all `Observable` types:
 ///
 ///     let label = UILabel()
-///     let observable = label.observable(at: \UILabel.text).flatMap(transform: { $0 })
+///     let observable = label.observable(at: \UILabel.text).flatMap({ $0 })
 ///
 public class FlatMapTransformObservable<To, K: Observable>: Observable {
     

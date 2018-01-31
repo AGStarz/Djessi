@@ -15,7 +15,7 @@ import Foundation
 /// You can use `FilterConditionObservable` only by calling `filter` method defined for all `Observable` types:
 ///
 ///     let label = UILabel()
-///     let observable = label.observable(at: \UILabel.text).filter(condition: { $0?.count ?? 0 > 3 })
+///     let observable = label.observable(at: \UILabel.text).filter({ $0?.count ?? 0 > 3 })
 ///
 public class FilterConditionObservable<O: Observable>: Observable {
     

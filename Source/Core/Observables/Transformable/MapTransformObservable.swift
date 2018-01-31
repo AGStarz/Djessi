@@ -15,7 +15,7 @@ import Foundation
 /// You can use `MapTransformObservable` only by calling `map` method defined for all `Observable` types:
 ///
 ///     let label = UILabel()
-///     let observable = label.observable(at: \UILabel.text).map(transform: { $0?.count ?? 0 })
+///     let observable = label.observable(at: \UILabel.text).map({ $0?.count ?? 0 })
 ///
 public class MapTransformObservable<To, K: Observable>: Observable {
     
