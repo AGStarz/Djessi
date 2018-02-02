@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NSObjectProtocol Extension Reference</title>
+    <title>CombineLatestObservable Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/NSObjectProtocol" class="dashAnchor"></a>
-    <a title="NSObjectProtocol Extension Reference"></a>
+    <a name="//apple_ref/swift/Class/CombineLatestObservable" class="dashAnchor"></a>
+    <a title="CombineLatestObservable Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        NSObjectProtocol Extension Reference
+        CombineLatestObservable Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -100,8 +100,37 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>NSObjectProtocol</h1>
-            
+            <h1>CombineLatestObservable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CombineLatestObservable</span><span class="o">&lt;</span><span class="kt">O1</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Observable.html">Observable</a></span><span class="p">,</span> <span class="kt">O2</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Observable.html">Observable</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Implementation of <code><a href="../Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define combination rule to get latest values from two observables.</p>
+
+<p>You can use <code>CombineLatestObservable</code> only by calling <code>combineLatest</code> method defined for all <code><a href="../Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let labelOne = UILabel()
+let labelTwo = UILabel()
+
+let observableOne = labelOne.observable(at: \UILabel.text).flatMap({ $0 })
+let observableTwo = labelTwo.observable(at: \UILabel.text).flatMap({ $0 })
+
+let token = observableOne
+    .combineLatest(with: observableTwo)
+    .observe { (value) in
+        print("Value one is \(value.0)")
+        print("Value two is \(value.1)")
+    }
+</code></pre>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You should keep strong reference to token&rsquo;s which was returned by calling <code>observe</code> method or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object will be finished generate observation changes if token deallocated.
+
+</div>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -109,9 +138,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So16NSObjectProtocolP6DjessiSo0A0CRbzlE10observableAC17KeyPathObservableCyxqd__Gs017ReferenceWritableeF0Cyxqd__G2at_Sb25shouldObserveInitialValuetlF"></a>
-                    <a name="//apple_ref/swift/Method/observable(at:shouldObserveInitialValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So16NSObjectProtocolP6DjessiSo0A0CRbzlE10observableAC17KeyPathObservableCyxqd__Gs017ReferenceWritableeF0Cyxqd__G2at_Sb25shouldObserveInitialValuetlF">observable(at:shouldObserveInitialValue:)</a>
+                    <a name="/s:6Djessi23CombineLatestObservableC5Valuea"></a>
+                    <a name="//apple_ref/swift/Alias/Value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi23CombineLatestObservableC5Valuea">Value</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -119,14 +148,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create new observable with specified key path.</p>
+                        <p>Observation value type - tuple consists with value type from first observable &amp; with value type from second observable.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">observable</span><span class="o">&lt;</span><span class="kt">V</span><span class="o">&gt;</span><span class="p">(</span><span class="n">at</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">ReferenceWritableKeyPath</span><span class="o">&lt;</span><span class="k">Self</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">shouldObserveInitialValue</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/KeyPathObservable.html">KeyPathObservable</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Value</span> <span class="o">=</span> <span class="p">(</span><span class="kt">O1</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">O2</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi23CombineLatestObservableC7observeAA10Disposable_py5ValueQz_AFQy_tc6onNext_tF"></a>
+                    <a name="//apple_ref/swift/Method/observe(onNext:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi23CombineLatestObservableC7observeAA10Disposable_py5ValueQz_AFQy_tc6onNext_tF">observe(onNext:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start observe changes. Block will be start triggering when every observable have at least one value change.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">observe</span><span class="p">(</span><span class="nv">onNext</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/CombineLatestObservable.html#/s:6Djessi23CombineLatestObservableC5Valuea">Value</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -137,24 +193,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>keyPath</em>
+                                <em>onNext</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Key path of field which will be observed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>shouldObserveInitialValue</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Indicates that observing block should be called for initial value or not. Default value is <code>true</code></p>
+                                  <p>Block which will be called on each observable value change while token not disposed or invalidated.</p>
                                 </div>
                               </td>
                             </tr>
@@ -163,7 +207,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>New key path observable instance.</p>
+                        <p>Disposable token. You should keep strong reference to it or use <code><a href="../Classes/DisposeBag.html">DisposeBag</a></code> because object observing depends on token.</p>
                       </div>
                     </section>
                   </div>

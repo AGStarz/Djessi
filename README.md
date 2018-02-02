@@ -129,6 +129,27 @@ obj.field = "12345" // not observed
 obj.field = "123456" // observed
 ```
 
+##### Combine values
+
+You can combine latest values from two observables
+
+```swift
+let label1 = UILabel()
+let observable1 = label1.observable(at: \UILabel.text).flatMap({ $0 })
+let label2 = UILabel()
+let observable2 = label2.observable(at: \UILabel.text).flatMap({ $0 })
+
+let token = observable1
+    .combineLatest(with: observable2)
+    .observe { (value) in
+        print(value.0) // prints '123'
+        print(value.1) // prints '345'
+    }
+
+label1.text = "123"
+label2.text = "345"
+```
+
 #### Reactive extensions
 
 Every `NSObject` have reactive capability accessible via `asReactive` property.

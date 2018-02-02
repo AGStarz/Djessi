@@ -1,3 +1,14 @@
+0.3.5
+---------
+
+* `KeyPathObservable` is a class now (previously it was a protocol), remove `AnyKeyPathObservable` class (replaced with `KeyPathObservable`).
+*  `Disposables` - new implementation of `Disposable` protocol, contains array of any `Disposable`.
+* Add reactive extensions for `UIScrollView`.
+* Update `map` method signature - remove first argument name.
+* Update `flatMap` method signature - remove first argument name.
+* Update `filter` method signature - remove first argument name.
+* Implement combine latest feature for all observbles accessible through method `combineLatest(with:)`.
+
 0.3.4
 ---------
 

@@ -30,6 +30,9 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Classes/CombineLatestObservable.html">CombineLatestObservable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
@@ -118,12 +121,7 @@
                       <div class="abstract">
                         <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
 
-<p>You can manually create observables (through initializer):</p>
-<pre class="highlight plaintext"><code>let label = UILabel()
-let observable = KeyPathObservable(source: label, keyPath: \UILabel.text)
-</code></pre>
-
-<p>Or use <code>NSObject</code> support method:</p>
+<p>You can create observables through <code>NSObject</code> support method:</p>
 <pre class="highlight plaintext"><code>let label = UILabel()
 let observable = label.observable(at: \UILabel.text)
 </code></pre>
@@ -321,6 +319,60 @@ label
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6Djessi23CombineLatestObservableC"></a>
+                    <a name="//apple_ref/swift/Class/CombineLatestObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi23CombineLatestObservableC">CombineLatestObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define combination rule to get latest values from two observables.</p>
+
+<p>You can use <code>CombineLatestObservable</code> only by calling <code>combineLatest</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let labelOne = UILabel()
+let labelTwo = UILabel()
+
+let observableOne = labelOne.observable(at: \UILabel.text).flatMap({ $0 })
+let observableTwo = labelTwo.observable(at: \UILabel.text).flatMap({ $0 })
+
+let token = observableOne
+    .combineLatest(with: observableTwo)
+    .observe { (value) in
+        print("Value one is \(value.0)")
+        print("Value two is \(value.1)")
+    }
+</code></pre>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You should keep strong reference to token&rsquo;s which was returned by calling <code>observe</code> method or use <code><a href="Classes/DisposeBag.html">DisposeBag</a></code> because object will be finished generate observation changes if token deallocated.
+
+</div>
+
+                        <a href="Classes/CombineLatestObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CombineLatestObservable</span><span class="o">&lt;</span><span class="kt">O1</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="p">,</span> <span class="kt">O2</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6Djessi25FilterConditionObservableC"></a>
                     <a name="//apple_ref/swift/Class/FilterConditionObservable" class="dashAnchor"></a>
                     <a class="token" href="#/s:6Djessi25FilterConditionObservableC">FilterConditionObservable</a>
@@ -392,7 +444,7 @@ let observable = label.observable(at: \UILabel.text).filter({ $0?.count ?? 0 &gt
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-01)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
