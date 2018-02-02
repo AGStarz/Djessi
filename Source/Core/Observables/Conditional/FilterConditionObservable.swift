@@ -28,7 +28,7 @@ public class FilterConditionObservable<O: Observable>: Observable {
     /// Condition for observed values.
     private let condition: (O.Value) -> Bool
     
-    /// Create new condition supported observable.
+    /// Create new filter condition supported observable.
     ///
     /// - Parameters:
     ///   - observable: Source observable whose changes should be validated by provided condition.

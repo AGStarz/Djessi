@@ -602,4 +602,28 @@ extension Tests {
         
         wait(for: [expectation], timeout: 1)
     }
+    
+    // MARK: - Distinct until changed
+    
+    func testDistinctUntilChanged() {
+        var changesCounter = 0
+        
+        let label = UILabel()
+        label.asReactive
+            .text
+            .flatMap({ $0 })
+            .distinctUntilChanged
+            .observe { (value) in
+                changesCounter = changesCounter + 1
+            }
+            .dispose(in: disposeBag)
+        
+        label.text = "123"
+        label.text = "123"
+        label.text = "123"
+        label.text = "345"
+        label.text = "345"
+        
+        XCTAssert(changesCounter == 2)
+    }
 }
