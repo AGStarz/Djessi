@@ -22,8 +22,8 @@ public class FilterConditionObservable<O: Observable>: Observable {
     /// Observing value type
     public typealias Value = O.Value
     
-    /// Associated observable whose changes handle current observable.
-    private let associatedObservable: O
+    /// Source observable whose changes handle current observable.
+    private let source: O
     
     /// Condition for observed values.
     private let condition: (O.Value) -> Bool
@@ -34,7 +34,7 @@ public class FilterConditionObservable<O: Observable>: Observable {
     ///   - observable: Source observable whose changes should be validated by provided condition.
     ///   - condition: Condition that observed values should satisfy.
     init(observable: O, condition c: @escaping (O.Value) -> Bool) {
-        associatedObservable = observable
+        source = observable
         condition = c
     }
     
@@ -43,7 +43,7 @@ public class FilterConditionObservable<O: Observable>: Observable {
     /// - Parameter onNext: Block which will be called on each value change while token not disposed or invalidated.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
     public func observe(onNext: @escaping (Value) -> Void) -> Disposable {
-        return associatedObservable.observe { (value) in
+        return source.observe { (value) in
             guard self.condition(value) else { return }
             
             onNext(value)
