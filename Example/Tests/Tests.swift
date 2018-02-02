@@ -576,4 +576,30 @@ extension Tests {
         
         XCTAssert(!view.translatesAutoresizingMaskIntoConstraints)
     }
+    
+    // MARK: - Combine latest
+    
+    func testCombineLatestObservable() {
+        let expectation = XCTestExpectation(description: "Expectation")
+        
+        let label1 = UILabel()
+        let observable1 = label1.asReactive.text.flatMap({ $0 })
+        let label2 = UILabel()
+        let observable2 = label2.asReactive.text.flatMap({ $0 })
+        
+        observable1
+            .combineLatest(with: observable2)
+            .observe { (value) in
+                XCTAssert(value.0 == "123")
+                XCTAssert(value.1 == "345")
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        label1.text = "123"
+        label2.text = "345"
+        
+        wait(for: [expectation], timeout: 1)
+    }
 }

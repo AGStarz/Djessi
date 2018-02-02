@@ -19,7 +19,6 @@
 		518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23091FDEAD51005D6E40 /* Disposable.swift */; };
 		518D231E1FDEAD51005D6E40 /* KPODisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230A1FDEAD51005D6E40 /* KPODisposable.swift */; };
 		518D231F1FDEAD51005D6E40 /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230C1FDEAD51005D6E40 /* DisposeBag.swift */; };
-		518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */; };
 		518D23221FDEAD51005D6E40 /* KeyPathObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */; };
 		518D23251FDEAD51005D6E40 /* ThreadObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23181FDEAD51005D6E40 /* ThreadObservable.swift */; };
 		518D23261FDEAD51005D6E40 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D231A1FDEAD51005D6E40 /* Observable.swift */; };
@@ -158,6 +157,8 @@
 		51DA80ED2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */; };
 		51DA80F12000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */; };
 		51DA80F42000E492003654D5 /* UIViewPropertyAnimator+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */; };
+		51E347332024C62700148646 /* CombineLatestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E347322024C62700148646 /* CombineLatestObservable.swift */; };
+		51E347372024D9BA00148646 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E347362024D9BA00148646 /* Disposables.swift */; };
 		51F357942015C8E90024835C /* UIScrollView+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F357932015C8E90024835C /* UIScrollView+Observable.swift */; };
 		7C5EAE1F1EA2E293DDA36EE160CD130C /* Pods-Djessi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A3584009F0140CD6878E710B4F2809 /* Pods-Djessi_Tests-dummy.m */; };
 		90766A5AFC0A084EDE8D8B63A4FCB3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -194,7 +195,6 @@
 		518D23091FDEAD51005D6E40 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		518D230A1FDEAD51005D6E40 /* KPODisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPODisposable.swift; sourceTree = "<group>"; };
 		518D230C1FDEAD51005D6E40 /* DisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposeBag.swift; sourceTree = "<group>"; };
-		518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Observable.swift"; sourceTree = "<group>"; };
 		518D23121FDEAD51005D6E40 /* KeyPathObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathObservable.swift; sourceTree = "<group>"; };
 		518D23181FDEAD51005D6E40 /* ThreadObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadObservable.swift; sourceTree = "<group>"; };
 		518D231A1FDEAD51005D6E40 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -333,6 +333,8 @@
 		51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationAction+Observable.swift"; sourceTree = "<group>"; };
 		51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationCategory+Observable.swift"; sourceTree = "<group>"; };
 		51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Observable.swift"; sourceTree = "<group>"; };
+		51E347322024C62700148646 /* CombineLatestObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CombineLatestObservable.swift; path = ../Combination/CombineLatestObservable.swift; sourceTree = "<group>"; };
+		51E347362024D9BA00148646 /* Disposables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposables.swift; sourceTree = "<group>"; };
 		51F357932015C8E90024835C /* UIScrollView+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Observable.swift"; sourceTree = "<group>"; };
 		5CE65714C420E2DB41FF282FD983B22C /* Pods-Djessi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Djessi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EF6A15D16CE4C94C4B9E323875D93D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -467,7 +469,8 @@
 			isa = PBXGroup;
 			children = (
 				518D23091FDEAD51005D6E40 /* Disposable.swift */,
-				518D230A1FDEAD51005D6E40 /* KPODisposable.swift */,
+				51E347342024D99100148646 /* Single Disposable */,
+				51E347352024D9A400148646 /* Multiple Disposables */,
 			);
 			path = Token;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				518D23131FDEAD51005D6E40 /* Transformable */,
 				518D23151FDEAD51005D6E40 /* Conditional */,
 				518D23171FDEAD51005D6E40 /* Thread */,
+				51E347312024C5FD00148646 /* Combination */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -540,14 +544,6 @@
 				518D231A1FDEAD51005D6E40 /* Observable.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		5196F87E1FE50D5800B9E44D /* NSObject+Observable */ = {
-			isa = PBXGroup;
-			children = (
-				518D230E1FDEAD51005D6E40 /* NSObject+Observable.swift */,
-			);
-			path = "NSObject+Observable";
 			sourceTree = "<group>";
 		};
 		5196F87F1FE50D7E00B9E44D /* UIKit+Observable */ = {
@@ -1105,17 +1101,8 @@
 				518D230F1FDEAD51005D6E40 /* Observables */,
 				518D23071FDEAD51005D6E40 /* Disposables */,
 				518D23041FDEAD51005D6E40 /* Queues */,
-				51C0D2AB2014891A00E122DF /* Extensions */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		51C0D2AB2014891A00E122DF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5196F87E1FE50D5800B9E44D /* NSObject+Observable */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		51C0D2AC2014895A00E122DF /* iOS */ = {
@@ -1767,6 +1754,31 @@
 			path = UIViewPropertyAnimator;
 			sourceTree = "<group>";
 		};
+		51E347312024C5FD00148646 /* Combination */ = {
+			isa = PBXGroup;
+			children = (
+				51E347322024C62700148646 /* CombineLatestObservable.swift */,
+			);
+			name = Combination;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		51E347342024D99100148646 /* Single Disposable */ = {
+			isa = PBXGroup;
+			children = (
+				518D230A1FDEAD51005D6E40 /* KPODisposable.swift */,
+			);
+			path = "Single Disposable";
+			sourceTree = "<group>";
+		};
+		51E347352024D9A400148646 /* Multiple Disposables */ = {
+			isa = PBXGroup;
+			children = (
+				51E347362024D9BA00148646 /* Disposables.swift */,
+			);
+			path = "Multiple Disposables";
+			sourceTree = "<group>";
+		};
 		51F3579520176F170024835C /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1992,7 +2004,6 @@
 				51D530C61FFF83230016DADC /* UIDropInteraction+Observable.swift in Sources */,
 				51D531121FFFA4B20016DADC /* UILocalNotification+Observable.swift in Sources */,
 				5196F8AA1FE97C2900B9E44D /* UILabel+Observable.swift in Sources */,
-				518D23201FDEAD51005D6E40 /* NSObject+Observable.swift in Sources */,
 				5196F8FE1FF15A6D00B9E44D /* UINavigationController+Observable.swift in Sources */,
 				5196F8941FE58FD300B9E44D /* UISlider+Observable.swift in Sources */,
 				5196F8E01FF1510D00B9E44D /* UIViewController+Observable.swift in Sources */,
@@ -2037,6 +2048,7 @@
 				51A8ECED1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift in Sources */,
 				5196F90D1FF15BAC00B9E44D /* UISplitViewController+Observable.swift in Sources */,
 				5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */,
+				51E347332024C62700148646 /* CombineLatestObservable.swift in Sources */,
 				51D530C31FFF82650016DADC /* UIDragPreviewParameters+Observable.swift in Sources */,
 				5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */,
 				51DA80E92000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift in Sources */,
@@ -2098,6 +2110,7 @@
 				5196F89D1FE972E900B9E44D /* UIActivityIndicatorView+Observable.swift in Sources */,
 				5196F8CD1FEA7F5900B9E44D /* UITableViewHeaderFooterView+Observable.swift in Sources */,
 				5196F8AE1FEA458600B9E44D /* UINavigationBar+Observable.swift in Sources */,
+				51E347372024D9BA00148646 /* Disposables.swift in Sources */,
 				51A8ECD21FFFEBC500C5E230 /* UIPresentationController+Observable.swift in Sources */,
 				5196F8921FE560DF00B9E44D /* UISegmentedControl+Observable.swift in Sources */,
 				5196F9131FF15C1000B9E44D /* UITableViewController+Observable.swift in Sources */,

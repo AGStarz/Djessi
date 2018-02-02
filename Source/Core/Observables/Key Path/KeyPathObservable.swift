@@ -10,12 +10,7 @@ import Foundation
 
 /// Implementation of `Observable` protocol.
 ///
-/// You can manually create observables (through initializer):
-///
-///     let label = UILabel()
-///     let observable = KeyPathObservable(source: label, keyPath: \UILabel.text)
-///
-/// Or use `NSObject` support method:
+/// You can create observables through `NSObject` support method:
 ///
 ///     let label = UILabel()
 ///     let observable = label.observable(at: \UILabel.text)
@@ -39,7 +34,7 @@ public class KeyPathObservable<Source: NSObject, Value>: Observable {
     private let keyPath: ReferenceWritableKeyPath<Source, Value>
     
     /// Observing options which will be used to create observable.
-    private let observingOptions: NSKeyValueObservingOptions
+    private let options: NSKeyValueObservingOptions
     
     /// Create new observable at key path of source.
     ///
@@ -47,10 +42,10 @@ public class KeyPathObservable<Source: NSObject, Value>: Observable {
     ///   - source: Source object whose field will be observed.
     ///   - keyPath: Key path of field which will be observed.
     ///   - shouldObserveInitialValue: Indicates that observing block should be called for initial value or not. Default value is `true`.
-    init(source: Source, keyPath: ReferenceWritableKeyPath<Source, Value>, shouldObserveInitialValue: Bool = true) {
+    init(source: Source, keyPath: ReferenceWritableKeyPath<Source, Value>, options: NSKeyValueObservingOptions = [.new, .old, .initial]) {
         self.source = source
         self.keyPath = keyPath
-        observingOptions = shouldObserveInitialValue ? [.new, .old, .initial] : [.new, .old]
+        self.options = options
     }
     
     /// Start observe changes.
@@ -58,7 +53,7 @@ public class KeyPathObservable<Source: NSObject, Value>: Observable {
     /// - Parameter onNext: Block which will be called on each value change while token alive.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
     public func observe(onNext: @escaping (Value) -> Void) -> Disposable {
-        let token = source.observe(keyPath, options: observingOptions) { (source, _) in
+        let token = source.observe(keyPath, options: options) { (source, _) in
             onNext(source[keyPath: self.keyPath])
         }
         
@@ -85,38 +80,48 @@ extension Observable where Value: Equatable {
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, ObservableValue>) -> Disposable
-        where ObservableValue == Value {
-            return observe { (value) in
-                guard another.value != value else { return }
-                
-                another.value = value
-            }
+    public func bind<Source, ObservableValue>(to another: KeyPathObservable<Source, ObservableValue>) -> Disposable where ObservableValue == Value {
+        return observe { (value) in
+            guard another.value != value else { return }
+            
+            another.value = value
+        }
     }
     
     /// Bind current observable changes to another one with optional value type of current one.
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, Optional<ObservableValue>>) -> Disposable
-        where ObservableValue == Value {
-            return observe { (value) in
-                guard another.value != value else { return }
-                
-                another.value = value
-            }
+    public func bind<Source, ObservableValue>(to another: KeyPathObservable<Source, Optional<ObservableValue>>) -> Disposable where ObservableValue == Value {
+        return observe { (value) in
+            guard another.value != value else { return }
+            
+            another.value = value
+        }
     }
     
     /// Bind current observable changes to another one with implicitly unwrapped value type of current one.
     ///
     /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
     /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<Source, ObservableValue: Equatable>(to another: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<ObservableValue>>) -> Disposable
-        where ObservableValue == Value {
-            return observe { (value) in
-                guard another.value != value else { return }
-                
-                another.value = value
-            }
+    public func bind<Source, ObservableValue>(to another: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<ObservableValue>>) -> Disposable where ObservableValue == Value {
+        return observe { (value) in
+            guard another.value != value else { return }
+            
+            another.value = value
+        }
+    }
+}
+
+extension NSObjectProtocol where Self: NSObject {
+    
+    /// Create new observable with specified key path.
+    ///
+    /// - Parameters:
+    ///   - keyPath: Key path of field which will be observed.
+    ///   - shouldObserveInitialValue: Indicates that observing block should be called for initial value or not. Default value is `true`
+    /// - Returns: New key path observable instance.
+    public func observable<V>(at keyPath: ReferenceWritableKeyPath<Self, V>, shouldObserveInitialValue: Bool = true) -> KeyPathObservable<Self, V> {
+        return KeyPathObservable(source: self, keyPath: keyPath, options: shouldObserveInitialValue ? [.new, .old, .initial] : [.new, .old])
     }
 }
