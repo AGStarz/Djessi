@@ -18,7 +18,9 @@ public class GCDQueue: Queue {
     /// - async: Asynchronous style. Specified queue will be called as `queue.async { ... }`
     /// - sync: Synchronous style. Specified queue will be called as `queue.sync { ... }`
     public enum DispatchStyle {
-        case async, sync
+        case async
+        case asyncAfter(delay: TimeInterval)
+        case sync
     }
     
     /// Associated `DispatchQueue`.
@@ -37,28 +39,40 @@ public class GCDQueue: Queue {
         style = s
     }
     
-    /// Execution function on specified `DispatchQueue` with selected `DispatchStyle`.
+    /// Execute block on specified `DispatchQueue` with selected `DispatchStyle`.
     ///
     /// - Parameter block: Block to execute.
     public func execute(block: @escaping () -> Swift.Void) {
         switch style {
-        case .async:
-            queue.async {
-                block()
-            }
         case .sync:
-            queue.sync {
-                block()
-            }
+            queue.sync(execute: block)
+        case .async:
+            queue.async(execute: block)
+        case .asyncAfter(let delay):
+            queue.asyncAfter(deadline: .now() + delay, execute: block)
+        }
+    }
+    
+    /// Execute work item on specified `DispatchQueue` with selected `DispatchStyle`.
+    ///
+    /// - Parameter workItem: Work item to execute.
+    public func execute(workItem: DispatchWorkItem) {
+        switch style {
+        case .sync:
+            queue.sync(execute: workItem)
+        case .async:
+            queue.async(execute: workItem)
+        case .asyncAfter(let delay):
+            queue.asyncAfter(deadline: .now() + delay, execute: workItem)
         }
     }
 }
 
 extension GCDQueue {
     
-    /// Predefined async main `DispatchQueue`.
+    /// Predefined async main `DispatchQueue` with no delay.
     public static let asyncMain: GCDQueue = GCDQueue()
     
     /// Predefined sync main `DispatchQueue`.
-    public static let syncMain: GCDQueue = GCDQueue(style: .async)
+    public static let syncMain: GCDQueue = GCDQueue(style: .sync)
 }

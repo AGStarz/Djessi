@@ -61,4 +61,16 @@ extension Observable {
     public func deliver(on queue: Queue) -> ThreadObservable<Self> {
         return ThreadObservable(source: self, queue: queue)
     }
+    
+    /// Add thread support on specified `DispatchQueue` for current observable.
+    ///
+    /// - Parameters:
+    ///   - queue: Queue for callback's.
+    ///   - style: Callback dispatch style.
+    /// - Returns: Wrapped current observable with thread support.
+    public func deliver(on queue: DispatchQueue, style: GCDQueue.DispatchStyle = .async) -> ThreadObservable<Self> {
+        let dispatchQueue = GCDQueue(queue: queue, style: style)
+        
+        return ThreadObservable(source: self, queue: dispatchQueue)
+    }
 }
