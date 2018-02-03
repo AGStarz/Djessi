@@ -3,6 +3,7 @@
 //  Djessi
 //
 //  Created by Vasily Agafonov on 03.02.2018.
+//  Copyright © 2018 Agafonov. All rights reserved.
 //
 
 import Foundation
@@ -34,13 +35,9 @@ public class DistinctUntilChangedConditionObservable<O: Observable>: Observable 
         return source.observe { (value) in
             defer { self.lastKnownValue = value }
             
-            if let lastKnownValue = self.lastKnownValue {
-                guard lastKnownValue != value else { return }
+            guard self.lastKnownValue != value else { return }
                 
-                onNext(value)
-            } else {
-                onNext(value)
-            }
+            onNext(value)
         }
     }
 }
