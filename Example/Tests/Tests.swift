@@ -626,4 +626,74 @@ extension Tests {
         
         XCTAssert(changesCounter == 2)
     }
+    
+    // MARK: - Throttle
+    
+    func testThrottle() {
+        let expectation = XCTestExpectation(description: "Expectation")
+        
+        let label = UILabel()
+        label.asReactive
+            .text
+            .flatMap({ $0 })
+            .throttle(interval: 0.3)
+            .observe { (value) in
+                XCTAssert(value == "678")
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        label.text = "123"
+        label.text = "345"
+        label.text = "678"
+        
+        wait(for: [expectation], timeout: 1)
+    }
+    
+    // MARK: - Take
+    
+    func testTake() {
+        var counter = 2
+        
+        let label = UILabel()
+        label.asReactive
+            .text
+            .flatMap({ $0 })
+            .take(2)
+            .observe { (value) in
+                counter = counter - 1
+            }
+            .dispose(in: disposeBag)
+        
+        label.text = "123"
+        label.text = "345"
+        label.text = "678"
+        
+        XCTAssert(counter == 0)
+    }
+    
+    // MARK: - Skip
+    
+    func testSkip() {
+        let expectation = XCTestExpectation(description: "Expectation")
+        
+        let label = UILabel()
+        label.asReactive
+            .text
+            .flatMap({ $0 })
+            .skip(2)
+            .observe { (value) in
+                XCTAssert(value == "678")
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        label.text = "123"
+        label.text = "345"
+        label.text = "678"
+        
+        wait(for: [expectation], timeout: 1)
+    }
 }
