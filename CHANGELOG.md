@@ -1,3 +1,19 @@
+0.3.6
+---------
+
+* Implement mechanism for distinct repeated followed values for all observables accessible through property `distinctUntilChanged`.
+* Implement mechanism for skipping specified number of values for all observables accessible through method `skip(Int)`.
+* Implement mechanism for taking only specified number of values for all observables accessible through method `take(Int)`.
+* Implement throttling mechanism for all observables accessible through method `throttle(interval:queue:)`.
+* Add new method to create thread support observable `deliver(on: DispatchQueue, style: GCDQueue.DispatchStyle = .async)` and can be used as followed:
+
+```swift
+import UIKit
+
+let label = UILabel()
+let _ = label.observable(at: \UILabel.text).deliver(on: .main)
+```
+
 0.3.5
 ---------
 

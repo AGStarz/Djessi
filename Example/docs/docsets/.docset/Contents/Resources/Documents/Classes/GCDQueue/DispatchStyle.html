@@ -37,6 +37,9 @@
                 <a href="../../Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Classes/DistinctUntilChangedConditionObservable.html">DistinctUntilChangedConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Classes/FilterConditionObservable.html">FilterConditionObservable</a>
               </li>
               <li class="nav-group-task">
@@ -55,7 +58,16 @@
                 <a href="../../Classes/MapTransformObservable.html">MapTransformObservable</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Classes/SkipConditionObservable.html">SkipConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/TakeConditionObservable.html">TakeConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Classes/ThreadObservable.html">ThreadObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/ThrottleConditionObservable.html">ThrottleConditionObservable</a>
               </li>
             </ul>
           </li>
@@ -110,8 +122,15 @@
             <p>Dispatch style.</p>
 
 <ul>
-<li>async: Asynchronous style. Specified queue will be called as <code>queue.async { ... }</code></li>
-<li>sync: Synchronous style. Specified queue will be called as <code>queue.sync { ... }</code></li>
+<li><p>async: Asynchronous style, specified queue will be called as</p>
+<pre class="highlight plaintext"><code>queue.async(execute: block)
+</code></pre></li>
+<li><p>async(delay: TimeInterval): Asynchronous style with selected delay (in seconds), specified queue will be called as</p>
+<pre class="highlight plaintext"><code>queue.asyncAfter(deadline: .now() + delay, execute: block)
+</code></pre></li>
+<li><p>sync: Synchronous style, specified queue will be called as</p>
+<pre class="highlight plaintext"><code>queue.sync(execute: block)
+</code></pre></li>
 </ul>
 
           </section>
@@ -137,13 +156,47 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">async</span><span class="p">,</span> <span class="n"><a href="../../Classes/GCDQueue/DispatchStyle.html#/s:6Djessi8GCDQueueC13DispatchStyleO4syncA2EmF">sync</a></span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="n">async</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi8GCDQueueC13DispatchStyleO10asyncAfterAESd5delay_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/asyncAfter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi8GCDQueueC13DispatchStyleO10asyncAfterAESd5delay_tcAEmF">asyncAfter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="nf">asyncAfter</span><span class="p">(</span><span class="nv">delay</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -163,7 +216,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n"><a href="../../Classes/GCDQueue/DispatchStyle.html#/s:6Djessi8GCDQueueC13DispatchStyleO5asyncA2EmF">async</a></span><span class="p">,</span> <span class="n">sync</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="n">sync</span></code></pre>
 
                         </div>
                       </div>
@@ -175,7 +228,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-03)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

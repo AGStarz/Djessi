@@ -36,6 +36,9 @@
                 <a href="Classes/DisposeBag.html">DisposeBag</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/DistinctUntilChangedConditionObservable.html">DistinctUntilChangedConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/FilterConditionObservable.html">FilterConditionObservable</a>
               </li>
               <li class="nav-group-task">
@@ -54,7 +57,16 @@
                 <a href="Classes/MapTransformObservable.html">MapTransformObservable</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/SkipConditionObservable.html">SkipConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TakeConditionObservable.html">TakeConditionObservable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/ThreadObservable.html">ThreadObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ThrottleConditionObservable.html">ThrottleConditionObservable</a>
               </li>
             </ul>
           </li>
@@ -104,6 +116,45 @@
 
           </section>
           <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi23SkipConditionObservableC"></a>
+                    <a name="//apple_ref/swift/Class/SkipConditionObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi23SkipConditionObservableC">SkipConditionObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define skipping rule for observed values by specified count.</p>
+
+<p>You can use <code>SkipConditionObservable</code> only by calling <code>skip</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).skip(2)
+</code></pre>
+
+                        <a href="Classes/SkipConditionObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SkipConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul>
                 <li class="item">
@@ -319,6 +370,45 @@ label
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6Djessi27ThrottleConditionObservableC"></a>
+                    <a name="//apple_ref/swift/Class/ThrottleConditionObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi27ThrottleConditionObservableC">ThrottleConditionObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define throttling mechanism for observed values.</p>
+
+<p>You can use <code>ThrottleConditionObservable</code> only by calling <code>throttle</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).throttle(interval: 0.3, queue: DispatchQueue.main)
+</code></pre>
+
+                        <a href="Classes/ThrottleConditionObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThrottleConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6Djessi23CombineLatestObservableC"></a>
                     <a name="//apple_ref/swift/Class/CombineLatestObservable" class="dashAnchor"></a>
                     <a class="token" href="#/s:6Djessi23CombineLatestObservableC">CombineLatestObservable</a>
@@ -412,6 +502,45 @@ let observable = label.observable(at: \UILabel.text).filter({ $0?.count ?? 0 &gt
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6Djessi23TakeConditionObservableC"></a>
+                    <a name="//apple_ref/swift/Class/TakeConditionObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi23TakeConditionObservableC">TakeConditionObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define taking specified number of observed values.</p>
+
+<p>You can use <code>TakeConditionObservable</code> only by calling <code>take</code> method defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).take(2)
+</code></pre>
+
+                        <a href="Classes/TakeConditionObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TakeConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6Djessi8GCDQueueC"></a>
                     <a name="//apple_ref/swift/Class/GCDQueue" class="dashAnchor"></a>
                     <a class="token" href="#/s:6Djessi8GCDQueueC">GCDQueue</a>
@@ -441,10 +570,49 @@ let observable = label.observable(at: \UILabel.text).filter({ $0?.count ?? 0 &gt
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Djessi39DistinctUntilChangedConditionObservableC"></a>
+                    <a name="//apple_ref/swift/Class/DistinctUntilChangedConditionObservable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Djessi39DistinctUntilChangedConditionObservableC">DistinctUntilChangedConditionObservable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/Observable.html">Observable</a></code> protocol.</p>
+
+<p>Define mechanism to avoid following repeated values.</p>
+
+<p>You can use <code>DistinctUntilChangedConditionObservable</code> only by calling <code>distinctUntilChanged</code> property defined for all <code><a href="Protocols/Observable.html">Observable</a></code> types:</p>
+<pre class="highlight plaintext"><code>let label = UILabel()
+let observable = label.observable(at: \UILabel.text).distinctUntilChanged
+</code></pre>
+
+                        <a href="Classes/DistinctUntilChangedConditionObservable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DistinctUntilChangedConditionObservable</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Observable.html">Observable</a></span> <span class="k">where</span> <span class="kt">O</span><span class="o">.</span><span class="kt">Value</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-03)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
