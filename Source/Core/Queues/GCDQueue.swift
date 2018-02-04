@@ -15,8 +15,18 @@ public class GCDQueue: Queue {
     
     /// Dispatch style.
     ///
-    /// - async: Asynchronous style. Specified queue will be called as `queue.async { ... }`
-    /// - sync: Synchronous style. Specified queue will be called as `queue.sync { ... }`
+    /// - async: Asynchronous style, specified queue will be called as
+    ///
+    ///         queue.async(execute: block)
+    ///
+    /// - async(delay: TimeInterval): Asynchronous style with selected delay (in seconds), specified queue will be called as
+    ///
+    ///         queue.asyncAfter(deadline: .now() + delay, execute: block)
+    ///
+    /// - sync: Synchronous style, specified queue will be called as
+    ///
+    ///         queue.sync(execute: block)
+    ///
     public enum DispatchStyle {
         case async
         case asyncAfter(delay: TimeInterval)
