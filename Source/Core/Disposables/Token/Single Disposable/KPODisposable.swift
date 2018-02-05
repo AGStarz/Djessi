@@ -11,7 +11,7 @@ import Foundation
 /// Implementation of `Disposable` protocol.
 ///
 /// Simple container for single `NSKeyValueObservation` token for key path observing.
-public struct KPODisposable: Disposable {
+struct KPODisposable: Disposable {
     
     /// Smart key path disposable token.
     let token: NSKeyValueObservation
