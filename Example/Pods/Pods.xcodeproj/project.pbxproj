@@ -14,6 +14,7 @@
 		5139F3FF1FE195190026EF3E /* MapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */; };
 		5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */; };
 		5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */; };
+		513FF195202864C6003949D9 /* CombineLatestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FF194202864C6003949D9 /* CombineLatestObservable.swift */; };
 		518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23051FDEAD51005D6E40 /* Queue.swift */; };
 		518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23061FDEAD51005D6E40 /* GCDQueue.swift */; };
 		518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23091FDEAD51005D6E40 /* Disposable.swift */; };
@@ -157,7 +158,6 @@
 		51DA80ED2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */; };
 		51DA80F12000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */; };
 		51DA80F42000E492003654D5 /* UIViewPropertyAnimator+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */; };
-		51E347332024C62700148646 /* CombineLatestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E347322024C62700148646 /* CombineLatestObservable.swift */; };
 		51E347372024D9BA00148646 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E347362024D9BA00148646 /* Disposables.swift */; };
 		51E347392024F19200148646 /* DistinctUntilChangedConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E347382024F19200148646 /* DistinctUntilChangedConditionObservable.swift */; };
 		51E3473B2024FBB900148646 /* ThrottleConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E3473A2024FBB900148646 /* ThrottleConditionObservable.swift */; };
@@ -194,6 +194,7 @@
 		5139F3FE1FE195190026EF3E /* MapTransformObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTransformObservable.swift; sourceTree = "<group>"; };
 		5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapTransformObservable.swift; sourceTree = "<group>"; };
 		5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConditionObservable.swift; sourceTree = "<group>"; };
+		513FF194202864C6003949D9 /* CombineLatestObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLatestObservable.swift; sourceTree = "<group>"; };
 		518D23051FDEAD51005D6E40 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		518D23061FDEAD51005D6E40 /* GCDQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueue.swift; sourceTree = "<group>"; };
 		518D23091FDEAD51005D6E40 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
@@ -337,7 +338,6 @@
 		51DA80EC2000E2CF003654D5 /* UIMutableUserNotificationAction+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationAction+Observable.swift"; sourceTree = "<group>"; };
 		51DA80F02000E3EA003654D5 /* UIMutableUserNotificationCategory+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMutableUserNotificationCategory+Observable.swift"; sourceTree = "<group>"; };
 		51DA80F32000E492003654D5 /* UIViewPropertyAnimator+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Observable.swift"; sourceTree = "<group>"; };
-		51E347322024C62700148646 /* CombineLatestObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CombineLatestObservable.swift; path = ../Combination/CombineLatestObservable.swift; sourceTree = "<group>"; };
 		51E347362024D9BA00148646 /* Disposables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposables.swift; sourceTree = "<group>"; };
 		51E347382024F19200148646 /* DistinctUntilChangedConditionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctUntilChangedConditionObservable.swift; sourceTree = "<group>"; };
 		51E3473A2024FBB900148646 /* ThrottleConditionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleConditionObservable.swift; sourceTree = "<group>"; };
@@ -446,6 +446,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		513FF193202864C6003949D9 /* Combination */ = {
+			isa = PBXGroup;
+			children = (
+				513FF194202864C6003949D9 /* CombineLatestObservable.swift */,
+			);
+			path = Combination;
+			sourceTree = "<group>";
+		};
 		518D23031FDEAD28005D6E40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,7 +516,7 @@
 				518D23131FDEAD51005D6E40 /* Transformable */,
 				518D23151FDEAD51005D6E40 /* Conditional */,
 				518D23171FDEAD51005D6E40 /* Thread */,
-				51E347312024C5FD00148646 /* Combination */,
+				513FF193202864C6003949D9 /* Combination */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -1766,15 +1774,6 @@
 			path = UIViewPropertyAnimator;
 			sourceTree = "<group>";
 		};
-		51E347312024C5FD00148646 /* Combination */ = {
-			isa = PBXGroup;
-			children = (
-				51E347322024C62700148646 /* CombineLatestObservable.swift */,
-			);
-			name = Combination;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		51E347342024D99100148646 /* Single Disposable */ = {
 			isa = PBXGroup;
 			children = (
@@ -2061,8 +2060,8 @@
 				51A8ECED1FFFF2B100C5E230 /* UIPrintPageRenderer+Observable.swift in Sources */,
 				5196F90D1FF15BAC00B9E44D /* UISplitViewController+Observable.swift in Sources */,
 				5196F8961FE5919200B9E44D /* UIStepper+Observable.swift in Sources */,
+				513FF195202864C6003949D9 /* CombineLatestObservable.swift in Sources */,
 				51E3473B2024FBB900148646 /* ThrottleConditionObservable.swift in Sources */,
-				51E347332024C62700148646 /* CombineLatestObservable.swift in Sources */,
 				51D530C31FFF82650016DADC /* UIDragPreviewParameters+Observable.swift in Sources */,
 				5196F8C11FEA6FB500B9E44D /* UISearchBar+Observable.swift in Sources */,
 				51DA80E92000E0FE003654D5 /* UITextInputAssistantItem+Observable.swift in Sources */,
