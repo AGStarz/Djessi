@@ -15,6 +15,7 @@
 		5139F4011FE196C90026EF3E /* FlatMapTransformObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */; };
 		5139F4031FE19A5B0026EF3E /* FilterConditionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */; };
 		513FF195202864C6003949D9 /* CombineLatestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FF194202864C6003949D9 /* CombineLatestObservable.swift */; };
+		513FF1972028A232003949D9 /* ZipObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FF1962028A231003949D9 /* ZipObservable.swift */; };
 		518D231B1FDEAD51005D6E40 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23051FDEAD51005D6E40 /* Queue.swift */; };
 		518D231C1FDEAD51005D6E40 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23061FDEAD51005D6E40 /* GCDQueue.swift */; };
 		518D231D1FDEAD51005D6E40 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23091FDEAD51005D6E40 /* Disposable.swift */; };
@@ -195,6 +196,7 @@
 		5139F4001FE196C90026EF3E /* FlatMapTransformObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapTransformObservable.swift; sourceTree = "<group>"; };
 		5139F4021FE19A5B0026EF3E /* FilterConditionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConditionObservable.swift; sourceTree = "<group>"; };
 		513FF194202864C6003949D9 /* CombineLatestObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLatestObservable.swift; sourceTree = "<group>"; };
+		513FF1962028A231003949D9 /* ZipObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipObservable.swift; sourceTree = "<group>"; };
 		518D23051FDEAD51005D6E40 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		518D23061FDEAD51005D6E40 /* GCDQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueue.swift; sourceTree = "<group>"; };
 		518D23091FDEAD51005D6E40 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				513FF194202864C6003949D9 /* CombineLatestObservable.swift */,
+				513FF1962028A231003949D9 /* ZipObservable.swift */,
 			);
 			path = Combination;
 			sourceTree = "<group>";
@@ -2042,6 +2045,7 @@
 				5196F8881FE53F0C00B9E44D /* UIButton+Observable.swift in Sources */,
 				51D530B11FFF67530016DADC /* UIManagedDocument+Observable.swift in Sources */,
 				51A8ECD51FFFEC5E00C5E230 /* UIPopoverPresentationController+Observable.swift in Sources */,
+				513FF1972028A232003949D9 /* ZipObservable.swift in Sources */,
 				5196F8BC1FEA59C500B9E44D /* UITableView+Observable.swift in Sources */,
 				5196F9161FF15C9F00B9E44D /* UIImagePickerController+Observable.swift in Sources */,
 				51D531061FFF9EF00016DADC /* UIGraphicsPDFRendererFormat+Observable.swift in Sources */,

@@ -696,4 +696,60 @@ extension Tests {
         
         wait(for: [expectation], timeout: 1)
     }
+    
+    // MARK: - Zip
+    
+    func testZipFirstPair() {
+        let expectation = XCTestExpectation(description: "Expectation")
+        
+        let labelOne = UILabel()
+        let labelTwo = UILabel()
+        
+        labelOne.asReactive
+            .text
+            .flatMap({ $0 })
+            .zip(with: labelTwo.asReactive.text.flatMap({ $0 }))
+            .observe { (value) in
+                XCTAssert(value.0 == "123")
+                XCTAssert(value.1 == "321")
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        labelOne.text = "123"
+        labelOne.text = "345"
+        
+        labelTwo.text = "321"
+        
+        wait(for: [expectation], timeout: 1)
+    }
+    
+    func testZipCustomOffsetPair() {
+        let expectation = XCTestExpectation(description: "Expectation")
+        
+        let labelOne = UILabel()
+        let labelTwo = UILabel()
+        
+        labelOne.asReactive
+            .text
+            .flatMap({ $0 })
+            .zip(with: labelTwo.asReactive.text.flatMap({ $0 }))
+            .skip(1)
+            .observe { (value) in
+                XCTAssert(value.0 == "345")
+                XCTAssert(value.1 == "543")
+                
+                expectation.fulfill()
+            }
+            .dispose(in: disposeBag)
+        
+        labelOne.text = "123"
+        labelOne.text = "345"
+        labelTwo.text = "321"
+        labelOne.text = "678"
+        labelTwo.text = "543"
+        
+        wait(for: [expectation], timeout: 1)
+    }
 }
