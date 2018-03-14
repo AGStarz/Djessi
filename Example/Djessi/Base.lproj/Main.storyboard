@@ -24,17 +24,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-nH-WKU">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter dog breed here" id="Nw6-Y4-dMs">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="rHm-Kb-pUj"/>
-                                    </connections>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Lw8-3w-CXB" style="IBUITableViewCellStyleDefault" id="7IH-LE-jjg">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7IH-LE-jjg" id="fI2-fg-1aQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -67,7 +59,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="G5T-Mt-bU6"/>
                     <connections>
-                        <outlet property="searchBar" destination="Nw6-Y4-dMs" id="pIm-hF-NYk"/>
                         <outlet property="tableView" destination="f8a-nH-WKU" id="dwu-m0-mob"/>
                     </connections>
                 </viewController>
