@@ -13,17 +13,17 @@ class BreedsListViewController: UIViewController {
     
     @objcMembers
     class ViewModel: NSObject {
-        dynamic var breeds: [Breed] = []
+        dynamic var breeds: [DogAPI.Breed] = []
         dynamic var title: String = "Dog breeds"
         
         override init() {
             super.init()
             
             DogAPI
-                .breedsList { (breeds) in
-                    self.breeds = breeds
+                .breedsList
+                .request { (response: DogAPI.Breeds?) in
+                    self.breeds = response?.breeds ?? []
                 }
-                .resume()
         }
     }
     
@@ -32,7 +32,7 @@ class BreedsListViewController: UIViewController {
     private let viewModel = ViewModel()
     private let disposeBag = DisposeBag()
     
-    private var breeds: [Breed] = [] {
+    private var breeds: [String] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -69,9 +69,8 @@ extension BreedsListViewController: UITableViewDataSource {
         return cell
     }
     
-    private func setup(cell: UITableViewCell, breed: Breed) {
-        cell.textLabel?.text = breed.name.capitalized
-        cell.detailTextLabel?.text = breed.subBreeds.count > 0 ? "Sub breeds: \(breed.subBreeds.map({ $0.capitalized }).joined(separator: ", "))" : nil
+    private func setup(cell: UITableViewCell, breed: DogAPI.Breed) {
+        cell.textLabel?.text = breed.capitalized
     }
 }
 

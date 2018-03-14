@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513FF19A2029F6F9003949D9 /* BreedImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FF1992029F6F9003949D9 /* BreedImageCollectionCell.swift */; };
 		518D23471FDFCB64005D6E40 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D23461FDFCB63005D6E40 /* DogAPI.swift */; };
-		518D234B1FDFCB97005D6E40 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D234A1FDFCB97005D6E40 /* Breed.swift */; };
 		518D234F1FDFD68D005D6E40 /* BreedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* BreedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* BreedsListViewController.swift */; };
@@ -34,8 +34,8 @@
 		27AEC5939C877998E51A06A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		39B14C54A98E33672A8EECE5 /* Pods_Djessi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Djessi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2918272FC971EB3470579B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		513FF1992029F6F9003949D9 /* BreedImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageCollectionCell.swift; sourceTree = "<group>"; };
 		518D23461FDFCB63005D6E40 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
-		518D234A1FDFCB97005D6E40 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		518D234E1FDFD68D005D6E40 /* BreedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageViewController.swift; sourceTree = "<group>"; };
 		5196F8DA1FEAA0E200B9E44D /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		5319404370E8E231364994B7 /* Pods-Djessi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Djessi_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Djessi_Tests/Pods-Djessi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,20 +85,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		513FF1982029F6CD003949D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				513FF1992029F6F9003949D9 /* BreedImageCollectionCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		518D23481FDFCB86005D6E40 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				518D23461FDFCB63005D6E40 /* DogAPI.swift */,
 			);
 			name = Network;
-			sourceTree = "<group>";
-		};
-		518D23491FDFCB8E005D6E40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				518D234A1FDFCB97005D6E40 /* Breed.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		518D234C1FDFCBB8005D6E40 /* Storyboards */ = {
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				518D23491FDFCB8E005D6E40 /* Model */,
+				513FF1982029F6CD003949D9 /* Views */,
 				518D234D1FDFCBCD005D6E40 /* View Controllers */,
 				518D23481FDFCB86005D6E40 /* Network */,
 				518D234C1FDFCBB8005D6E40 /* Storyboards */,
@@ -414,7 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				518D234F1FDFD68D005D6E40 /* BreedImageViewController.swift in Sources */,
-				518D234B1FDFCB97005D6E40 /* Breed.swift in Sources */,
+				513FF19A2029F6F9003949D9 /* BreedImageCollectionCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* BreedsListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				518D23471FDFCB64005D6E40 /* DogAPI.swift in Sources */,
@@ -509,6 +509,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -554,6 +555,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

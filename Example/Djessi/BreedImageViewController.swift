@@ -13,31 +13,51 @@ class BreedImageViewController: UIViewController {
     
     @objcMembers
     class ViewModel: NSObject {
-        dynamic var breedImage: UIImage? = nil
+        
+        @objcMembers
+        class BreedImage: NSObject {
+            dynamic var breedImage: UIImage? = nil
+            
+            init(url: URL) {
+                super.init()
+                
+                URLSession.shared.dataTask(with: url) { (data, _, _) in
+                    guard let data = data else { return }
+                    
+                    self.breedImage = UIImage(data: data)
+                }.resume()
+            }
+        }
+        
+        dynamic var breedImages: [BreedImage] = []
         dynamic var title: String = ""
         
-        init(breed: Breed) {
+        init(breed: DogAPI.Breed) {
             super.init()
             
-            title = breed.name.capitalized
+            title = breed.capitalized
             
             DogAPI
-                .breedImage(breed) { (url) in
-                    URLSession.shared.dataTask(with: url) { (data, _, _) in
-                        guard let data = data else { return }
-                        
-                        self.breedImage = UIImage(data: data)
-                    }.resume()
-                }.resume()
+                .breedImages(breed)
+                .request { (response: DogAPI.BreedImages?) in
+                    self.breedImages = (response?.images ?? [])
+                        .flatMap({ URL(string: $0) })
+                        .map({ BreedImage(url: $0) })
+                }
         }
     }
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel: ViewModel!
     
     private let disposeBag = DisposeBag()
+    
+    private var breedImages: [ViewModel.BreedImage] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,18 +69,48 @@ class BreedImageViewController: UIViewController {
             .dispose(in: disposeBag)
         
         viewModel
-            .observable(at: \ViewModel.breedImage)
-            .deliver(on: GCDQueue.asyncMain)
+            .observable(at: \ViewModel.breedImages)
+            .deliver(on: .main)
+            .observe(onNext: { self.breedImages = $0 })
+            .dispose(in: disposeBag)
+    }
+}
+
+extension BreedImageViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return breedImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BreedImageCollectionCell.identifier, for: indexPath) as? BreedImageCollectionCell else { return UICollectionViewCell() }
+        
+        setup(cell: cell, breedImage: breedImages[indexPath.row])
+        
+        return cell
+    }
+    
+    private func setup(cell: BreedImageCollectionCell, breedImage: ViewModel.BreedImage) {
+        let observable = breedImage
+            .observable(at: \ViewModel.BreedImage.breedImage)
+            .deliver(on: .main)
+        
+        observable
             .map({ $0 != nil })
-            .bind(to: activityIndicator.asReactive.isHidden)
+            .bind(to: cell.activityIndicator.asReactive.isHidden)
             .dispose(in: disposeBag)
         
-        viewModel
-            .observable(at: \ViewModel.breedImage)
-            .deliver(on: GCDQueue.asyncMain)
+        observable
             .flatMap({ $0 })
-            .bind(to: imageView.asReactive.image)
+            .bind(to: cell.imageView.asReactive.image)
             .dispose(in: disposeBag)
+    }
+}
+
+extension BreedImageViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.frame.size
     }
 }
 
