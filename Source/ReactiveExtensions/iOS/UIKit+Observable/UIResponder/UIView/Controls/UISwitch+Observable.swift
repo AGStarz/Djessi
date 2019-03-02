@@ -21,7 +21,7 @@ extension ReactiveExtension where Source: UISwitch {
     
     /// Observable for `tintColor` property of `UISwitch` source.
     @available(iOS 6.0, *)
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     

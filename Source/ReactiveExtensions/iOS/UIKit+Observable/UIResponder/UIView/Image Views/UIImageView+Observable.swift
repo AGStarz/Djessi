@@ -52,7 +52,7 @@ extension ReactiveExtension where Source: UIImageView {
     
     /// Observable for `tintColor` property of `UIImageView` source.
     @available(iOS 7.0, *)
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     

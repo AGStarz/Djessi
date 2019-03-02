@@ -18,7 +18,7 @@ extension ReactiveExtension where Source: UIFocusGuide {
     
     /// Observable for `preferredFocusEnvironments` property of `UIFocusGuide` source.
     @available(iOS 10.0, *)
-    public var preferredFocusEnvironments: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<[UIFocusEnvironment]>> {
+    public var preferredFocusEnvironments: KeyPathObservable<Source, Optional<[UIFocusEnvironment]>> {
         return source.observable(at: \Source.preferredFocusEnvironments)
     }
     

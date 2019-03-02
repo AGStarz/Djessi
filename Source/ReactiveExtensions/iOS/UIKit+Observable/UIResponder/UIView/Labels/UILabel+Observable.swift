@@ -17,12 +17,12 @@ extension ReactiveExtension where Source: UILabel {
     }
     
     /// Observable for `font` property of `UILabel` source.
-    public var font: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIFont>> {
+    public var font: KeyPathObservable<Source, Optional<UIFont>> {
         return source.observable(at: \Source.font)
     }
     
     /// Observable for `textColor` property of `UILabel` source.
-    public var textColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var textColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.textColor)
     }
     

@@ -36,7 +36,7 @@ extension ReactiveExtension where Source: UINavigationBar {
     }
     
     /// Observable for `tintColor` property of `UINavigationBar` source.
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     

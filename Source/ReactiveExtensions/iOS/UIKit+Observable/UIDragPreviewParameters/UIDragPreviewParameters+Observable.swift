@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UIDragPreviewParameters {
     }
     
     /// Observable for `backgroundColor` property of `UIDragPreviewParameters` source.
-    public var backgroundColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var backgroundColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.backgroundColor)
     }
 }

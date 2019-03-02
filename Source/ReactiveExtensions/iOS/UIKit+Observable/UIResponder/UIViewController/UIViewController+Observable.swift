@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIViewController {
 
     /// Observable for `view` property of `UIViewController` source.
-    public var view: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIView>> {
+    public var view: KeyPathObservable<Source, Optional<UIView>> {
         return source.observable(at: \Source.view)
     }
     

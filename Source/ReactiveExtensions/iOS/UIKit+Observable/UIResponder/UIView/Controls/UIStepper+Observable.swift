@@ -50,7 +50,7 @@ extension ReactiveExtension where Source: UIStepper {
     
     /// Observable for `tintColor` property of `UIStepper` source.
     @available(iOS 6.0, *)
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
 }

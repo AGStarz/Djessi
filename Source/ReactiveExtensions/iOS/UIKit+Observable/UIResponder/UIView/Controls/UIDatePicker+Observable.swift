@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UIDatePicker {
     }
     
     /// Observable for `calendar` property of `UIDatePicker` source.
-    public var calendar: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<Calendar>> {
+    public var calendar: KeyPathObservable<Source, Optional<Calendar>> {
         return source.observable(at: \Source.calendar)
     }
     

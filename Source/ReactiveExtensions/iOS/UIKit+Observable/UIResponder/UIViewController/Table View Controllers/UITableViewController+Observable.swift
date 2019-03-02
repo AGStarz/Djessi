@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UITableViewController {
 
     /// Observable for `tableView` property of `UITableViewController` source.
-    public var tableView: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UITableView>> {
+    public var tableView: KeyPathObservable<Source, Optional<UITableView>> {
         return source.observable(at: \Source.tableView)
     }
     

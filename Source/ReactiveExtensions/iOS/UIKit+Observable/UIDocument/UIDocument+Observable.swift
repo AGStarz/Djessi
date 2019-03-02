@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UIDocument {
     }
     
     /// Observable for `undoManager` property of `UIDocument` source.
-    public var undoManager: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UndoManager>> {
+    public var undoManager: KeyPathObservable<Source, Optional<UndoManager>> {
         return source.observable(at: \Source.undoManager)
     }
     

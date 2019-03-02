@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UITextView {
     
     /// Observable for `text` property of `UITextView` source.
-    public var text: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<String>> {
+    public var text: KeyPathObservable<Source, Optional<String>> {
         return source.observable(at: \Source.text)
     }
 
@@ -61,7 +61,7 @@ extension ReactiveExtension where Source: UITextView {
     
     /// Observable for `attributedText` property of `UITextView` source.
     @available(iOS 6.0, *)
-    public var attributedText: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<NSAttributedString>> {
+    public var attributedText: KeyPathObservable<Source, Optional<NSAttributedString>> {
         return source.observable(at: \Source.attributedText)
     }
     
@@ -95,7 +95,7 @@ extension ReactiveExtension where Source: UITextView {
     
     /// Observable for `linkTextAttributes` property of `UITextView` source.
     @available(iOS 7.0, *)
-    public var linkTextAttributes: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<[String: Any]>> {
+    public var linkTextAttributes: KeyPathObservable<Source, Optional<[String: Any]>> {
         return source.observable(at: \Source.linkTextAttributes)
     }
     

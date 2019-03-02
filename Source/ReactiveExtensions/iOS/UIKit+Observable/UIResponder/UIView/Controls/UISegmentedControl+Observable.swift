@@ -19,7 +19,7 @@ extension ReactiveExtension where Source: UISegmentedControl {
     }
     
     /// Observable for `tintColor` property of `UISegmentedControl` source.
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     

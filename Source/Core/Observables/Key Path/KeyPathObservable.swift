@@ -99,18 +99,6 @@ extension Observable where Value: Equatable {
             another.value = value
         }
     }
-    
-    /// Bind current observable changes to another one with implicitly unwrapped value type of current one.
-    ///
-    /// - Parameter another: Another observable which should handle source changes. It constrained to `KeyPathObservable`.
-    /// - Returns: Disposable token. You should keep strong reference to it or use `DisposeBag` because object observing depends on token.
-    public func bind<Source, ObservableValue>(to another: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<ObservableValue>>) -> Disposable where ObservableValue == Value {
-        return observe { (value) in
-            guard another.value != value else { return }
-            
-            another.value = value
-        }
-    }
 }
 
 extension NSObjectProtocol where Self: NSObject {

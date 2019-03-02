@@ -25,7 +25,7 @@ extension ReactiveExtension where Source: UITabBar {
     
     /// Observable for `tintColor` property of `UITabBar` source.
     @available(iOS 5.0, *)
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     

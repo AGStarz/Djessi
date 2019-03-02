@@ -28,7 +28,7 @@ extension ReactiveExtension where Source: UIToolbar {
     }
     
     /// Observable for `tintColor` property of `UIToolbar` source.
-    public var tintColor: KeyPathObservable<Source, ImplicitlyUnwrappedOptional<UIColor>> {
+    public var tintColor: KeyPathObservable<Source, Optional<UIColor>> {
         return source.observable(at: \Source.tintColor)
     }
     
