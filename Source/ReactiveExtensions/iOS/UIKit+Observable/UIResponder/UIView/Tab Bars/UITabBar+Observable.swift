@@ -61,7 +61,7 @@ extension ReactiveExtension where Source: UITabBar {
     
     /// Observable for `itemPositioning` property of `UITabBar` source.
     @available(iOS 7.0, *)
-    public var itemPositioning: KeyPathObservable<Source, UITabBarItemPositioning> {
+    public var itemPositioning: KeyPathObservable<Source, UITabBar.ItemPositioning> {
         return source.observable(at: \Source.itemPositioning)
     }
     

@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIBarButtonItem {
     
     /// Observable for `style` property of `UIBarButtonItem` source.
-    public var style: KeyPathObservable<Source, UIBarButtonItemStyle> {
+    public var style: KeyPathObservable<Source, UIBarButtonItem.Style> {
         return source.observable(at: \Source.style)
     }
     

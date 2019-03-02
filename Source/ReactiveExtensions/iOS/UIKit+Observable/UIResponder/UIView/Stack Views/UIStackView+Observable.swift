@@ -14,17 +14,17 @@ import UIKit
 extension ReactiveExtension where Source: UIStackView {
     
     /// Observable for `axis` property of `UIStackView` source.
-    public var axis: KeyPathObservable<Source, UILayoutConstraintAxis> {
+    public var axis: KeyPathObservable<Source, NSLayoutConstraint.Axis> {
         return source.observable(at: \Source.axis)
     }
     
     /// Observable for `distribution` property of `UIStackView` source.
-    public var distribution: KeyPathObservable<Source, UIStackViewDistribution> {
+    public var distribution: KeyPathObservable<Source, UIStackView.Distribution> {
         return source.observable(at: \Source.distribution)
     }
     
     /// Observable for `alignment` property of `UIStackView` source.
-    public var alignment: KeyPathObservable<Source, UIStackViewAlignment> {
+    public var alignment: KeyPathObservable<Source, UIStackView.Alignment> {
         return source.observable(at: \Source.alignment)
     }
     

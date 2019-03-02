@@ -54,13 +54,13 @@ extension ReactiveExtension where Source: UINavigationBar {
     
     /// Observable for `titleTextAttributes` property of `UINavigationBar` source.
     @available(iOS 5.0, *)
-    public var titleTextAttributes: KeyPathObservable<Source, [NSAttributedStringKey : Any]?> {
+    public var titleTextAttributes: KeyPathObservable<Source, [NSAttributedString.Key : Any]?> {
         return source.observable(at: \Source.titleTextAttributes)
     }
     
     /// Observable for `largeTitleTextAttributes` property of `UINavigationBar` source.
     @available(iOS 11.0, *)
-    public var largeTitleTextAttributes: KeyPathObservable<Source, [NSAttributedStringKey : Any]?> {
+    public var largeTitleTextAttributes: KeyPathObservable<Source, [NSAttributedString.Key : Any]?> {
         return source.observable(at: \Source.largeTitleTextAttributes)
     }
     

@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UIAccessibilityCustomRotorSearchPredic
     }
     
     /// Observable for `searchDirection` property of `UIAccessibilityCustomRotorSearchPredicate` source.
-    public var searchDirection: KeyPathObservable<Source, UIAccessibilityCustomRotorDirection> {
+    public var searchDirection: KeyPathObservable<Source, UIAccessibilityCustomRotor.Direction> {
         return source.observable(at: \Source.searchDirection)
     }
 }

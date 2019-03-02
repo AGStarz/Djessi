@@ -67,7 +67,7 @@ extension ReactiveExtension where Source: UITextView {
     
     /// Observable for `typingAttributes` property of `UITextView` source.
     @available(iOS 6.0, *)
-    public var typingAttributes: KeyPathObservable<Source, [String: Any]> {
+    public var typingAttributes: KeyPathObservable<Source, [NSAttributedString.Key: Any]> {
         return source.observable(at: \Source.typingAttributes)
     }
     
@@ -95,7 +95,7 @@ extension ReactiveExtension where Source: UITextView {
     
     /// Observable for `linkTextAttributes` property of `UITextView` source.
     @available(iOS 7.0, *)
-    public var linkTextAttributes: KeyPathObservable<Source, Optional<[String: Any]>> {
+    public var linkTextAttributes: KeyPathObservable<Source, Optional<[NSAttributedString.Key: Any]>> {
         return source.observable(at: \Source.linkTextAttributes)
     }
     
@@ -106,7 +106,7 @@ extension ReactiveExtension where Source: UITextView {
     }
     
     /// Observable for `markedTextStyle` property of `UITextView` source.
-    public var markedTextStyle: KeyPathObservable<Source, [AnyHashable: Any]?> {
+    public var markedTextStyle: KeyPathObservable<Source, [NSAttributedString.Key: Any]?> {
         return source.observable(at: \Source.markedTextStyle)
     }
     

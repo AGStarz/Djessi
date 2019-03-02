@@ -27,12 +27,12 @@ extension ReactiveExtension where Source: UIControl {
     }
     
     /// Observable for `contentVerticalAlignment` property of `UIControl` source.
-    public var contentVerticalAlignment: KeyPathObservable<Source, UIControlContentVerticalAlignment> {
+    public var contentVerticalAlignment: KeyPathObservable<Source, UIControl.ContentVerticalAlignment> {
         return source.observable(at: \Source.contentVerticalAlignment)
     }
     
     /// Observable for `contentHorizontalAlignment` property of `UIControl` source.
-    public var contentHorizontalAlignment: KeyPathObservable<Source, UIControlContentHorizontalAlignment> {
+    public var contentHorizontalAlignment: KeyPathObservable<Source, UIControl.ContentHorizontalAlignment> {
         return source.observable(at: \Source.contentHorizontalAlignment)
     }
 }

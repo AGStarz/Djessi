@@ -40,13 +40,13 @@ extension ReactiveExtension where Source: UITextField {
     }
     
     /// Observable for `borderStyle` property of `UITextField` source.
-    public var borderStyle: KeyPathObservable<Source, UITextBorderStyle> {
+    public var borderStyle: KeyPathObservable<Source, UITextField.BorderStyle> {
         return source.observable(at: \Source.borderStyle)
     }
     
     /// Observable for `defaultTextAttributes` property of `UITextField` source.
     @available(iOS 7.0, *)
-    public var defaultTextAttributes: KeyPathObservable<Source, [String: Any]> {
+    public var defaultTextAttributes: KeyPathObservable<Source, [NSAttributedString.Key: Any]> {
         return source.observable(at: \Source.defaultTextAttributes)
     }
     
@@ -94,12 +94,12 @@ extension ReactiveExtension where Source: UITextField {
     
     /// Observable for `typingAttributes` property of `UITextField` source.
     @available(iOS 6.0, *)
-    public var typingAttributes: KeyPathObservable<Source, [String: Any]?> {
+    public var typingAttributes: KeyPathObservable<Source, [NSAttributedString.Key: Any]?> {
         return source.observable(at: \Source.typingAttributes)
     }
     
     /// Observable for `clearButtonMode` property of `UITextField` source.
-    public var clearButtonMode: KeyPathObservable<Source, UITextFieldViewMode> {
+    public var clearButtonMode: KeyPathObservable<Source, UITextField.ViewMode> {
         return source.observable(at: \Source.clearButtonMode)
     }
     
@@ -109,7 +109,7 @@ extension ReactiveExtension where Source: UITextField {
     }
     
     /// Observable for `leftViewMode` property of `UITextField` source.
-    public var leftViewMode: KeyPathObservable<Source, UITextFieldViewMode> {
+    public var leftViewMode: KeyPathObservable<Source, UITextField.ViewMode> {
         return source.observable(at: \Source.leftViewMode)
     }
     
@@ -119,7 +119,7 @@ extension ReactiveExtension where Source: UITextField {
     }
     
     /// Observable for `rightViewMode` property of `UITextField` source.
-    public var rightViewMode: KeyPathObservable<Source, UITextFieldViewMode> {
+    public var rightViewMode: KeyPathObservable<Source, UITextField.ViewMode> {
         return source.observable(at: \Source.rightViewMode)
     }
     

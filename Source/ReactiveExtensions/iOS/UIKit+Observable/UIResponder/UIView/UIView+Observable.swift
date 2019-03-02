@@ -61,7 +61,7 @@ extension ReactiveExtension where Source: UIView {
     }
     
     /// Observable for `autoresizingMask` property of `UIView` source.
-    public var autoresizingMask: KeyPathObservable<Source, UIViewAutoresizing> {
+    public var autoresizingMask: KeyPathObservable<Source, UIView.AutoresizingMask> {
         return source.observable(at: \Source.autoresizingMask)
     }
     
@@ -91,7 +91,7 @@ extension ReactiveExtension where Source: UIView {
     }
     
     /// Observable for `contentMode` property of `UIView` source.
-    public var contentMode: KeyPathObservable<Source, UIViewContentMode> {
+    public var contentMode: KeyPathObservable<Source, UIView.ContentMode> {
         return source.observable(at: \Source.contentMode)
     }
     
@@ -139,7 +139,7 @@ extension ReactiveExtension where Source: UIView {
     
     /// Observable for `tintAdjustmentMode` property of `UIView` source.
     @available(iOS 7.0, *)
-    public var tintAdjustmentMode: KeyPathObservable<Source, UIViewTintAdjustmentMode> {
+    public var tintAdjustmentMode: KeyPathObservable<Source, UIView.TintAdjustmentMode> {
         return source.observable(at: \Source.tintAdjustmentMode)
     }
     

@@ -30,7 +30,7 @@ extension ReactiveExtension where Source: UICollectionView {
     
     /// Observable for `reorderingCadence` property of `UICollectionView` source.
     @available(iOS 11.0, *)
-    public var reorderingCadence: KeyPathObservable<Source, UICollectionViewReorderingCadence> {
+    public var reorderingCadence: KeyPathObservable<Source, UICollectionView.ReorderingCadence> {
         return source.observable(at: \Source.reorderingCadence)
     }
     

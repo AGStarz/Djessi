@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIProgressView {
 
     /// Observable for `progressViewStyle` property of `UIProgressView` source.
-    public var progressViewStyle: KeyPathObservable<Source, UIProgressViewStyle> {
+    public var progressViewStyle: KeyPathObservable<Source, UIProgressView.Style> {
         return source.observable(at: \Source.progressViewStyle)
     }
     

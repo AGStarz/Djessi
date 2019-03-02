@@ -12,12 +12,12 @@ import UIKit
 extension ReactiveExtension where Source: UITextDropProposal {
     
     /// Observable for `dropAction` property of `UITextDropProposal` source.
-    public var dropAction: KeyPathObservable<Source, UITextDropAction> {
+    public var dropAction: KeyPathObservable<Source, UITextDropProposal.Action> {
         return source.observable(at: \Source.dropAction)
     }
     
     /// Observable for `dropProgressMode` property of `UITextDropProposal` source.
-    public var dropProgressMode: KeyPathObservable<Source, UITextDropProgressMode> {
+    public var dropProgressMode: KeyPathObservable<Source, UITextDropProposal.ProgressMode> {
         return source.observable(at: \Source.dropProgressMode)
     }
     
@@ -27,7 +27,7 @@ extension ReactiveExtension where Source: UITextDropProposal {
     }
     
     /// Observable for `dropPerformer` property of `UITextDropProposal` source.
-    public var dropPerformer: KeyPathObservable<Source, UITextDropPerformer> {
+    public var dropPerformer: KeyPathObservable<Source, UITextDropProposal.Performer> {
         return source.observable(at: \Source.dropPerformer)
     }
 }

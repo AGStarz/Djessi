@@ -68,7 +68,7 @@ extension ReactiveExtension where Source: UISearchBar {
     
     /// Observable for `searchBarStyle` property of `UISearchBar` source.
     @available(iOS 7.0, *)
-    public var searchBarStyle: KeyPathObservable<Source, UISearchBarStyle> {
+    public var searchBarStyle: KeyPathObservable<Source, UISearchBar.Style> {
         return source.observable(at: \Source.searchBarStyle)
     }
     

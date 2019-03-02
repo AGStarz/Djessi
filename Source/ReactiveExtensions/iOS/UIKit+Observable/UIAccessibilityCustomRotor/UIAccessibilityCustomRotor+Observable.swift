@@ -23,7 +23,7 @@ extension ReactiveExtension where Source: UIAccessibilityCustomRotor {
     }
     
     /// Observable for `itemSearchBlock` property of `UIAccessibilityCustomRotor` source.
-    public var itemSearchBlock: KeyPathObservable<Source, UIKit.UIAccessibilityCustomRotorSearch> {
+    public var itemSearchBlock: KeyPathObservable<Source, UIKit.UIAccessibilityCustomRotor.Search> {
         return source.observable(at: \Source.itemSearchBlock)
     }
 }

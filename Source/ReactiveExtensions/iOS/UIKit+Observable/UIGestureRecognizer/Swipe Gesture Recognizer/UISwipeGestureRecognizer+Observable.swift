@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UISwipeGestureRecognizer {
     }
     
     /// Observable for `direction` property of `UISwipeGestureRecognizer` source.
-    public var direction: KeyPathObservable<Source, UISwipeGestureRecognizerDirection> {
+    public var direction: KeyPathObservable<Source, UISwipeGestureRecognizer.Direction> {
         return source.observable(at: \Source.direction)
     }
 }

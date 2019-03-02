@@ -12,7 +12,7 @@ import UIKit
 extension ReactiveExtension where Source: UIImagePickerController {
 
     /// Observable for `sourceType` property of `UIImagePickerController` source.
-    public var sourceType: KeyPathObservable<Source, UIImagePickerControllerSourceType> {
+    public var sourceType: KeyPathObservable<Source, UIImagePickerController.SourceType> {
         return source.observable(at: \Source.sourceType)
     }
     
@@ -29,7 +29,7 @@ extension ReactiveExtension where Source: UIImagePickerController {
     
     /// Observable for `imageExportPreset` property of `UIImagePickerController` source.
     @available(iOS 11.0, *)
-    public var imageExportPreset: KeyPathObservable<Source, UIImagePickerControllerImageURLExportPreset> {
+    public var imageExportPreset: KeyPathObservable<Source, UIImagePickerController.ImageURLExportPreset> {
         return source.observable(at: \Source.imageExportPreset)
     }
     
@@ -41,7 +41,7 @@ extension ReactiveExtension where Source: UIImagePickerController {
     
     /// Observable for `videoQuality` property of `UIImagePickerController` source.
     @available(iOS 3.1, *)
-    public var videoQuality: KeyPathObservable<Source, UIImagePickerControllerQualityType> {
+    public var videoQuality: KeyPathObservable<Source, UIImagePickerController.QualityType> {
         return source.observable(at: \Source.videoQuality)
     }
     
@@ -71,19 +71,19 @@ extension ReactiveExtension where Source: UIImagePickerController {
     
     /// Observable for `cameraCaptureMode` property of `UIImagePickerController` source.
     @available(iOS 4.0, *)
-    public var cameraCaptureMode: KeyPathObservable<Source, UIImagePickerControllerCameraCaptureMode> {
+    public var cameraCaptureMode: KeyPathObservable<Source, UIImagePickerController.CameraCaptureMode> {
         return source.observable(at: \Source.cameraCaptureMode)
     }
     
     /// Observable for `cameraDevice` property of `UIImagePickerController` source.
     @available(iOS 4.0, *)
-    public var cameraDevice: KeyPathObservable<Source, UIImagePickerControllerCameraDevice> {
+    public var cameraDevice: KeyPathObservable<Source, UIImagePickerController.CameraDevice> {
         return source.observable(at: \Source.cameraDevice)
     }
     
     /// Observable for `cameraFlashMode` property of `UIImagePickerController` source.
     @available(iOS 4.0, *)
-    public var cameraFlashMode: KeyPathObservable<Source, UIImagePickerControllerCameraFlashMode> {
+    public var cameraFlashMode: KeyPathObservable<Source, UIImagePickerController.CameraFlashMode> {
         return source.observable(at: \Source.cameraFlashMode)
     }
 }

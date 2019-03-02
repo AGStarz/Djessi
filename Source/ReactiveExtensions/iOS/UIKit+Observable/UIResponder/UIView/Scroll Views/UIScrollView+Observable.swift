@@ -28,7 +28,7 @@ extension ReactiveExtension where Source: UIScrollView {
     
     /// Observable for `contentInsetAdjustmentBehavior` property of `UIScrollView` source.
     @available(iOS 11.0, *)
-    public var contentInsetAdjustmentBehavior: KeyPathObservable<Source, UIScrollViewContentInsetAdjustmentBehavior> {
+    public var contentInsetAdjustmentBehavior: KeyPathObservable<Source, UIScrollView.ContentInsetAdjustmentBehavior> {
         return source.observable(at: \Source.contentInsetAdjustmentBehavior)
     }
     
@@ -78,18 +78,18 @@ extension ReactiveExtension where Source: UIScrollView {
     }
     
     /// Observable for `indicatorStyle` property of `UIScrollView` source.
-    public var indicatorStyle: KeyPathObservable<Source, UIScrollViewIndicatorStyle> {
+    public var indicatorStyle: KeyPathObservable<Source, UIScrollView.IndicatorStyle> {
         return source.observable(at: \Source.indicatorStyle)
     }
     
     /// Observable for `decelerationRate` property of `UIScrollView` source.
     @available(iOS 3.0, *)
-    public var decelerationRate: KeyPathObservable<Source, CGFloat> {
+    public var decelerationRate: KeyPathObservable<Source, UIScrollView.DecelerationRate> {
         return source.observable(at: \Source.decelerationRate)
     }
     
     /// Observable for `indexDisplayMode` property of `UIScrollView` source.
-    public var indexDisplayMode: KeyPathObservable<Source, UIScrollViewIndexDisplayMode> {
+    public var indexDisplayMode: KeyPathObservable<Source, UIScrollView.IndexDisplayMode> {
         return source.observable(at: \Source.indexDisplayMode)
     }
     
@@ -131,7 +131,7 @@ extension ReactiveExtension where Source: UIScrollView {
     
     /// Observable for `keyboardDismissMode` property of `UIScrollView` source.
     @available(iOS 7.0, *)
-    public var keyboardDismissMode: KeyPathObservable<Source, UIScrollViewKeyboardDismissMode> {
+    public var keyboardDismissMode: KeyPathObservable<Source, UIScrollView.KeyboardDismissMode> {
         return source.observable(at: \Source.keyboardDismissMode)
     }
     

@@ -22,7 +22,7 @@ extension ReactiveExtension where Source: UIVideoEditorController {
     }
     
     /// Observable for `videoQuality` property of `UIVideoEditorController` source.
-    public var videoQuality: KeyPathObservable<Source, UIImagePickerControllerQualityType> {
+    public var videoQuality: KeyPathObservable<Source, UIImagePickerController.QualityType> {
         return source.observable(at: \Source.videoQuality)
     }
 }

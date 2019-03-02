@@ -52,7 +52,7 @@ extension ReactiveExtension where Source: UIDatePicker {
     }
 
     /// Observable for `datePickerMode` property of `UIDatePicker` source.
-    public var datePickerMode: KeyPathObservable<Source, UIDatePickerMode> {
+    public var datePickerMode: KeyPathObservable<Source, UIDatePicker.Mode> {
         return source.observable(at: \Source.datePickerMode)
     }
 }

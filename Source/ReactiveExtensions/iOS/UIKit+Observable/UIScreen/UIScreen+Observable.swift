@@ -19,7 +19,7 @@ extension ReactiveExtension where Source: UIScreen {
     
     /// Observable for `overscanCompensation` property of `UIScreen` source.
     @available(iOS 5.0, *)
-    public var overscanCompensation: KeyPathObservable<Source, UIScreenOverscanCompensation> {
+    public var overscanCompensation: KeyPathObservable<Source, UIScreen.OverscanCompensation> {
         return source.observable(at: \Source.overscanCompensation)
     }
     

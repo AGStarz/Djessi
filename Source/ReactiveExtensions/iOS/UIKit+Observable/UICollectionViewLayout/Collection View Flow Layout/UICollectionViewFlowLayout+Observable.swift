@@ -33,7 +33,7 @@ extension ReactiveExtension where Source: UICollectionViewFlowLayout {
     }
     
     /// Observable for `scrollDirection` property of `UICollectionViewFlowLayout` source.
-    public var scrollDirection: KeyPathObservable<Source, UICollectionViewScrollDirection> {
+    public var scrollDirection: KeyPathObservable<Source, UICollectionView.ScrollDirection> {
         return source.observable(at: \Source.scrollDirection)
     }
     
@@ -54,7 +54,7 @@ extension ReactiveExtension where Source: UICollectionViewFlowLayout {
     
     /// Observable for `sectionInsetReference` property of `UICollectionViewFlowLayout` source.
     @available(iOS 11.0, *)
-    public var sectionInsetReference: KeyPathObservable<Source, UICollectionViewFlowLayoutSectionInsetReference> {
+    public var sectionInsetReference: KeyPathObservable<Source, UICollectionViewFlowLayout.SectionInsetReference> {
         return source.observable(at: \Source.sectionInsetReference)
     }
     

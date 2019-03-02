@@ -52,7 +52,7 @@ extension ReactiveExtension where Source: UITableView {
     
     /// Observable for `separatorInsetReference` property of `UITableView` source.
     @available(iOS 11.0, *)
-    public var separatorInsetReference: KeyPathObservable<Source, UITableViewSeparatorInsetReference> {
+    public var separatorInsetReference: KeyPathObservable<Source, UITableView.SeparatorInsetReference> {
         return source.observable(at: \Source.separatorInsetReference)
     }
     
@@ -114,7 +114,7 @@ extension ReactiveExtension where Source: UITableView {
     }
     
     /// Observable for `separatorStyle` property of `UITableView` source.
-    public var separatorStyle: KeyPathObservable<Source, UITableViewCellSeparatorStyle> {
+    public var separatorStyle: KeyPathObservable<Source, UITableViewCell.SeparatorStyle> {
         return source.observable(at: \Source.separatorStyle)
     }
     

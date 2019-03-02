@@ -18,7 +18,7 @@ extension ReactiveExtension where Source: UIWindow {
     }
     
     /// Observable for `windowLevel` property of `UIWindow` source.
-    public var windowLevel: KeyPathObservable<Source, UIWindowLevel> {
+    public var windowLevel: KeyPathObservable<Source, UIWindow.Level> {
         return source.observable(at: \Source.windowLevel)
     }
     

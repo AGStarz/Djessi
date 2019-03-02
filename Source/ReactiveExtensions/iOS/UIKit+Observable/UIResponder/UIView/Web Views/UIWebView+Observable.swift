@@ -54,13 +54,13 @@ extension ReactiveExtension where Source: UIWebView {
     
     /// Observable for `paginationMode` property of `UIWebView` source.
     @available(iOS 7.0, *)
-    public var paginationMode: KeyPathObservable<Source, UIWebPaginationMode> {
+    public var paginationMode: KeyPathObservable<Source, UIWebView.PaginationMode> {
         return source.observable(at: \Source.paginationMode)
     }
     
     /// Observable for `paginationBreakingMode` property of `UIWebView` source.
     @available(iOS 7.0, *)
-    public var paginationBreakingMode: KeyPathObservable<Source, UIWebPaginationBreakingMode> {
+    public var paginationBreakingMode: KeyPathObservable<Source, UIWebView.PaginationBreakingMode> {
         return source.observable(at: \Source.paginationBreakingMode)
     }
     

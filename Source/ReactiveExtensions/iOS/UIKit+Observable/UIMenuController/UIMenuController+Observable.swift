@@ -18,7 +18,7 @@ extension ReactiveExtension where Source: UIMenuController {
     
     /// Observable for `arrowDirection` property of `UIMenuController` source.
     @available(iOS 3.2, *)
-    public var arrowDirection: KeyPathObservable<Source, UIMenuControllerArrowDirection> {
+    public var arrowDirection: KeyPathObservable<Source, UIMenuController.ArrowDirection> {
         return source.observable(at: \Source.arrowDirection)
     }
     

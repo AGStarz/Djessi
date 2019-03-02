@@ -28,8 +28,8 @@ extension ReactiveExtension where Source: UIActivityIndicatorView {
     }
     
     /// Observable for `activityIndicatorViewStyle` property of `UIActivityIndicatorView` source.
-    public var activityIndicatorViewStyle: KeyPathObservable<Source, UIActivityIndicatorViewStyle> {
-        return source.observable(at: \Source.activityIndicatorViewStyle)
+    public var activityIndicatorViewStyle: KeyPathObservable<Source, UIActivityIndicatorView.Style> {
+        return source.observable(at: \Source.style)
     }
 }
 

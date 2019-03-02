@@ -30,7 +30,7 @@ extension ReactiveExtension where Source: UITableViewCell {
     }
     
     /// Observable for `selectionStyle` property of `UITableViewCell` source.
-    public var selectionStyle: KeyPathObservable<Source, UITableViewCellSelectionStyle> {
+    public var selectionStyle: KeyPathObservable<Source, UITableViewCell.SelectionStyle> {
         return source.observable(at: \Source.selectionStyle)
     }
     
@@ -55,7 +55,7 @@ extension ReactiveExtension where Source: UITableViewCell {
     }
     
     /// Observable for `accessoryType` property of `UITableViewCell` source.
-    public var accessoryType: KeyPathObservable<Source, UITableViewCellAccessoryType> {
+    public var accessoryType: KeyPathObservable<Source, UITableViewCell.AccessoryType> {
         return source.observable(at: \Source.accessoryType)
     }
     
@@ -65,7 +65,7 @@ extension ReactiveExtension where Source: UITableViewCell {
     }
     
     /// Observable for `editingAccessoryType` property of `UITableViewCell` source.
-    public var editingAccessoryType: KeyPathObservable<Source, UITableViewCellAccessoryType> {
+    public var editingAccessoryType: KeyPathObservable<Source, UITableViewCell.AccessoryType> {
         return source.observable(at: \Source.editingAccessoryType)
     }
     
@@ -97,7 +97,7 @@ extension ReactiveExtension where Source: UITableViewCell {
     
     /// Observable for `focusStyle` property of `UITableViewCell` source.
     @available(iOS 9.0, *)
-    public var focusStyle: KeyPathObservable<Source, UITableViewCellFocusStyle> {
+    public var focusStyle: KeyPathObservable<Source, UITableViewCell.FocusStyle> {
         return source.observable(at: \Source.focusStyle)
     }
     

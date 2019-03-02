@@ -14,7 +14,7 @@ extension ReactiveExtension where Source: UICollisionBehavior {
     // TODO: delegate
     
     /// Observable for `collisionMode` property of `UICollisionBehavior` source.
-    public var collisionMode: KeyPathObservable<Source, UICollisionBehaviorMode> {
+    public var collisionMode: KeyPathObservable<Source, UICollisionBehavior.Mode> {
         return source.observable(at: \Source.collisionMode)
     }
     

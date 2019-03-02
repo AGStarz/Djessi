@@ -24,7 +24,7 @@ extension ReactiveExtension where Source: UISplitViewController {
     
     /// Observable for `preferredDisplayMode` property of `UISplitViewController` source.
     @available(iOS 8.0, *)
-    public var preferredDisplayMode: KeyPathObservable<Source, UISplitViewControllerDisplayMode> {
+    public var preferredDisplayMode: KeyPathObservable<Source, UISplitViewController.DisplayMode> {
         return source.observable(at: \Source.preferredDisplayMode)
     }
     
@@ -48,7 +48,7 @@ extension ReactiveExtension where Source: UISplitViewController {
     
     /// Observable for `primaryEdge` property of `UISplitViewController` source.
     @available(iOS 11.0, *)
-    public var primaryEdge: KeyPathObservable<Source, UISplitViewControllerPrimaryEdge> {
+    public var primaryEdge: KeyPathObservable<Source, UISplitViewController.PrimaryEdge> {
         return source.observable(at: \Source.primaryEdge)
     }
 }

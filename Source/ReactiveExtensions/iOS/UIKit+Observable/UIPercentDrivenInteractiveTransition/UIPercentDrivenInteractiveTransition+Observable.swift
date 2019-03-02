@@ -17,7 +17,7 @@ extension ReactiveExtension where Source: UIPercentDrivenInteractiveTransition {
     }
     
     /// Observable for `completionCurve` property of `UIPercentDrivenInteractiveTransition` source.
-    public var completionCurve: KeyPathObservable<Source, UIViewAnimationCurve> {
+    public var completionCurve: KeyPathObservable<Source, UIView.AnimationCurve> {
         return source.observable(at: \Source.completionCurve)
     }
     

@@ -22,17 +22,17 @@ extension ReactiveExtension where Source: UIPrintInfo {
     }
     
     /// Observable for `outputType` property of `UIPrintInfo` source.
-    public var outputType: KeyPathObservable<Source, UIPrintInfoOutputType> {
+    public var outputType: KeyPathObservable<Source, UIPrintInfo.OutputType> {
         return source.observable(at: \Source.outputType)
     }
     
     /// Observable for `orientation` property of `UIPrintInfo` source.
-    public var orientation: KeyPathObservable<Source, UIPrintInfoOrientation> {
+    public var orientation: KeyPathObservable<Source, UIPrintInfo.Orientation> {
         return source.observable(at: \Source.orientation)
     }
     
     /// Observable for `duplex` property of `UIPrintInfo` source.
-    public var duplex: KeyPathObservable<Source, UIPrintInfoDuplex> {
+    public var duplex: KeyPathObservable<Source, UIPrintInfo.Duplex> {
         return source.observable(at: \Source.duplex)
     }
 }
